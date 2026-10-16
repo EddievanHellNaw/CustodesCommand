@@ -1,116 +1,157 @@
 
 package com.example.custodescommand.ui
 
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
-import androidx.compose.material3.Card
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.saveable.listSaver
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.snapshots.SnapshotStateList
+import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
+import androidx.navigation3.runtime.NavEntry
+import androidx.navigation3.ui.NavDisplay
+import com.example.custodescommand.navigation.MainTab
+import com.example.custodescommand.feature.common.SectionPlaceholder
+import com.example.custodescommand.feature.datasheets.DatasheetListScreen
+import com.example.custodescommand.feature.datasheets.DatasheetDetailScreen
 
-private data class AppSection(
-    val title: String,
-    val description: String
-)
+private const val UNIT_PREFIX = "unit:"
 
-private val sections = listOf(
-    AppSection(
-        title = "My Rosters",
-        description = "Create and manage your Custodes armies."
-    ),
-    AppSection(
-        title = "Datasheets",
-        description = "Consult unit characteristics and abilities."
-    ),
-    AppSection(
-        title = "Detachments",
-        description = "Browse rules, stratagems and enhancements."
-    ),
-    AppSection(
-        title = "Core Rules",
-        description = "Search the Warhammer 40,000 rulebook."
-    )
-)
-
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CustodesApp() {
-    Scaffold { innerPadding ->
 
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(innerPadding),
-            contentPadding = PaddingValues(20.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp)
-        ) {
+    val backStack = rememberSaveable(
+        saver = listSaver<SnapshotStateList<String>, String>(
+            save = { it.toList() },
+            restore = { it.toMutableStateList() }
+        )
+    ) {
+        mutableStateListOf(MainTab.Rosters.key)
+    }
 
-            item {
-                Column(
-                    verticalArrangement =
-                    Arrangement.spacedBy(8.dp)
-                ) {
-                    Text(
-                        text = "Custodes Command",
-                        style = MaterialTheme.typography.headlineLarge
-                    )
+    val currentRoute = backStack.last()
+    val selectedTab = backStack.first()
 
-                    Text(
-                        text = "Your offline Adeptus Custodes companion",
-                        style = MaterialTheme.typography.bodyMedium
+    val screenTitle = if (currentRoute.startsWith(UNIT_PREFIX)) {
+        "Datasheet"
+    } else {
+        MainTab.entries
+            .firstOrNull { it.key == currentRoute }
+            ?.label ?: "Custodes Command"
+    }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(screenTitle) },
+                navigationIcon = {
+                    if (backStack.size > 1) {
+                        IconButton(
+                            onClick = {
+                                backStack.removeAt(backStack.lastIndex)
+                            }
+                        ) {
+                            Text(
+                                text = "←",
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                        }
+                    }
+                }
+            )
+        },
+
+        bottomBar = {
+            NavigationBar {
+                MainTab.entries.forEach { tab ->
+
+                    NavigationBarItem(
+                        selected = selectedTab == tab.key,
+
+                        onClick = {
+                            if (
+                                backStack.size > 1 ||
+                                selectedTab != tab.key
+                            ) {
+                                backStack.clear()
+                                backStack.add(tab.key)
+                            }
+                        },
+
+                        icon = { Text(tab.symbol) },
+                        label = { Text(tab.label) }
                     )
                 }
             }
-
-            items(sections, key = { it.title }) { section ->
-                SectionPreview(section)
-            }
-
-            item {
-                Text(
-                    text = "Prototype 0.1 - Project foundation",
-                    style = MaterialTheme.typography.labelSmall
-                )
-            }
         }
-    }
-}
+    ) { innerPadding ->
 
-@Composable
-private fun SectionPreview(section: AppSection) {
-    Card(
-        modifier = Modifier.fillMaxWidth()
-    ) {
-        Column(
-            modifier = Modifier.padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            Text(
-                text = section.title,
-                style = MaterialTheme.typography.titleLarge
-            )
+        NavDisplay(
+            modifier = Modifier.padding(innerPadding),
+            backStack = backStack,
 
-            Text(
-                text = section.description,
-                style = MaterialTheme.typography.bodyMedium
-            )
-        }
-    }
-}
+            onBack = {
+                if (backStack.size > 1) {
+                    backStack.removeAt(backStack.lastIndex)
+                }
+            },
 
-@Preview(showBackground = true)
-@Composable
-private fun CustodesAppPreview() {
-    MaterialTheme {
-        CustodesApp()
+            entryProvider = { route ->
+
+                when {
+                    route == MainTab.Rosters.key ->
+                        NavEntry(route) {
+                            SectionPlaceholder(
+                                title = "My Rosters",
+                                description = "Your saved Custodes armies will appear here."
+                            )
+                        }
+
+                    route == MainTab.Datasheets.key ->
+                        NavEntry(route) {
+                            DatasheetListScreen(
+                                onOpenUnit = { unitId ->
+                                    backStack.add("$UNIT_PREFIX$unitId")
+                                }
+                            )
+                        }
+
+                    route == MainTab.Detachments.key ->
+                        NavEntry(route) {
+                            SectionPlaceholder(
+                                title = "Detachments",
+                                description = "Detachment rules, stratagems and enhancements."
+                            )
+                        }
+
+                    route == MainTab.Rules.key ->
+                        NavEntry(route) {
+                            SectionPlaceholder(
+                                title = "Core Rules",
+                                description = "A searchable reference for Warhammer 40,000."
+                            )
+                        }
+
+                    route.startsWith(UNIT_PREFIX) ->
+                        NavEntry(route) {
+                            DatasheetDetailScreen(
+                                unitId = route.removePrefix(UNIT_PREFIX)
+                            )
+                        }
+
+                    else -> error("Unknown route: $route")
+                }
+            }
+        )
     }
 }
