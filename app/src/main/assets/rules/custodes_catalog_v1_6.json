@@ -1,0 +1,1773 @@
+{
+  "packId": "custodes_11e_mfm_v1_6_lesson7",
+  "edition": "11th",
+  "faction": "Adeptus Custodes",
+  "pointsVersion": "MFM v1.6",
+  "sources": {
+    "unitsAndPoints": "Current-MFM-points-for-custodes.txt",
+    "datasheets": "11th edn - Custodes.pdf, pages 16–30"
+  },
+  "dataWarnings": [
+    "Base points only; add wargear and enhancement costs in later lessons.",
+    "Unit datasheet entries from PDF pages have photographed page fallback; structured weapon/ability transcription remains partial.",
+    "Ares Gunship, Orion Assault Dropship and Legends entries have no datasheets in uploaded PDF.",
+    "Occurrence tier ordering for mixed unit sizes is a provisional implementation convention until checked against complete army-construction rules."
+  ],
+  "optionalWargearCosts": [
+    {
+      "unitId": "shield-captain",
+      "optionName": "Praesidium Shield",
+      "pointsPerItem": 25
+    }
+  ],
+  "units": [
+    {
+      "id": "allarus",
+      "name": "Allarus Custodians",
+      "category": "Terminator Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 20,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        2,
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 2,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 180
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 270
+        },
+        {
+          "modelCount": 2,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 210
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 300
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 8,
+        "armourSave": "2+",
+        "wounds": 6,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "TERMINATOR",
+        "ADEPTUS CUSTODES"
+      ],
+      "weapons": [
+        {
+          "name": "Ballistus Grenade Launcher",
+          "type": "RANGED",
+          "range": "18\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ASSAULT",
+            "BLAST 1"
+          ]
+        },
+        {
+          "name": "Castellan Axe (ranged)",
+          "type": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "name": "Guardian Spear (ranged)",
+          "type": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "name": "Castellan Axe (melee)",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "name": "Guardian Spear (melee)",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": []
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Slayer of Tyrants",
+          "text": "This unit’s melee attacks that target a unit with a greater Toughness than this unit’s T have +1 to wound rolls."
+        },
+        {
+          "name": "Vexilla",
+          "text": "This unit has +1 OC and can ignore modifiers to its Ld."
+        }
+      ],
+      "wargearOptions": [
+        "1 model can be equipped with 1 Vexilla.",
+        "All models in this unit can each have their Guardian Spear replaced with 1 Castellan Axe."
+      ],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "aquilon-gauntlets",
+      "name": "Aquilon Terminators with Solarite Power Gauntlets",
+      "category": "Terminator Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 21,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 285
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 315
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 8,
+        "armourSave": "2+",
+        "wounds": 6,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "aquilon-talons",
+      "name": "Aquilon Terminators with Solarite Power Talons",
+      "category": "Terminator Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 21,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 275
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 305
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 8,
+        "armourSave": "2+",
+        "wounds": 6,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "ares-gunship",
+      "name": "Ares Gunship",
+      "category": "Aircraft",
+      "playStatus": "CURRENT",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 580
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 610
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "blade-champion",
+      "name": "Blade Champion",
+      "category": "Character Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 18,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 175
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 195
+        }
+      ],
+      "characteristics": {
+        "movementInches": 8,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 7,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": [
+        "guard",
+        "wardens",
+        "sentinel"
+      ]
+    },
+    {
+      "id": "caladius-annihilator",
+      "name": "Caladius Annihilator Grav-Tank",
+      "category": "Vehicle",
+      "playStatus": "CURRENT",
+      "sourcePage": 27,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 250
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 280
+        }
+      ],
+      "characteristics": {
+        "movementInches": 10,
+        "toughness": 11,
+        "armourSave": "2+",
+        "wounds": 14,
+        "leadership": "5+",
+        "objectiveControl": 4,
+        "invulnerableSave": "5+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "caladius",
+      "name": "Caladius Grav-Tank",
+      "category": "Vehicle",
+      "playStatus": "CURRENT",
+      "sourcePage": 27,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 230
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 260
+        }
+      ],
+      "characteristics": {
+        "movementInches": 10,
+        "toughness": 11,
+        "armourSave": "2+",
+        "wounds": 14,
+        "leadership": "5+",
+        "objectiveControl": 4,
+        "invulnerableSave": "5+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "achillus",
+      "name": "Contemptor-Achillus Dreadnought",
+      "category": "Vehicle Dreadnought",
+      "playStatus": "CURRENT",
+      "sourcePage": 22,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 230
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 260
+        }
+      ],
+      "characteristics": {
+        "movementInches": 9,
+        "toughness": 10,
+        "armourSave": "2+",
+        "wounds": 12,
+        "leadership": "5+",
+        "objectiveControl": 3,
+        "invulnerableSave": "5+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "galatus",
+      "name": "Contemptor-Galatus Dreadnought",
+      "category": "Vehicle Dreadnought",
+      "playStatus": "CURRENT",
+      "sourcePage": 22,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 220
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 250
+        }
+      ],
+      "characteristics": {
+        "movementInches": 9,
+        "toughness": 10,
+        "armourSave": "2+",
+        "wounds": 12,
+        "leadership": "5+",
+        "objectiveControl": 3,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "coronus",
+      "name": "Coronus Grav-Carrier",
+      "category": "Vehicle Transport",
+      "playStatus": "CURRENT",
+      "sourcePage": 26,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 225
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 245
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 12,
+        "armourSave": "2+",
+        "wounds": 16,
+        "leadership": "5+",
+        "objectiveControl": 5,
+        "invulnerableSave": "5+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "guard",
+      "name": "Custodian Guard Sodality",
+      "category": "Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 19,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 3,
+          "points": 240
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 4,
+          "throughOccurrence": null,
+          "points": 270
+        }
+      ],
+      "characteristics": {
+        "movementInches": 8,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 5,
+        "leadership": "5+",
+        "objectiveControl": 3,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "wardens",
+      "name": "Custodian Wardens",
+      "category": "Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 19,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        2,
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 2,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 200
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 295
+        },
+        {
+          "modelCount": 2,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 230
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 325
+        }
+      ],
+      "characteristics": {
+        "movementInches": 8,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 6,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "gyrfalcon",
+      "name": "Gyrfalcon Jetbike Sodality",
+      "category": "Mounted",
+      "playStatus": "CURRENT",
+      "sourcePage": 23,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        2
+      ],
+      "points": [
+        {
+          "modelCount": 2,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 260
+        },
+        {
+          "modelCount": 2,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 280
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 8,
+        "armourSave": "2+",
+        "wounds": 9,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "orion-dropship",
+      "name": "Orion Assault Dropship",
+      "category": "Aircraft Transport",
+      "playStatus": "CURRENT",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 690
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 740
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "pallas",
+      "name": "Pallas Grav-Attack",
+      "category": "Vehicle",
+      "playStatus": "CURRENT",
+      "sourcePage": 26,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 135
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 9,
+        "armourSave": "2+",
+        "wounds": 10,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "5+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "sentinel",
+      "name": "Sentinel Guard Sodality",
+      "category": "Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 18,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 3,
+          "points": 240
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 4,
+          "throughOccurrence": null,
+          "points": 270
+        }
+      ],
+      "characteristics": {
+        "movementInches": 8,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 5,
+        "leadership": "5+",
+        "objectiveControl": 3,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "shield-captain",
+      "name": "Shield-Captain",
+      "category": "Character Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 16,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 180
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 200
+        }
+      ],
+      "characteristics": {
+        "movementInches": 8,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 8,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": [
+        "guard",
+        "guard-adrasite",
+        "guard-pyrithite",
+        "wardens",
+        "sagittarum",
+        "sentinel"
+      ]
+    },
+    {
+      "id": "shield-captain-allarus",
+      "name": "Shield-Captain in Allarus Terminator Armour",
+      "category": "Character Terminator Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 17,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 185
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 205
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 8,
+        "armourSave": "2+",
+        "wounds": 9,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": [
+        "allarus",
+        "aquilon-gauntlets",
+        "aquilon-talons"
+      ]
+    },
+    {
+      "id": "shield-captain-jetbike",
+      "name": "Shield-Captain on Dawneagle Jetbike",
+      "category": "Character Mounted",
+      "playStatus": "CURRENT",
+      "sourcePage": 17,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 205
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 225
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 8,
+        "armourSave": "2+",
+        "wounds": 10,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": [
+        "gyrfalcon",
+        "vertus"
+      ]
+    },
+    {
+      "id": "telemon",
+      "name": "Telemon Heavy Dreadnought",
+      "category": "Vehicle Dreadnought",
+      "playStatus": "CURRENT",
+      "sourcePage": 25,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 280
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 310
+        }
+      ],
+      "characteristics": {
+        "movementInches": 10,
+        "toughness": 11,
+        "armourSave": "2+",
+        "wounds": 14,
+        "leadership": "5+",
+        "objectiveControl": 4,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [
+        {
+          "name": "Adrathic Destructor",
+          "type": "RANGED",
+          "range": "24\"",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "name": "Arachnus Storm Cannon",
+          "type": "RANGED",
+          "range": "24\"",
+          "attacks": "12",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "DEVASTATING WOUNDS",
+            "SUSTAINED HITS 1"
+          ]
+        },
+        {
+          "name": "Iliastus Accelerator Culverin",
+          "type": "RANGED",
+          "range": "48\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -1,
+          "damage": "3",
+          "abilities": [
+            "RAPID FIRE 3"
+          ]
+        },
+        {
+          "name": "Spiculus Bolt Launcher",
+          "type": "RANGED",
+          "range": "36\"",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "BLAST 2"
+          ]
+        },
+        {
+          "name": "Twin Neutronium Cascade Projectors",
+          "type": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "—",
+          "strength": "7",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "BLAST 1",
+            "TORRENT",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "name": "Caestus Fists",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "14",
+          "armourPenetration": -3,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "name": "Dual Caestus Fists",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "7",
+          "skill": "2+",
+          "strength": "14",
+          "armourPenetration": -3,
+          "damage": "4",
+          "abilities": [
+            "TWIN-LINKED"
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Guardian Eternal",
+          "text": "Ranged attacks that target this unit have -1 Damage."
+        }
+      ],
+      "wargearOptions": [
+        "Dual Caestus Fists and 2 Twin Neutronium Cascade Projectors can be replaced by one of the three configurations listed on the source page."
+      ],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "trajann",
+      "name": "Trajann Valoris",
+      "category": "Epic Hero Character",
+      "playStatus": "CURRENT",
+      "sourcePage": 16,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 265
+        }
+      ],
+      "characteristics": {
+        "movementInches": 8,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 10,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [
+        {
+          "name": "Eagle’s Scream",
+          "type": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "name": "Watcher’s Axe",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "12",
+          "armourPenetration": -3,
+          "damage": "4",
+          "abilities": [
+            "CLEAVE 1"
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Captain-General (Aura)",
+          "text": "Friendly ADEPTUS CUSTODES units (excluding MONSTER/VEHICLE units) within 6\" can re-roll hit rolls of 1 and wound rolls of 1."
+        },
+        {
+          "name": "Moment Shackle",
+          "text": "Once per battle, per army, at the start of any phase, choose an effect from the source page."
+        },
+        {
+          "name": "Supreme Commander",
+          "text": "If this model is in your army, it must be your WARLORD."
+        }
+      ],
+      "wargearOptions": [],
+      "leaderBodyguardIds": [
+        "allarus",
+        "aquilon-gauntlets",
+        "aquilon-talons",
+        "guard",
+        "guard-adrasite",
+        "guard-pyrithite",
+        "wardens",
+        "sagittarum",
+        "sentinel"
+      ]
+    },
+    {
+      "id": "venatari-kinetic",
+      "name": "Venatari with Kinetic Destroyers",
+      "category": "Jump Pack Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 24,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 255
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 280
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 5,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "venatari-lances",
+      "name": "Venatari with Verutum Lances",
+      "category": "Jump Pack Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 24,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 2,
+          "points": 270
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 3,
+          "throughOccurrence": null,
+          "points": 300
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 7,
+        "armourSave": "2+",
+        "wounds": 5,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "vertus",
+      "name": "Vertus Praetors",
+      "category": "Mounted",
+      "playStatus": "CURRENT",
+      "sourcePage": 23,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        2,
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 2,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 220
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": 1,
+          "points": 330
+        },
+        {
+          "modelCount": 2,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 240
+        },
+        {
+          "modelCount": 3,
+          "fromOccurrence": 2,
+          "throughOccurrence": null,
+          "points": 350
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 8,
+        "armourSave": "2+",
+        "wounds": 7,
+        "leadership": "5+",
+        "objectiveControl": 2,
+        "invulnerableSave": "4+"
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "rhino",
+      "name": "Anathema Psykana Rhino",
+      "category": "Vehicle Transport",
+      "playStatus": "CURRENT",
+      "sourcePage": 30,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": 3,
+          "points": 70
+        },
+        {
+          "modelCount": 1,
+          "fromOccurrence": 4,
+          "throughOccurrence": null,
+          "points": 80
+        }
+      ],
+      "characteristics": {
+        "movementInches": 12,
+        "toughness": 9,
+        "armourSave": "3+",
+        "wounds": 10,
+        "leadership": "6+",
+        "objectiveControl": 2,
+        "invulnerableSave": null
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "knight-centura",
+      "name": "Knight-Centura",
+      "category": "Character Infantry",
+      "playStatus": "CURRENT",
+      "sourcePage": 28,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 55
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 3,
+        "armourSave": "3+",
+        "wounds": 4,
+        "leadership": "6+",
+        "objectiveControl": 1,
+        "invulnerableSave": "5+"
+      },
+      "keywords": [],
+      "weapons": [
+        {
+          "name": "Master-crafted Boltgun",
+          "type": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ANTI-PSYKER 4+",
+            "ASSAULT",
+            "RAPID FIRE 1"
+          ]
+        },
+        {
+          "name": "Master-crafted Flamer",
+          "type": "RANGED",
+          "range": "12\"",
+          "attacks": "4",
+          "skill": "—",
+          "strength": "4",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ANTI-PSYKER 4+",
+            "ASSAULT",
+            "BLAST 2",
+            "TORRENT"
+          ]
+        },
+        {
+          "name": "Executioner Greatblade",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "ANTI-PSYKER 5+",
+            "CLEAVE 1",
+            "DEVASTATING WOUNDS: PSYKER"
+          ]
+        },
+        {
+          "name": "Gun Stock",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "3",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Seeker’s Instincts",
+          "text": "This unit has +2\" M, and it can re-roll Advance rolls and Charge rolls."
+        }
+      ],
+      "wargearOptions": [
+        "Executioner Greatblade can be replaced by a Master-crafted Boltgun and Gun Stock, or a Master-crafted Flamer and Gun Stock."
+      ],
+      "leaderBodyguardIds": [
+        "prosecutor",
+        "vigilator",
+        "witchseeker"
+      ]
+    },
+    {
+      "id": "prosecutor",
+      "name": "Prosecutor Squad",
+      "category": "Infantry Anathema Psykana",
+      "playStatus": "CURRENT",
+      "sourcePage": 28,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        4,
+        5,
+        9,
+        10
+      ],
+      "points": [
+        {
+          "modelCount": 4,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 45
+        },
+        {
+          "modelCount": 5,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 50
+        },
+        {
+          "modelCount": 9,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 80
+        },
+        {
+          "modelCount": 10,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 90
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 3,
+        "armourSave": "3+",
+        "wounds": 1,
+        "leadership": "6+",
+        "objectiveControl": 2,
+        "invulnerableSave": null
+      },
+      "keywords": [],
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "type": "RANGED",
+          "range": "24\"",
+          "attacks": "1",
+          "skill": "3+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ANTI-PSYKER 4+",
+            "ASSAULT",
+            "RAPID FIRE 1"
+          ]
+        },
+        {
+          "name": "Gun Stock",
+          "type": "MELEE",
+          "range": "Melee",
+          "attacks": "2",
+          "skill": "3+",
+          "strength": "3",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "vigilator",
+      "name": "Vigilator Squad",
+      "category": "Infantry Anathema Psykana",
+      "playStatus": "CURRENT",
+      "sourcePage": 29,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        4,
+        5,
+        9,
+        10
+      ],
+      "points": [
+        {
+          "modelCount": 4,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 50
+        },
+        {
+          "modelCount": 5,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 55
+        },
+        {
+          "modelCount": 9,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 90
+        },
+        {
+          "modelCount": 10,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 100
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 3,
+        "armourSave": "3+",
+        "wounds": 1,
+        "leadership": "6+",
+        "objectiveControl": 1,
+        "invulnerableSave": null
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "witchseeker",
+      "name": "Witchseeker Squad",
+      "category": "Infantry Anathema Psykana",
+      "playStatus": "CURRENT",
+      "sourcePage": 30,
+      "sourceDocument": "11th edn - Custodes.pdf",
+      "profileStatus": "PARTIAL_TRANSCRIPTION",
+      "allowedModelCounts": [
+        4,
+        5,
+        9,
+        10
+      ],
+      "points": [
+        {
+          "modelCount": 4,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 55
+        },
+        {
+          "modelCount": 5,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 60
+        },
+        {
+          "modelCount": 9,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 100
+        },
+        {
+          "modelCount": 10,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 110
+        }
+      ],
+      "characteristics": {
+        "movementInches": 7,
+        "toughness": 3,
+        "armourSave": "3+",
+        "wounds": 1,
+        "leadership": "6+",
+        "objectiveControl": 1,
+        "invulnerableSave": null
+      },
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "aleya",
+      "name": "Aleya",
+      "category": "Legends Character",
+      "playStatus": "LEGENDS",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 55
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": [
+        "prosecutor",
+        "vigilator",
+        "witchseeker"
+      ]
+    },
+    {
+      "id": "guard-adrasite",
+      "name": "Custodian Guard Sodality with Adrasite Spears",
+      "category": "Legends Infantry",
+      "playStatus": "LEGENDS",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 200
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "guard-pyrithite",
+      "name": "Custodian Guard Sodality with Pyrithite Spears",
+      "category": "Legends Infantry",
+      "playStatus": "LEGENDS",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 215
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "sagittarum",
+      "name": "Sagittarum Custodians Sodality",
+      "category": "Legends Infantry",
+      "playStatus": "LEGENDS",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        3
+      ],
+      "points": [
+        {
+          "modelCount": 3,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 185
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "valerian",
+      "name": "Valerian",
+      "category": "Legends Character",
+      "playStatus": "LEGENDS",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 130
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": [
+        "guard",
+        "guard-adrasite",
+        "guard-pyrithite",
+        "wardens",
+        "sagittarum",
+        "sentinel"
+      ]
+    },
+    {
+      "id": "venerable-contemptor",
+      "name": "Venerable Contemptor Dreadnought",
+      "category": "Legends Vehicle",
+      "playStatus": "LEGENDS",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 220
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    },
+    {
+      "id": "venerable-land-raider",
+      "name": "Venerable Land Raider",
+      "category": "Legends Vehicle",
+      "playStatus": "LEGENDS",
+      "sourcePage": null,
+      "sourceDocument": "Current-MFM-points-for-custodes.txt",
+      "profileStatus": "INDEX_ONLY",
+      "allowedModelCounts": [
+        1
+      ],
+      "points": [
+        {
+          "modelCount": 1,
+          "fromOccurrence": 1,
+          "throughOccurrence": null,
+          "points": 230
+        }
+      ],
+      "characteristics": null,
+      "keywords": [],
+      "weapons": [],
+      "abilities": [],
+      "wargearOptions": [],
+      "leaderBodyguardIds": []
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "source": "Current-MFM-points-for-custodes.txt",
+  "detachments": [
+    {
+      "id": "aquilan-shield",
+      "name": "Aquilan Shield",
+      "dpCost": 1,
+      "dispositions": [
+        "TAKE AND HOLD"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Not a Shell Wasted",
+          "points": 10
+        },
+        {
+          "name": "Pareldor’s Caducatrix",
+          "points": 30
+        }
+      ]
+    },
+    {
+      "id": "auric-champions",
+      "name": "Auric Champions",
+      "dpCost": 1,
+      "dispositions": [
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Inspirational Exemplar",
+          "points": 10
+        },
+        {
+          "name": "Shroud of the Hidden Blade",
+          "points": 20
+        },
+        {
+          "name": "Superior Creation",
+          "points": 30
+        }
+      ]
+    },
+    {
+      "id": "dread-host",
+      "name": "Dread Host",
+      "dpCost": 1,
+      "dispositions": [
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Auric Exemplar",
+          "points": 15
+        },
+        {
+          "name": "Flawless Bladework",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "emissaries-imperatus",
+      "name": "Emissaries Imperatus",
+      "dpCost": 1,
+      "dispositions": [
+        "PRIORITY ASSETS"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Auriferous Orb",
+          "points": 20
+        },
+        {
+          "name": "Edge of the Blade",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "emperors-chosen",
+      "name": "Emperor’s Chosen",
+      "dpCost": 1,
+      "dispositions": [
+        "PRIORITY ASSETS"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "From the Hall of Armouries",
+          "points": 15
+        },
+        {
+          "name": "Radiant Mantle",
+          "points": 40
+        }
+      ]
+    },
+    {
+      "id": "grav-assault",
+      "name": "Grav-Assault Force",
+      "dpCost": 1,
+      "dispositions": [
+        "RECONNAISSANCE"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Anti-gravitic Mobility (Upgrade)",
+          "points": 15
+        },
+        {
+          "name": "Combat Deployment (Upgrade)",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": "guardians-throne",
+      "name": "Guardians of the Throne",
+      "dpCost": 3,
+      "dispositions": [
+        "PRIORITY ASSETS",
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Bane of Abominations",
+          "points": 20
+        },
+        {
+          "name": "Castellan’s Mark",
+          "points": 25
+        },
+        {
+          "name": "Eagle’s Eye",
+          "points": 30
+        },
+        {
+          "name": "Emperor’s Light",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "honoured-companions",
+      "name": "Honoured Companions",
+      "dpCost": 1,
+      "dispositions": [
+        "TAKE AND HOLD"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Arae-Shrike",
+          "points": 20
+        },
+        {
+          "name": "Celeritous Sentries (Upgrade)",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "lions",
+      "name": "Lions of the Emperor",
+      "dpCost": 1,
+      "dispositions": [
+        "DISRUPTION"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Leonine Ferocity",
+          "points": 20
+        },
+        {
+          "name": "Lightning Descent",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "id": "moritoi",
+      "name": "Might of the Moritoi",
+      "dpCost": 1,
+      "dispositions": [
+        "TAKE AND HOLD"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Augury Uplink (one per army) (Upgrade)",
+          "points": 30
+        },
+        {
+          "name": "Memento Moritoi (one per army) (Upgrade)",
+          "points": 30
+        }
+      ]
+    },
+    {
+      "id": "null-maiden",
+      "name": "Null Maiden Vigil",
+      "dpCost": 1,
+      "dispositions": [
+        "DISRUPTION"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Huntress’ Eye",
+          "points": 10
+        },
+        {
+          "name": "Oblivion Knight",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "shadowkeepers",
+      "name": "Shadowkeepers",
+      "dpCost": 1,
+      "dispositions": [
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Genalchemic Warding",
+          "points": 30
+        },
+        {
+          "name": "Unstoppable Destroyer",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "id": "solar-watch",
+      "name": "Solar Watch",
+      "dpCost": 1,
+      "dispositions": [
+        "RECONNAISSANCE"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Auric Eagle (Upgrade)",
+          "points": 15
+        },
+        {
+          "name": "Sally Forth",
+          "points": 30
+        }
+      ]
+    }
+  ]
+}

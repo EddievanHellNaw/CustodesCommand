@@ -1,0 +1,928 @@
+{
+  "source": {
+    "points": "Current-MFM-points-for-custodes.txt",
+    "rules": "11th edn - Custodes.pdf (pages 2–15)"
+  },
+  "detachments": [
+    {
+      "id": "aquilan-shield",
+      "name": "Aquilan Shield",
+      "dpCost": 1,
+      "dispositions": [
+        "TAKE AND HOLD"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Not a Shell Wasted",
+          "points": 10,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Pareldor’s Caducatrix",
+          "points": 30,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 6,
+      "additionalSourcePages": [],
+      "ruleTitle": "Gilded Guardians",
+      "ruleText": "While a friendly ADEPTUS CUSTODES unit (excluding MONSTER/VEHICLE units) is within range of an objective, ranged attacks that target that unit with a Strength greater than its Toughness have -1 to wound rolls.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": "SALVUS",
+      "favouredKatahEffect": "Your unit’s ranged attacks have +6\" Range.",
+      "stratagems": [
+        {
+          "id": "manoeuvre-and-fire",
+          "name": "Manoeuvre and Fire",
+          "cpCost": 1,
+          "phase": "Your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 6
+        },
+        {
+          "id": "tip-of-the-talon",
+          "name": "Tip of the Talon",
+          "cpCost": 1,
+          "phase": "Your Shooting phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 6
+        },
+        {
+          "id": "rapid-reactions",
+          "name": "Rapid Reactions",
+          "cpCost": 1,
+          "phase": "Opponent's Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 6
+        }
+      ]
+    },
+    {
+      "id": "auric-champions",
+      "name": "Auric Champions",
+      "dpCost": 1,
+      "dispositions": [
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Inspirational Exemplar",
+          "points": 10,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Shroud of the Hidden Blade",
+          "points": 20,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Superior Creation",
+          "points": 30,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 10,
+      "additionalSourcePages": [],
+      "ruleTitle": "Assemblage of Might",
+      "ruleText": "In your Command phase, select one enemy unit to be a dreadful foe until the start of your next Command phase. Friendly ADEPTUS CUSTODES CHARACTER models’ attacks targeting that unit have +1 to wound rolls.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": null,
+      "favouredKatahEffect": null,
+      "stratagems": [
+        {
+          "id": "gilded-champion",
+          "name": "Gilded Champion",
+          "cpCost": 1,
+          "phase": "Any phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 10
+        },
+        {
+          "id": "duty-unto-death",
+          "name": "Duty Unto Death",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 10
+        }
+      ]
+    },
+    {
+      "id": "dread-host",
+      "name": "Dread Host",
+      "dpCost": 1,
+      "dispositions": [
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Auric Exemplar",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Flawless Bladework",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 7,
+      "additionalSourcePages": [],
+      "ruleTitle": "Instruments of the Emperor’s Wrath",
+      "ruleText": "Friendly ADEPTUS CUSTODES units can re-roll charge rolls.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": "DACATARAI",
+      "favouredKatahEffect": "When an enemy unit engaged with yours makes a pile-in/consolidation move, subtract 2 inches from that move.",
+      "stratagems": [
+        {
+          "id": "lightning-wrath",
+          "name": "Lightning Wrath",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 7
+        },
+        {
+          "id": "golden-light-of-the-moritades",
+          "name": "Golden Light of the Moritades",
+          "cpCost": 2,
+          "phase": "Your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 7
+        },
+        {
+          "id": "preternatural-rapidity",
+          "name": "Preternatural Rapidity",
+          "cpCost": 1,
+          "phase": "Your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 7
+        }
+      ]
+    },
+    {
+      "id": "emissaries-imperatus",
+      "name": "Emissaries Imperatus",
+      "dpCost": 1,
+      "dispositions": [
+        "PRIORITY ASSETS"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Auriferous Orb",
+          "points": 20,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Edge of the Blade",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 8,
+      "additionalSourcePages": [],
+      "ruleTitle": "Heralds of the Throne",
+      "ruleText": "Friendly ADEPTUS CUSTODES units have Fights First.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": "CONSERVAI",
+      "favouredKatahEffect": "Until the end of the turn, advance or fall-back moves do not prevent your unit from being eligible to start an action.",
+      "stratagems": [
+        {
+          "id": "bearers-of-his-light",
+          "name": "Bearers of His Light",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 8
+        },
+        {
+          "id": "slayers-of-nightmares",
+          "name": "Slayers of Nightmares",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 8
+        },
+        {
+          "id": "selfless-service",
+          "name": "Selfless Service",
+          "cpCost": 1,
+          "phase": "Opponent’s Charge phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 8
+        }
+      ]
+    },
+    {
+      "id": "emperors-chosen",
+      "name": "Emperor’s Chosen",
+      "dpCost": 1,
+      "dispositions": [
+        "PRIORITY ASSETS"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "From the Hall of Armouries",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Radiant Mantle",
+          "points": 40,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 9,
+      "additionalSourcePages": [],
+      "ruleTitle": "Magna Imperator",
+      "ruleText": "When a friendly ADEPTUS CUSTODES unit is selected to attack, that unit’s attacks can re-roll one hit roll and re-roll one wound roll.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": "RENDAX",
+      "favouredKatahEffect": "After engaging an enemy MONSTER/VEHICLE unit, select that unit and roll one D6 to inflict mortal wounds as described on the source page.",
+      "stratagems": [
+        {
+          "id": "superhuman-focus",
+          "name": "Superhuman Focus",
+          "cpCost": 1,
+          "phase": "End of any phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 9
+        },
+        {
+          "id": "in-auramite-clad",
+          "name": "In Auramite Clad",
+          "cpCost": 1,
+          "phase": "Opponent’s Shooting phase / Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 9
+        },
+        {
+          "id": "impenetrable-bastion",
+          "name": "Impenetrable Bastion",
+          "cpCost": 1,
+          "phase": "End of your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 9
+        }
+      ]
+    },
+    {
+      "id": "grav-assault",
+      "name": "Grav-Assault Force",
+      "dpCost": 1,
+      "dispositions": [
+        "RECONNAISSANCE"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Anti-gravitic Mobility (Upgrade)",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Combat Deployment (Upgrade)",
+          "points": 20,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 12,
+      "additionalSourcePages": [],
+      "ruleTitle": "Flare Shields",
+      "ruleText": "Friendly GRAV-ASSAULT units have a 4+ invulnerable save against ranged attacks.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": null,
+      "favouredKatahEffect": null,
+      "stratagems": [
+        {
+          "id": "victory-before-death",
+          "name": "Victory Before Death",
+          "cpCost": 1,
+          "phase": "Any phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 12
+        },
+        {
+          "id": "advanced-stabilisers",
+          "name": "Advanced Stabilisers",
+          "cpCost": 1,
+          "phase": "Your Shooting phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 12
+        },
+        {
+          "id": "inevitable-annihilation",
+          "name": "Inevitable Annihilation",
+          "cpCost": 1,
+          "phase": "Your Shooting phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 12
+        }
+      ]
+    },
+    {
+      "id": "guardians-throne",
+      "name": "Guardians of the Throne",
+      "dpCost": 3,
+      "dispositions": [
+        "PRIORITY ASSETS",
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Bane of Abominations",
+          "points": 20,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Castellan’s Mark",
+          "points": 25,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Eagle’s Eye",
+          "points": 30,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Emperor’s Light",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 2,
+      "additionalSourcePages": [
+        3
+      ],
+      "ruleTitle": "Martial Mastery",
+      "ruleText": "In the Fight phase, when a friendly ADEPTUS CUSTODES unit is selected to fight, choose whether its melee attacks have SUSTAINED HITS 1 or LETHAL HITS.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": null,
+      "favouredKatahEffect": null,
+      "stratagems": [
+        {
+          "id": "superhuman-focus",
+          "name": "Superhuman Focus",
+          "cpCost": 1,
+          "phase": "End of any phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 3
+        },
+        {
+          "id": "shield-of-honour",
+          "name": "Shield of Honour",
+          "cpCost": 1,
+          "phase": "Start of Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 3
+        },
+        {
+          "id": "in-auramite-clad",
+          "name": "In Auramite Clad",
+          "cpCost": 1,
+          "phase": "Opponent’s Shooting phase / Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 3
+        },
+        {
+          "id": "unlimited-endurance",
+          "name": "Unlimited Endurance",
+          "cpCost": 1,
+          "phase": "Your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 3
+        },
+        {
+          "id": "prime-target",
+          "name": "Prime Target",
+          "cpCost": 1,
+          "phase": "Your Shooting phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 3
+        },
+        {
+          "id": "swift-as-the-eagle",
+          "name": "Swift as the Eagle",
+          "cpCost": 1,
+          "phase": "Opponent’s Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 3
+        }
+      ]
+    },
+    {
+      "id": "honoured-companions",
+      "name": "Honoured Companions",
+      "dpCost": 1,
+      "dispositions": [
+        "TAKE AND HOLD"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Arae-Shrike",
+          "points": 20,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Celeritous Sentries (Upgrade)",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 11,
+      "additionalSourcePages": [],
+      "ruleTitle": "Companion’s Watch",
+      "ruleText": "While a friendly TRUSTED SENTINEL unit is within range of an objective, that unit’s attacks can re-roll wound rolls of 1.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": null,
+      "favouredKatahEffect": null,
+      "stratagems": [
+        {
+          "id": "emperor-s-domain",
+          "name": "Emperor’s Domain",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 11
+        },
+        {
+          "id": "avenge-the-fallen",
+          "name": "Avenge the Fallen",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 11
+        },
+        {
+          "id": "swift-as-the-eagle",
+          "name": "Swift as the Eagle",
+          "cpCost": 1,
+          "phase": "Opponent’s Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 11
+        }
+      ]
+    },
+    {
+      "id": "lions",
+      "name": "Lions of the Emperor",
+      "dpCost": 1,
+      "dispositions": [
+        "DISRUPTION"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Leonine Ferocity",
+          "points": 20,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Lightning Descent",
+          "points": 20,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 14,
+      "additionalSourcePages": [],
+      "ruleTitle": "On Gilded Wings",
+      "ruleText": "At the end of your opponent’s Fight phase, if a friendly ADEPTUS CUSTODES TERMINATOR unit is unengaged, you can place that unit into Strategic Reserves.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": null,
+      "favouredKatahEffect": null,
+      "stratagems": [
+        {
+          "id": "vigil-unending",
+          "name": "Vigil Unending",
+          "cpCost": 2,
+          "phase": "Opponent’s Shooting phase / Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 14
+        },
+        {
+          "id": "unleash-the-lions",
+          "name": "Unleash the Lions",
+          "cpCost": 1,
+          "phase": "Your Command phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 14
+        },
+        {
+          "id": "fury-of-the-emperor",
+          "name": "Fury of the Emperor",
+          "cpCost": 1,
+          "phase": "Your Charge phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 14
+        }
+      ]
+    },
+    {
+      "id": "moritoi",
+      "name": "Might of the Moritoi",
+      "dpCost": 1,
+      "dispositions": [
+        "TAKE AND HOLD"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Augury Uplink (one per army) (Upgrade)",
+          "points": 30,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Memento Moritoi (one per army) (Upgrade)",
+          "points": 30,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 15,
+      "additionalSourcePages": [],
+      "ruleTitle": "Moritoi Ancients",
+      "ruleText": "Friendly ADEPTUS CUSTODES DREADNOUGHT units receive different effects based on remaining strength: +2 OC at starting strength; re-roll hit rolls of 1 below starting strength; and re-roll hit/wound rolls of 1 below half-strength.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": null,
+      "favouredKatahEffect": null,
+      "stratagems": [
+        {
+          "id": "honoured-interred",
+          "name": "Honoured Interred",
+          "cpCost": 1,
+          "phase": "Your Shooting phase / Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 15
+        },
+        {
+          "id": "unceasing-onslaught",
+          "name": "Unceasing Onslaught",
+          "cpCost": 1,
+          "phase": "Your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 15
+        },
+        {
+          "id": "unstoppable-momentum",
+          "name": "Unstoppable Momentum",
+          "cpCost": 1,
+          "phase": "Your Movement phase / Charge phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 15
+        }
+      ]
+    },
+    {
+      "id": "null-maiden",
+      "name": "Null Maiden Vigil",
+      "dpCost": 1,
+      "dispositions": [
+        "DISRUPTION"
+      ],
+      "uniqueShieldHost": false,
+      "enhancements": [
+        {
+          "name": "Huntress’ Eye",
+          "points": 10,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Oblivion Knight",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 13,
+      "additionalSourcePages": [],
+      "ruleTitle": "Silent Sisterhood",
+      "ruleText": "Allows an ANATHEMA PSYKANA CHARACTER to be Warlord; gives PROSECUTOR SQUAD units BATTLELINE; ANATHEMA PSYKANA units gain the Creeping Dread aura. See original page for the exact aura conditions.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": null,
+      "favouredKatahEffect": null,
+      "stratagems": [
+        {
+          "id": "anathema-blademastery",
+          "name": "Anathema Blademastery",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 13
+        },
+        {
+          "id": "psy-chaff-volley",
+          "name": "Psy-Chaff Volley",
+          "cpCost": 1,
+          "phase": "Your Shooting phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 13
+        },
+        {
+          "id": "purgation-sweep",
+          "name": "Purgation Sweep",
+          "cpCost": 1,
+          "phase": "Your Shooting phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 13
+        }
+      ]
+    },
+    {
+      "id": "shadowkeepers",
+      "name": "Shadowkeepers",
+      "dpCost": 1,
+      "dispositions": [
+        "PURGE THE FOE"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Genalchemic Warding",
+          "points": 30,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Unstoppable Destroyer",
+          "points": 25,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 4,
+      "additionalSourcePages": [],
+      "ruleTitle": "Wardens of the Dark Cells",
+      "ruleText": "While a friendly ADEPTUS CUSTODES unit (excluding MONSTER/VEHICLE units) is within range of an objective, melee attacks that target that unit with a Strength greater than its Toughness have -1 to wound rolls.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": "KAPTARIS",
+      "favouredKatahEffect": "Select an enemy unit engaged with yours; it must make a Battle-shock roll with -1, at most once per phase for that enemy.",
+      "stratagems": [
+        {
+          "id": "grim-responsibility",
+          "name": "Grim Responsibility",
+          "cpCost": 1,
+          "phase": "Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 4
+        },
+        {
+          "id": "no-escape",
+          "name": "No Escape",
+          "cpCost": 2,
+          "phase": "Opponent’s Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 4
+        },
+        {
+          "id": "indomitable-guardians",
+          "name": "Indomitable Guardians",
+          "cpCost": 1,
+          "phase": "Opponent’s Fight phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 4
+        }
+      ]
+    },
+    {
+      "id": "solar-watch",
+      "name": "Solar Watch",
+      "dpCost": 1,
+      "dispositions": [
+        "RECONNAISSANCE"
+      ],
+      "uniqueShieldHost": true,
+      "enhancements": [
+        {
+          "name": "Auric Eagle (Upgrade)",
+          "points": 15,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        },
+        {
+          "name": "Sally Forth",
+          "points": 30,
+          "effectText": null,
+          "eligibilityText": null,
+          "textStatus": "INDEX_ONLY"
+        }
+      ],
+      "sourcePage": 5,
+      "additionalSourcePages": [],
+      "ruleTitle": "Talon Sortie",
+      "ruleText": "When a friendly ADEPTUS CUSTODES unit makes a fall-back move, that move does not prevent it from being eligible to charge.",
+      "ruleTextStatus": "SUMMARY_CHECK_SCAN",
+      "favouredKatah": "CALISTUS",
+      "favouredKatahEffect": "Your unit has +2 inches Move.",
+      "stratagems": [
+        {
+          "id": "inexorable",
+          "name": "Inexorable",
+          "cpCost": 1,
+          "phase": "Your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 5
+        },
+        {
+          "id": "at-spear-s-length",
+          "name": "At Spear’s Length",
+          "cpCost": 1,
+          "phase": "Your Movement phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 5
+        },
+        {
+          "id": "gravimetric-grenade",
+          "name": "Gravimetric Grenade",
+          "cpCost": 1,
+          "phase": "Opponent’s Charge phase",
+          "whenText": null,
+          "targetText": null,
+          "effectText": null,
+          "textStatus": "INDEX_ONLY",
+          "sourcePage": 5
+        }
+      ]
+    }
+  ],
+  "packId": "custodes-detachment-index-l8-v1-6",
+  "pointsVersion": "MFM v1.6",
+  "warning": "All detachment rules are display summaries, not verified exact quotations. Stratagem and enhancement effects/eligibility remain scan-only. Do not rely on the index alone for gameplay or army legality."
+}

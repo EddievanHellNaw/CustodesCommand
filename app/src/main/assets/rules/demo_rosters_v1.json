@@ -1,0 +1,81 @@
+{
+  "warning": "Base unit points only; not a tournament legality certificate.",
+  "rosters": [
+    {
+      "name": "L7 DEMO — Custodes 1000 (base points)",
+      "pointsLimit": 1000,
+      "units": [
+        {
+          "unitId": "blade-champion",
+          "modelCount": 1
+        },
+        {
+          "unitId": "wardens",
+          "modelCount": 3
+        },
+        {
+          "unitId": "guard",
+          "modelCount": 3
+        },
+        {
+          "unitId": "witchseeker",
+          "modelCount": 4
+        },
+        {
+          "unitId": "pallas",
+          "modelCount": 1
+        },
+        {
+          "unitId": "knight-centura",
+          "modelCount": 1
+        },
+        {
+          "unitId": "prosecutor",
+          "modelCount": 4
+        }
+      ]
+    },
+    {
+      "name": "L7 DEMO — Custodes 2000 (base points)",
+      "pointsLimit": 2000,
+      "units": [
+        {
+          "unitId": "shield-captain-allarus",
+          "modelCount": 1
+        },
+        {
+          "unitId": "allarus",
+          "modelCount": 2
+        },
+        {
+          "unitId": "wardens",
+          "modelCount": 2
+        },
+        {
+          "unitId": "venatari-lances",
+          "modelCount": 3
+        },
+        {
+          "unitId": "caladius-annihilator",
+          "modelCount": 1
+        },
+        {
+          "unitId": "telemon",
+          "modelCount": 1
+        },
+        {
+          "unitId": "pallas",
+          "modelCount": 1
+        },
+        {
+          "unitId": "guard",
+          "modelCount": 3
+        },
+        {
+          "unitId": "gyrfalcon",
+          "modelCount": 2
+        }
+      ]
+    }
+  ]
+}
