@@ -14,17 +14,19 @@ import androidx.compose.ui.unit.dp
 
 import com.example.custodescommand.core.data.SampleCustodesCatalog
 
+
 @Composable
 fun DatasheetListScreen(
+    state: DatasheetsUiState,
     onOpenUnit: (String) -> Unit
 ) {
     var query by rememberSaveable {
         mutableStateOf("")
     }
 
-    val filteredUnits = SampleCustodesCatalog.units.filter {
-        it.name.contains(query, ignoreCase = true) ||
-                it.category.contains(query, ignoreCase = true)
+    val filteredUnits = state.units.filter { unit ->
+        unit.name.contains(query, ignoreCase = true) ||
+                unit.category.contains(query, ignoreCase = true)
     }
 
     Column(
@@ -32,7 +34,6 @@ fun DatasheetListScreen(
             .fillMaxSize()
             .padding(16.dp)
     ) {
-
         Text(
             text = "Unit Datasheets",
             style = MaterialTheme.typography.headlineMedium
@@ -50,36 +51,68 @@ fun DatasheetListScreen(
 
         Spacer(Modifier.height(16.dp))
 
-        LazyColumn(
-            verticalArrangement = Arrangement.spacedBy(8.dp)
-        ) {
-            items(
-                items = filteredUnits,
-                key = { it.id }
-            ) { unit ->
+        when {
+            state.isLoading -> {
+                CircularProgressIndicator()
+            }
 
-                Card(
-                    onClick = { onOpenUnit(unit.id) },
-                    modifier = Modifier.fillMaxWidth()
+            state.errorMessage != null -> {
+                Text(
+                    text = state.errorMessage,
+                    color = MaterialTheme.colorScheme.error
+                )
+            }
+
+            state.units.isEmpty() -> {
+                Text("No datasheets have been imported.")
+            }
+
+            filteredUnits.isEmpty() -> {
+                Text("No units match your search.")
+            }
+
+            else -> {
+                LazyColumn(
+                    verticalArrangement =
+                        Arrangement.spacedBy(8.dp)
                 ) {
-                    Column(
-                        modifier = Modifier.padding(16.dp)
-                    ) {
-                        Text(
-                            text = unit.name,
-                            style = MaterialTheme.typography.titleMedium
-                        )
+                    items(
+                        items = filteredUnits,
+                        key = { it.id }
+                    ) { unit ->
+                        Card(
+                            onClick = {
+                                onOpenUnit(unit.id)
+                            },
+                            modifier = Modifier.fillMaxWidth()
+                        ) {
+                            Column(
+                                modifier = Modifier.padding(16.dp)
+                            ) {
+                                Text(
+                                    text = unit.name,
+                                    style = MaterialTheme
+                                        .typography.titleMedium
+                                )
 
-                        Text(
-                            text = unit.category,
-                            style = MaterialTheme.typography.bodySmall
-                        )
+                                Spacer(Modifier.height(4.dp))
+
+                                Text(
+                                    text = unit.category,
+                                    style = MaterialTheme
+                                        .typography.bodySmall,
+                                    color = MaterialTheme
+                                        .colorScheme.onSurfaceVariant
+                                )
+                            }
+                        }
                     }
                 }
             }
         }
     }
 }
+
 
 @Composable
 fun DatasheetDetailScreen(

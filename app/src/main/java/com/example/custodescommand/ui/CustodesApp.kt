@@ -24,11 +24,121 @@ import com.example.custodescommand.feature.common.SectionPlaceholder
 import com.example.custodescommand.feature.datasheets.DatasheetListScreen
 import com.example.custodescommand.feature.datasheets.DatasheetDetailScreen
 
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
+import androidx.compose.ui.platform.LocalContext
+
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.lifecycle.viewmodel.initializer
+import androidx.lifecycle.viewmodel.viewModelFactory
+
+import com.example.custodescommand.CustodesApplication
+import com.example.custodescommand.feature.datasheets.DatasheetsViewModel
+import com.example.custodescommand.feature.rosters.RostersViewModel
+import com.example.custodescommand.feature.rosters.RostersScreen
+
+import androidx.compose.runtime.LaunchedEffect
+import com.example.custodescommand.feature.rosters.RosterEditorViewModel
+import com.example.custodescommand.feature.rosters.RosterEditorScreen
+
+import com.example.custodescommand.feature.datasheets.UnitDetailViewModel
+import com.example.custodescommand.feature.datasheets.UnitDetailScreen
+import com.example.custodescommand.feature.datasheets.SourcePageScreen
+
+import com.example.custodescommand.feature.detachments.*
+
 private const val UNIT_PREFIX = "unit:"
+private const val ROSTER_PREFIX = "roster:"
+private const val SOURCE_PAGE_PREFIX = "source-page:"
+private const val DETACHMENT_PREFIX = "detachment:"
+private const val ROSTER_DETACHMENTS_PREFIX = "roster-detachments:"
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CustodesApp() {
+
+    val application = LocalContext.current.applicationContext
+            as CustodesApplication
+
+    val container = application.container
+
+    val detailFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                UnitDetailViewModel(
+                    repository = container.unitDetailRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+    val detailViewModel: UnitDetailViewModel = viewModel(factory = detailFactory)
+    val detailState by detailViewModel.state.collectAsStateWithLifecycle()
+
+    val detachmentsFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                DetachmentsViewModel(
+                    repository = container.detachmentRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+    val detachmentVm: DetachmentsViewModel = viewModel(factory = detachmentsFactory)
+    val detachmentsState by detachmentVm.state.collectAsStateWithLifecycle()
+
+    val rosterDetachmentsFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                RosterDetachmentsViewModel(
+                    repository = container.detachmentRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+    val rosterDetachmentsVm: RosterDetachmentsViewModel =
+        viewModel(factory = rosterDetachmentsFactory)
+    val rosterDetachmentsState by
+    rosterDetachmentsVm.state.collectAsStateWithLifecycle()
+
+    val datasheetsFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                DatasheetsViewModel(
+                    repository = container.referenceRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+
+    val rostersFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                RostersViewModel(
+                    repository = container.rosterRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+
+    val datasheetsViewModel: DatasheetsViewModel = viewModel(
+        factory = datasheetsFactory
+    )
+
+    val rostersViewModel: RostersViewModel = viewModel(
+        factory = rostersFactory
+    )
+
+    val datasheetsState by
+    datasheetsViewModel.uiState.collectAsStateWithLifecycle()
+
+    val rostersState by
+    rostersViewModel.uiState.collectAsStateWithLifecycle()
 
     val backStack = rememberSaveable(
         saver = listSaver<SnapshotStateList<String>, String>(
@@ -39,16 +149,52 @@ fun CustodesApp() {
         mutableStateListOf(MainTab.Rosters.key)
     }
 
+
+    val rosterEditorFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                RosterEditorViewModel(
+                    rosterRepository =
+                        container.rosterRepository,
+                    referenceRepository =
+                        container.referenceRepository,
+                    initializeData =
+                        container::initializeData
+                )
+            }
+        }
+    }
+
+    val rosterEditorViewModel: RosterEditorViewModel =
+        viewModel(
+            factory = rosterEditorFactory
+        )
+
+    val rosterEditorState by
+    rosterEditorViewModel.uiState
+        .collectAsStateWithLifecycle()
+
+
     val currentRoute = backStack.last()
     val selectedTab = backStack.first()
 
-    val screenTitle = if (currentRoute.startsWith(UNIT_PREFIX)) {
-        "Datasheet"
-    } else {
-        MainTab.entries
-            .firstOrNull { it.key == currentRoute }
-            ?.label ?: "Custodes Command"
+
+    val screenTitle = when {
+
+        currentRoute.startsWith(ROSTER_PREFIX) ->
+            "Roster Editor"
+
+        currentRoute.startsWith(UNIT_PREFIX) ->
+            "Datasheet"
+
+        else ->
+            MainTab.entries
+                .firstOrNull {
+                    it.key == currentRoute
+                }
+                ?.label ?: "Custodes Command"
     }
+
 
     Scaffold(
         topBar = {
@@ -109,30 +255,43 @@ fun CustodesApp() {
             entryProvider = { route ->
 
                 when {
+
+
                     route == MainTab.Rosters.key ->
                         NavEntry(route) {
-                            SectionPlaceholder(
-                                title = "My Rosters",
-                                description = "Your saved Custodes armies will appear here."
+                            RostersScreen(
+                                state = rostersState,
+                                onCreateRoster =
+                                    rostersViewModel::createRoster,
+                                onDismissError =
+                                    rostersViewModel::dismissError,
+                                onOpenRoster = { rosterId ->
+                                    backStack.add(
+                                        "$ROSTER_PREFIX$rosterId"
+                                    )
+                                }
                             )
                         }
+
+
+
 
                     route == MainTab.Datasheets.key ->
                         NavEntry(route) {
                             DatasheetListScreen(
+                                state = datasheetsState,
                                 onOpenUnit = { unitId ->
                                     backStack.add("$UNIT_PREFIX$unitId")
                                 }
                             )
                         }
 
-                    route == MainTab.Detachments.key ->
-                        NavEntry(route) {
-                            SectionPlaceholder(
-                                title = "Detachments",
-                                description = "Detachment rules, stratagems and enhancements."
-                            )
-                        }
+                    route == MainTab.Detachments.key -> NavEntry(route) {
+                        DetachmentListScreen(
+                            state = detachmentsState,
+                            onOpen = { id -> backStack.add("$DETACHMENT_PREFIX$id") }
+                        )
+                    }
 
                     route == MainTab.Rules.key ->
                         NavEntry(route) {
@@ -142,12 +301,74 @@ fun CustodesApp() {
                             )
                         }
 
-                    route.startsWith(UNIT_PREFIX) ->
+                    route.startsWith(UNIT_PREFIX) -> NavEntry(route) {
+                        val unitId = route.removePrefix(UNIT_PREFIX)
+                        LaunchedEffect(unitId) { detailViewModel.open(unitId) }
+                        UnitDetailScreen(
+                            requestedUnitId = unitId,
+                            state = detailState,
+                            onOpenSourcePage = { page ->
+                                backStack.add("$SOURCE_PAGE_PREFIX$page")
+                            }
+                        )
+                    }
+
+                    route.startsWith(ROSTER_PREFIX) ->
                         NavEntry(route) {
-                            DatasheetDetailScreen(
-                                unitId = route.removePrefix(UNIT_PREFIX)
+
+                            val rosterId =
+                                route.removePrefix(ROSTER_PREFIX)
+
+                            LaunchedEffect(rosterId) {
+                                rosterEditorViewModel.loadRoster(rosterId)
+                            }
+
+                            RosterEditorScreen(
+                                rosterId = rosterId,
+                                state = rosterEditorState,
+                                onAddUnit =
+                                    rosterEditorViewModel::addUnit,
+                                onRemoveUnit =
+                                    rosterEditorViewModel::removeUnit,
+                                onManageDetachments = {
+                                    backStack.add("$ROSTER_DETACHMENTS_PREFIX$rosterId")
+                                },
+                                onDismissError =
+                                    rosterEditorViewModel::dismissError
                             )
                         }
+
+                    route.startsWith(SOURCE_PAGE_PREFIX) -> NavEntry(route) {
+                        val page = route.removePrefix(SOURCE_PAGE_PREFIX).toIntOrNull()
+                        if (page != null && page in 2..30) {
+                            SourcePageScreen(page)
+                        } else {
+                            Text("Source page unavailable")
+                        }
+                    }
+
+                    route.startsWith(DETACHMENT_PREFIX) -> NavEntry(route) {
+                        val detachmentId = route.removePrefix(DETACHMENT_PREFIX)
+                        LaunchedEffect(detachmentId) { detachmentVm.open(detachmentId) }
+                        DetachmentDetailScreen(
+                            requestedId = detachmentId,
+                            state = detachmentsState,
+                            onOpenSourcePage = { page ->
+                                backStack.add("$SOURCE_PAGE_PREFIX$page")
+                            }
+                        )
+                    }
+
+                    route.startsWith(ROSTER_DETACHMENTS_PREFIX) -> NavEntry(route) {
+                        val rosterId = route.removePrefix(ROSTER_DETACHMENTS_PREFIX)
+                        LaunchedEffect(rosterId) { rosterDetachmentsVm.loadRoster(rosterId) }
+                        RosterDetachmentsScreen(
+                            rosterId = rosterId,
+                            state = rosterDetachmentsState,
+                            onToggle = rosterDetachmentsVm::setSelected,
+                            onOpenDetail = { id -> backStack.add("$DETACHMENT_PREFIX$id") }
+                        )
+                    }
 
                     else -> error("Unknown route: $route")
                 }
