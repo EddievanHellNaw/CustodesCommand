@@ -72,10 +72,10 @@ class DetachmentCatalogImporter(
             require(detachmentRows.map { it.id }.distinct().size == detachmentRows.size)
             dao.upsertDetachments(detachmentRows)
             // No roster_detachments rows are touched.
-            dao.clearStratagems()
-            dao.insertStratagems(stratagemRows)
-            dao.clearEnhancements()
-            dao.insertEnhancements(enhancementRows)
+            // Do not delete and recreate referenced enhancements: saved roster
+            // assignments now have foreign keys to their stable identifiers.
+            dao.upsertStratagems(stratagemRows)
+            dao.upsertEnhancements(enhancementRows)
             referenceDao.markImported(CatalogImportStateEntity(
                 importId = packId, importedAtEpochMillis = System.currentTimeMillis()
             ))

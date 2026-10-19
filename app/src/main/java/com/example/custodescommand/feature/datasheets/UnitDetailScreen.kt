@@ -84,9 +84,9 @@ private fun DatasheetPage(unit: DetailedUnit, onOpenSourcePage: (Int) -> Unit) {
                     }
                 }
             } else {
-                Column(
-                    verticalArrangement = Arrangement.spacedBy(16.dp)
-                ) {
+                // A Box overlays children. In portrait we need a vertical layout
+                // or the ability, composition and points text will draw on top of itself.
+                Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
                     AbilityPanel(unit)
                     CompositionPanel(unit)
                     PricePanel(unit)

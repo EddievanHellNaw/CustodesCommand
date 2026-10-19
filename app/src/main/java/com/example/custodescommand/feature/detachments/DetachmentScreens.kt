@@ -165,10 +165,9 @@ fun DetachmentDetailScreen(
                 Text("Open photographed page $page")
             }
         }
-        Text("Reference-only in this lesson: enhancement assignment, eligibility and army legality are not enforced.",
+        Text("Enhancements can now be assigned from a roster; full eligibility and army legality are still being verified.",
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant)
-        Spacer(Modifier.height(16.dp))
     }
 }
 

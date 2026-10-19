@@ -20,6 +20,7 @@ class AppContainer(private val context: Context) {
     val rosterRepository = RosterRepository(database)
     val unitDetailRepository = UnitDetailRepository(database.referenceDao())
     val detachmentRepository = DetachmentRepository(database)
+    val rosterEnhancementRepository = RosterEnhancementRepository(database)
 
     private val initializationMutex = Mutex()
     private var initialized = false

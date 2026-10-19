@@ -1,0 +1,1120 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "06a0a3e0839d87d72253ce217879cdd6",
+    "entities": [
+      {
+        "tableName": "catalog_metadata",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `pointsVersion` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pointsVersion",
+            "columnName": "pointsVersion",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "units",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `category` TEXT NOT NULL, `allowedModelCounts` TEXT NOT NULL, `sourceDocument` TEXT, `sourcePage` INTEGER, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "allowedModelCounts",
+            "columnName": "allowedModelCounts",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceDocument",
+            "columnName": "sourceDocument",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourcePage",
+            "columnName": "sourcePage",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "point_tiers",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitId` TEXT NOT NULL, `modelCount` INTEGER NOT NULL, `fromOccurrence` INTEGER NOT NULL, `throughOccurrence` INTEGER, `points` INTEGER NOT NULL, PRIMARY KEY(`unitId`, `modelCount`, `fromOccurrence`), FOREIGN KEY(`unitId`) REFERENCES `units`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "unitId",
+            "columnName": "unitId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "modelCount",
+            "columnName": "modelCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fromOccurrence",
+            "columnName": "fromOccurrence",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "throughOccurrence",
+            "columnName": "throughOccurrence",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "points",
+            "columnName": "points",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitId",
+            "modelCount",
+            "fromOccurrence"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_point_tiers_unitId",
+            "unique": false,
+            "columnNames": [
+              "unitId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_point_tiers_unitId` ON `${TABLE_NAME}` (`unitId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "units",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "unitId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "rosters",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `pointsLimit` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pointsLimit",
+            "columnName": "pointsLimit",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "roster_units",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`instanceId` TEXT NOT NULL, `rosterId` TEXT NOT NULL, `unitId` TEXT NOT NULL, `modelCount` INTEGER NOT NULL, `position` INTEGER NOT NULL, PRIMARY KEY(`instanceId`), FOREIGN KEY(`rosterId`) REFERENCES `rosters`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`unitId`) REFERENCES `units`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "instanceId",
+            "columnName": "instanceId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rosterId",
+            "columnName": "rosterId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unitId",
+            "columnName": "unitId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "modelCount",
+            "columnName": "modelCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "position",
+            "columnName": "position",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "instanceId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_roster_units_rosterId",
+            "unique": false,
+            "columnNames": [
+              "rosterId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_roster_units_rosterId` ON `${TABLE_NAME}` (`rosterId`)"
+          },
+          {
+            "name": "index_roster_units_unitId",
+            "unique": false,
+            "columnNames": [
+              "unitId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_roster_units_unitId` ON `${TABLE_NAME}` (`unitId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "rosters",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "rosterId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "units",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "unitId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "unit_profiles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitId` TEXT NOT NULL, `playStatus` TEXT NOT NULL, `profileStatus` TEXT NOT NULL, `movementInches` INTEGER, `toughness` INTEGER, `armourSave` TEXT, `wounds` INTEGER, `leadership` TEXT, `objectiveControl` INTEGER, `invulnerableSave` TEXT, `keywordsJson` TEXT NOT NULL, `leaderBodyguardIdsJson` TEXT NOT NULL, `sourcePage` INTEGER, PRIMARY KEY(`unitId`), FOREIGN KEY(`unitId`) REFERENCES `units`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "unitId",
+            "columnName": "unitId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "playStatus",
+            "columnName": "playStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "profileStatus",
+            "columnName": "profileStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "movementInches",
+            "columnName": "movementInches",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "toughness",
+            "columnName": "toughness",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "armourSave",
+            "columnName": "armourSave",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "wounds",
+            "columnName": "wounds",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "leadership",
+            "columnName": "leadership",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "objectiveControl",
+            "columnName": "objectiveControl",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "invulnerableSave",
+            "columnName": "invulnerableSave",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "keywordsJson",
+            "columnName": "keywordsJson",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "leaderBodyguardIdsJson",
+            "columnName": "leaderBodyguardIdsJson",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourcePage",
+            "columnName": "sourcePage",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_unit_profiles_unitId",
+            "unique": false,
+            "columnNames": [
+              "unitId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_unit_profiles_unitId` ON `${TABLE_NAME}` (`unitId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "units",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "unitId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "unit_weapons",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitId` TEXT NOT NULL, `sortOrder` INTEGER NOT NULL, `name` TEXT NOT NULL, `weaponType` TEXT NOT NULL, `rangeText` TEXT NOT NULL, `attacks` TEXT NOT NULL, `skill` TEXT NOT NULL, `strength` TEXT NOT NULL, `armourPenetration` INTEGER NOT NULL, `damage` TEXT NOT NULL, `abilitiesJson` TEXT NOT NULL, PRIMARY KEY(`unitId`, `sortOrder`), FOREIGN KEY(`unitId`) REFERENCES `units`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "unitId",
+            "columnName": "unitId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weaponType",
+            "columnName": "weaponType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rangeText",
+            "columnName": "rangeText",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attacks",
+            "columnName": "attacks",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skill",
+            "columnName": "skill",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "strength",
+            "columnName": "strength",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "armourPenetration",
+            "columnName": "armourPenetration",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "damage",
+            "columnName": "damage",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "abilitiesJson",
+            "columnName": "abilitiesJson",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitId",
+            "sortOrder"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_unit_weapons_unitId",
+            "unique": false,
+            "columnNames": [
+              "unitId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_unit_weapons_unitId` ON `${TABLE_NAME}` (`unitId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "units",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "unitId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "unit_abilities",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitId` TEXT NOT NULL, `sortOrder` INTEGER NOT NULL, `name` TEXT NOT NULL, `ruleText` TEXT NOT NULL, PRIMARY KEY(`unitId`, `sortOrder`), FOREIGN KEY(`unitId`) REFERENCES `units`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "unitId",
+            "columnName": "unitId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleText",
+            "columnName": "ruleText",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitId",
+            "sortOrder"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_unit_abilities_unitId",
+            "unique": false,
+            "columnNames": [
+              "unitId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_unit_abilities_unitId` ON `${TABLE_NAME}` (`unitId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "units",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "unitId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "unit_wargear_options",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitId` TEXT NOT NULL, `sortOrder` INTEGER NOT NULL, `description` TEXT NOT NULL, PRIMARY KEY(`unitId`, `sortOrder`), FOREIGN KEY(`unitId`) REFERENCES `units`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "unitId",
+            "columnName": "unitId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sortOrder",
+            "columnName": "sortOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitId",
+            "sortOrder"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_unit_wargear_options_unitId",
+            "unique": false,
+            "columnNames": [
+              "unitId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_unit_wargear_options_unitId` ON `${TABLE_NAME}` (`unitId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "units",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "unitId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "catalog_import_state",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`importId` TEXT NOT NULL, `importedAtEpochMillis` INTEGER NOT NULL, PRIMARY KEY(`importId`))",
+        "fields": [
+          {
+            "fieldPath": "importId",
+            "columnName": "importId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "importedAtEpochMillis",
+            "columnName": "importedAtEpochMillis",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "importId"
+          ]
+        }
+      },
+      {
+        "tableName": "optional_wargear_costs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`unitId` TEXT NOT NULL, `optionName` TEXT NOT NULL, `pointsPerItem` INTEGER NOT NULL, PRIMARY KEY(`unitId`, `optionName`), FOREIGN KEY(`unitId`) REFERENCES `units`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "unitId",
+            "columnName": "unitId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optionName",
+            "columnName": "optionName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pointsPerItem",
+            "columnName": "pointsPerItem",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "unitId",
+            "optionName"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_optional_wargear_costs_unitId",
+            "unique": false,
+            "columnNames": [
+              "unitId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_optional_wargear_costs_unitId` ON `${TABLE_NAME}` (`unitId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "units",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "unitId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "detachments",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `dpCost` INTEGER NOT NULL, `dispositionsJson` TEXT NOT NULL, `uniqueShieldHost` INTEGER NOT NULL, `ruleTitle` TEXT NOT NULL, `ruleText` TEXT NOT NULL, `ruleTextStatus` TEXT NOT NULL, `favouredKatah` TEXT, `favouredKatahEffect` TEXT, `sourcePage` INTEGER NOT NULL, `extraSourcePagesJson` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dpCost",
+            "columnName": "dpCost",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dispositionsJson",
+            "columnName": "dispositionsJson",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uniqueShieldHost",
+            "columnName": "uniqueShieldHost",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleTitle",
+            "columnName": "ruleTitle",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleText",
+            "columnName": "ruleText",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ruleTextStatus",
+            "columnName": "ruleTextStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "favouredKatah",
+            "columnName": "favouredKatah",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "favouredKatahEffect",
+            "columnName": "favouredKatahEffect",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "sourcePage",
+            "columnName": "sourcePage",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "extraSourcePagesJson",
+            "columnName": "extraSourcePagesJson",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "detachment_stratagems",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`detachmentId` TEXT NOT NULL, `stratagemId` TEXT NOT NULL, `name` TEXT NOT NULL, `cpCost` INTEGER NOT NULL, `phase` TEXT NOT NULL, `whenText` TEXT, `targetText` TEXT, `effectText` TEXT, `textStatus` TEXT NOT NULL, `sourcePage` INTEGER NOT NULL, PRIMARY KEY(`detachmentId`, `stratagemId`), FOREIGN KEY(`detachmentId`) REFERENCES `detachments`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "detachmentId",
+            "columnName": "detachmentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stratagemId",
+            "columnName": "stratagemId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cpCost",
+            "columnName": "cpCost",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "phase",
+            "columnName": "phase",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "whenText",
+            "columnName": "whenText",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "targetText",
+            "columnName": "targetText",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "effectText",
+            "columnName": "effectText",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "textStatus",
+            "columnName": "textStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourcePage",
+            "columnName": "sourcePage",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "detachmentId",
+            "stratagemId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_detachment_stratagems_detachmentId",
+            "unique": false,
+            "columnNames": [
+              "detachmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_detachment_stratagems_detachmentId` ON `${TABLE_NAME}` (`detachmentId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "detachments",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "detachmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "detachment_enhancements",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`detachmentId` TEXT NOT NULL, `enhancementId` TEXT NOT NULL, `name` TEXT NOT NULL, `points` INTEGER NOT NULL, `effectText` TEXT, `eligibilityText` TEXT, `textStatus` TEXT NOT NULL, PRIMARY KEY(`detachmentId`, `enhancementId`), FOREIGN KEY(`detachmentId`) REFERENCES `detachments`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "detachmentId",
+            "columnName": "detachmentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enhancementId",
+            "columnName": "enhancementId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "points",
+            "columnName": "points",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "effectText",
+            "columnName": "effectText",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "eligibilityText",
+            "columnName": "eligibilityText",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "textStatus",
+            "columnName": "textStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "detachmentId",
+            "enhancementId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_detachment_enhancements_detachmentId",
+            "unique": false,
+            "columnNames": [
+              "detachmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_detachment_enhancements_detachmentId` ON `${TABLE_NAME}` (`detachmentId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "detachments",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "detachmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "roster_detachments",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`rosterId` TEXT NOT NULL, `detachmentId` TEXT NOT NULL, PRIMARY KEY(`rosterId`, `detachmentId`), FOREIGN KEY(`rosterId`) REFERENCES `rosters`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`detachmentId`) REFERENCES `detachments`(`id`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "rosterId",
+            "columnName": "rosterId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "detachmentId",
+            "columnName": "detachmentId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "rosterId",
+            "detachmentId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_roster_detachments_rosterId",
+            "unique": false,
+            "columnNames": [
+              "rosterId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_roster_detachments_rosterId` ON `${TABLE_NAME}` (`rosterId`)"
+          },
+          {
+            "name": "index_roster_detachments_detachmentId",
+            "unique": false,
+            "columnNames": [
+              "detachmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_roster_detachments_detachmentId` ON `${TABLE_NAME}` (`detachmentId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "rosters",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "rosterId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "detachments",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "detachmentId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "roster_enhancements",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`rosterId` TEXT NOT NULL, `detachmentId` TEXT NOT NULL, `enhancementId` TEXT NOT NULL, `rosterUnitInstanceId` TEXT NOT NULL, PRIMARY KEY(`rosterId`, `detachmentId`, `enhancementId`), FOREIGN KEY(`rosterId`) REFERENCES `rosters`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`rosterUnitInstanceId`) REFERENCES `roster_units`(`instanceId`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`rosterId`, `detachmentId`) REFERENCES `roster_detachments`(`rosterId`, `detachmentId`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`detachmentId`, `enhancementId`) REFERENCES `detachment_enhancements`(`detachmentId`, `enhancementId`) ON UPDATE NO ACTION ON DELETE RESTRICT )",
+        "fields": [
+          {
+            "fieldPath": "rosterId",
+            "columnName": "rosterId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "detachmentId",
+            "columnName": "detachmentId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "enhancementId",
+            "columnName": "enhancementId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rosterUnitInstanceId",
+            "columnName": "rosterUnitInstanceId",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "rosterId",
+            "detachmentId",
+            "enhancementId"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_roster_enhancements_rosterId",
+            "unique": false,
+            "columnNames": [
+              "rosterId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_roster_enhancements_rosterId` ON `${TABLE_NAME}` (`rosterId`)"
+          },
+          {
+            "name": "index_roster_enhancements_rosterId_detachmentId",
+            "unique": false,
+            "columnNames": [
+              "rosterId",
+              "detachmentId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_roster_enhancements_rosterId_detachmentId` ON `${TABLE_NAME}` (`rosterId`, `detachmentId`)"
+          },
+          {
+            "name": "index_roster_enhancements_detachmentId_enhancementId",
+            "unique": false,
+            "columnNames": [
+              "detachmentId",
+              "enhancementId"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_roster_enhancements_detachmentId_enhancementId` ON `${TABLE_NAME}` (`detachmentId`, `enhancementId`)"
+          },
+          {
+            "name": "index_roster_enhancements_rosterUnitInstanceId",
+            "unique": true,
+            "columnNames": [
+              "rosterUnitInstanceId"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_roster_enhancements_rosterUnitInstanceId` ON `${TABLE_NAME}` (`rosterUnitInstanceId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "rosters",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "rosterId"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "roster_units",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "rosterUnitInstanceId"
+            ],
+            "referencedColumns": [
+              "instanceId"
+            ]
+          },
+          {
+            "table": "roster_detachments",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "rosterId",
+              "detachmentId"
+            ],
+            "referencedColumns": [
+              "rosterId",
+              "detachmentId"
+            ]
+          },
+          {
+            "table": "detachment_enhancements",
+            "onDelete": "RESTRICT",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "detachmentId",
+              "enhancementId"
+            ],
+            "referencedColumns": [
+              "detachmentId",
+              "enhancementId"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '06a0a3e0839d87d72253ce217879cdd6')"
+    ]
+  }
+}

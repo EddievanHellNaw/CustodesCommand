@@ -15,13 +15,15 @@ import com.example.custodescommand.core.data.local.entity.*
         UnitAbilityEntity::class, UnitWargearOptionEntity::class,
         CatalogImportStateEntity::class, OptionalWargearCostEntity::class,
         DetachmentEntity::class, DetachmentStratagemEntity::class,
-        DetachmentEnhancementEntity::class, RosterDetachmentEntity::class
+        DetachmentEnhancementEntity::class, RosterDetachmentEntity::class,
+        RosterEnhancementEntity::class
     ],
-    version = 3,
+    version = 4,
     exportSchema = true,
     autoMigrations = [
         AutoMigration(from = 1, to = 2),
-        AutoMigration(from = 2, to = 3)
+        AutoMigration(from = 2, to = 3),
+        AutoMigration(from = 3, to = 4)
     ]
 )
 @TypeConverters(Converters::class)
@@ -29,4 +31,5 @@ abstract class CustodesDatabase : RoomDatabase() {
     abstract fun referenceDao(): ReferenceDao
     abstract fun rosterDao(): RosterDao
     abstract fun detachmentDao(): DetachmentDao
+    abstract fun rosterEnhancementDao(): RosterEnhancementDao
 }

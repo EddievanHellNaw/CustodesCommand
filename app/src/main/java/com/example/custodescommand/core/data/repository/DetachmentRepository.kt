@@ -57,6 +57,10 @@ class DetachmentRepository(private val db: CustodesDatabase) {
             if (selected) {
                 dao.selectForRoster(RosterDetachmentEntity(rosterId, detachmentId))
             } else {
+                // The FK also protects integrity; this check provides a useful message.
+                require(db.rosterEnhancementDao().countForDetachment(rosterId, detachmentId) == 0) {
+                    "Remove enhancements assigned from this detachment before deselecting it."
+                }
                 dao.deselectForRoster(rosterId, detachmentId)
             }
         }

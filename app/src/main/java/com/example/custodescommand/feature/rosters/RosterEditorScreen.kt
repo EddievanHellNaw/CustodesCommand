@@ -19,6 +19,7 @@ fun RosterEditorScreen(
     onAddUnit: (String, Int) -> Unit,
     onRemoveUnit: (String) -> Unit,
     onManageDetachments: () -> Unit,
+    onManageEnhancements: () -> Unit,
     onDismissError: () -> Unit
 ) {
     var showUnitPicker by rememberSaveable(rosterId) {
@@ -84,25 +85,21 @@ fun RosterEditorScreen(
                 )
 
                 Text(
-                    text = state.points?.let {
-                        "${it.totalPoints} / ${roster.pointsLimit} pts"
-                    } ?: "Points unavailable",
+                    text = state.armyTotalPoints?.let { "$it / ${roster.pointsLimit} pts" }
+                        ?: "Points unavailable",
                     style = MaterialTheme.typography.headlineSmall
                 )
-
-                state.points?.let { summary ->
+                Text("Base units: ${state.points?.totalPoints ?: "?"} pts")
+                Text("Enhancements: +${state.enhancementPoints} pts")
+                state.armyRemainingPoints?.let { remaining ->
                     Text(
-                        text = "Remaining: " +
-                                "${summary.remainingPoints} pts",
-                        color = if (
-                            summary.remainingPoints < 0
-                        ) {
-                            MaterialTheme.colorScheme.error
-                        } else {
-                            MaterialTheme.colorScheme.onSurface
-                        }
+                        text = "Remaining: $remaining pts",
+                        color = if (remaining < 0) MaterialTheme.colorScheme.error
+                        else MaterialTheme.colorScheme.onSurface
                     )
                 }
+                Text("Extra wargear points not included yet.",
+                    style = MaterialTheme.typography.bodySmall)
             }
         }
 
@@ -140,6 +137,11 @@ fun RosterEditorScreen(
         ) {
             Text("Manage Detachments")
         }
+
+        OutlinedButton(
+            onClick = onManageEnhancements,
+            modifier = Modifier.fillMaxWidth()
+        ) { Text("Manage Enhancements") }
 
         if (roster.units.isEmpty()) {
             Text(

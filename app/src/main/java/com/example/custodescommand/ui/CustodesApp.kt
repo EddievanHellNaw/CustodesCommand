@@ -47,12 +47,15 @@ import com.example.custodescommand.feature.datasheets.UnitDetailScreen
 import com.example.custodescommand.feature.datasheets.SourcePageScreen
 
 import com.example.custodescommand.feature.detachments.*
+import com.example.custodescommand.feature.enhancements.RosterEnhancementsViewModel
+import com.example.custodescommand.feature.enhancements.RosterEnhancementsScreen
 
 private const val UNIT_PREFIX = "unit:"
 private const val ROSTER_PREFIX = "roster:"
 private const val SOURCE_PAGE_PREFIX = "source-page:"
 private const val DETACHMENT_PREFIX = "detachment:"
 private const val ROSTER_DETACHMENTS_PREFIX = "roster-detachments:"
+private const val ROSTER_ENHANCEMENTS_PREFIX = "roster-enhancements:"
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -75,6 +78,21 @@ fun CustodesApp() {
     }
     val detailViewModel: UnitDetailViewModel = viewModel(factory = detailFactory)
     val detailState by detailViewModel.state.collectAsStateWithLifecycle()
+
+    val enhancementFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                RosterEnhancementsViewModel(
+                    rosterRepository = container.rosterRepository,
+                    referenceRepository = container.referenceRepository,
+                    enhancements = container.rosterEnhancementRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+    val enhancementVm: RosterEnhancementsViewModel = viewModel(factory = enhancementFactory)
+    val enhancementState by enhancementVm.state.collectAsStateWithLifecycle()
 
     val detachmentsFactory = remember(container) {
         viewModelFactory {
@@ -159,7 +177,8 @@ fun CustodesApp() {
                     referenceRepository =
                         container.referenceRepository,
                     initializeData =
-                        container::initializeData
+                        container::initializeData,
+                    enhancementRepository = container.rosterEnhancementRepository,
                 )
             }
         }
@@ -333,6 +352,9 @@ fun CustodesApp() {
                                 onManageDetachments = {
                                     backStack.add("$ROSTER_DETACHMENTS_PREFIX$rosterId")
                                 },
+                                onManageEnhancements = {
+                                    backStack.add("$ROSTER_ENHANCEMENTS_PREFIX$rosterId")
+                                },
                                 onDismissError =
                                     rosterEditorViewModel::dismissError
                             )
@@ -367,6 +389,21 @@ fun CustodesApp() {
                             state = rosterDetachmentsState,
                             onToggle = rosterDetachmentsVm::setSelected,
                             onOpenDetail = { id -> backStack.add("$DETACHMENT_PREFIX$id") }
+                        )
+                    }
+
+                    route.startsWith(ROSTER_ENHANCEMENTS_PREFIX) -> NavEntry(route) {
+                        val rosterId = route.removePrefix(ROSTER_ENHANCEMENTS_PREFIX)
+                        LaunchedEffect(rosterId) { enhancementVm.load(rosterId) }
+                        RosterEnhancementsScreen(
+                            rosterId = rosterId,
+                            state = enhancementState,
+                            onAssign = enhancementVm::assign,
+                            onRemove = enhancementVm::remove,
+                            onDismissError = enhancementVm::dismissError,
+                            onOpenSourcePage = { page ->
+                                backStack.add("$SOURCE_PAGE_PREFIX$page")
+                            }
                         )
                     }
 

@@ -28,6 +28,12 @@ interface DetachmentDao {
     @Upsert
     suspend fun upsertDetachments(rows: List<DetachmentEntity>)
 
+    @Upsert
+    suspend fun upsertStratagems(rows: List<DetachmentStratagemEntity>)
+
+    @Upsert
+    suspend fun upsertEnhancements(rows: List<DetachmentEnhancementEntity>)
+
     @Query("DELETE FROM detachment_stratagems")
     suspend fun clearStratagems()
 
