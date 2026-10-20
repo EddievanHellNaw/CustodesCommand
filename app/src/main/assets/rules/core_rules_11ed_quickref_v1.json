@@ -1,0 +1,1152 @@
+{
+  "packId": "wh40k11-core-quick-reference-2026-10-20-v1",
+  "edition": 11,
+  "language": "en",
+  "asOf": "2026-10-20",
+  "type": "INDEPENDENT_SUMMARIES",
+  "disclaimer": "Independently written quick summaries, not the full official rule text. Consult the free Games Workshop Core Rules PDF for precise adjudication and updates.",
+  "officialPdfUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+  "verifiedAgainst": [
+    "Games Workshop free 11th-edition Core Rules PDF (June 2026)",
+    "40k.app Core Abilities index (reviewed 2026-10-20)",
+    "Tactical40k numbered 11e rule index (reviewed 2026-10-20)"
+  ],
+  "rules": [
+    {
+      "id": "core-01-01",
+      "number": "01.01",
+      "title": "Armies",
+      "category": "Basics",
+      "summary": "Your army consists of units; you control your own models.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-01-02",
+      "number": "01.02",
+      "title": "Units and Models",
+      "category": "Basics",
+      "summary": "Models within a unit act together. Bases count as part of their models.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-01-04",
+      "number": "01.04",
+      "title": "Measuring Distances",
+      "category": "Basics",
+      "summary": "Use inches and normally measure from the closest edge of a model’s base.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-01-05",
+      "number": "01.05",
+      "title": "Dice",
+      "category": "Basics",
+      "summary": "D6 means a six-sided die. D3 is a D6 halved and rounded up.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-01-06",
+      "number": "01.06",
+      "title": "Leadership Rolls",
+      "category": "Basics",
+      "summary": "Roll 2D6 against the unit’s Leadership characteristic when requested.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-01-07",
+      "number": "01.07",
+      "title": "Battle-shock Rolls",
+      "category": "Basics",
+      "summary": "A failed Leadership roll causes Battle-shock, affecting control and stratagem targeting.",
+      "context": "The unit’s OC becomes “-”; check the source for when the condition ends.",
+      "aliases": [
+        "Battle Shock",
+        "Battle-Shocked"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-02-02",
+      "number": "02.02",
+      "title": "Characteristics",
+      "category": "Datasheets",
+      "summary": "M, T, Sv, InSv, W, Ld and OC describe how models act and survive.",
+      "context": "",
+      "aliases": [
+        "Invulnerable Save",
+        "InSv"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-03-01",
+      "number": "03.01",
+      "title": "Moving Units",
+      "category": "Movement",
+      "summary": "Units move according to the selected move and the movement rules.",
+      "context": "Check restrictions for terrain, enemies, vertical distance and coherency.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-03-03",
+      "number": "03.03",
+      "title": "Coherency",
+      "category": "Movement",
+      "summary": "Keep models in a legal unit formation at the end of movement.",
+      "context": "Exact distances and model-count exceptions are in the official rule.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-03-04",
+      "number": "03.04",
+      "title": "Engagement",
+      "category": "Movement",
+      "summary": "Enemy units in Engagement Range restrict movement and attack options.",
+      "context": "Check the engagement and move rules for exceptions.",
+      "aliases": [
+        "Engagement Range"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-04-01",
+      "number": "04.01",
+      "title": "Select Weapons",
+      "category": "Combat",
+      "summary": "Choose the weapons and attacks a unit is permitted to make before rolling.",
+      "context": "",
+      "aliases": [
+        "Weapon Selection"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-04-02",
+      "number": "04.02",
+      "title": "Select Targets",
+      "category": "Combat",
+      "summary": "Declare legal enemy targets before resolving attacks.",
+      "context": "Visibility, range, and other weapon restrictions apply.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-05-01",
+      "number": "05.01",
+      "title": "Hit Rolls",
+      "category": "Combat",
+      "summary": "Roll against BS or WS. An unmodified 6 normally scores a Critical Hit.",
+      "context": "",
+      "aliases": [
+        "Critical Hit",
+        "To Hit"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-05-02",
+      "number": "05.02",
+      "title": "Wound Rolls",
+      "category": "Combat",
+      "summary": "Compare Strength with Toughness to determine the wound roll required.",
+      "context": "",
+      "aliases": [
+        "To Wound",
+        "Critical Wound"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-05-03",
+      "number": "05.03",
+      "title": "Save Rolls",
+      "category": "Combat",
+      "summary": "The defender makes permitted saves, accounting for Armour Penetration.",
+      "context": "",
+      "aliases": [
+        "Saving Throw",
+        "Armour Save"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-05-04",
+      "number": "05.04",
+      "title": "Inflict Damage",
+      "category": "Combat",
+      "summary": "Unblocked attacks deal damage according to their D characteristic.",
+      "context": "Check the official sequence for model allocation and damage loss.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-06-01",
+      "number": "06.01",
+      "title": "Visibility",
+      "category": "Combat",
+      "summary": "Check whether a model can see a target according to the visibility rules.",
+      "context": "",
+      "aliases": [
+        "Line of Sight",
+        "LOS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-06-02",
+      "number": "06.02",
+      "title": "Mortal Wounds",
+      "category": "Combat",
+      "summary": "Mortal wounds bypass normal saving throws but may be prevented by other rules.",
+      "context": "Their allocation and spillover depend on the source and weapon ability.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-06-03",
+      "number": "06.03",
+      "title": "Hazard Rolls",
+      "category": "Combat",
+      "summary": "Some hazardous attacks require a post-attack hazard test.",
+      "context": "The exact consequence depends on the hazard-roll rules.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-07-00",
+      "number": "07.00",
+      "title": "Battle Round",
+      "category": "Phases",
+      "summary": "Players take their turns in battle rounds, normally across five phases each.",
+      "context": "",
+      "aliases": [
+        "Turn Sequence"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-08-00",
+      "number": "08.00",
+      "title": "Command Phase",
+      "category": "Phases",
+      "summary": "Resolve Command-phase steps, gain Core CP and handle Battle-shock.",
+      "context": "",
+      "aliases": [
+        "Command"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-08-02",
+      "number": "08.02",
+      "title": "Gain Core CP",
+      "category": "Phases",
+      "summary": "Both players gain Core CP during the Command phase.",
+      "context": "Additional CP limits and timing are defined in the full rules.",
+      "aliases": [
+        "Command Points",
+        "CP"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-09-00",
+      "number": "09.00",
+      "title": "Movement Phase",
+      "category": "Phases",
+      "summary": "Move eligible units, resolve reinforcements and movement-related effects.",
+      "context": "",
+      "aliases": [
+        "Movement"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-09-02",
+      "number": "09.02",
+      "title": "Move Units Step",
+      "category": "Phases",
+      "summary": "Choose movement options for eligible units, observing their restrictions.",
+      "context": "",
+      "aliases": [
+        "Normal Move",
+        "Advance",
+        "Fall Back"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-10-00",
+      "number": "10.00",
+      "title": "Shooting Phase",
+      "category": "Phases",
+      "summary": "Choose units that can shoot and resolve legal ranged attacks.",
+      "context": "",
+      "aliases": [
+        "Shooting"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-10-05",
+      "number": "10.05",
+      "title": "Assault Shooting",
+      "category": "Phases",
+      "summary": "Assault shooting allows eligible units with Assault weapons to shoot after advancing.",
+      "context": "Only permitted Assault weapons are used in that shooting type.",
+      "aliases": [
+        "Shooting after Advancing"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-10-06",
+      "number": "10.06",
+      "title": "Close-quarters Shooting",
+      "category": "Phases",
+      "summary": "Eligible Close-quarters weapons can be used under the engagement-specific shooting rules.",
+      "context": "",
+      "aliases": [
+        "Close Quarters Shooting"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-10-07",
+      "number": "10.07",
+      "title": "Indirect Shooting",
+      "category": "Phases",
+      "summary": "Indirect shooting uses special rules for attacks against targets out of sight.",
+      "context": "Check targeting, cover and hit restrictions in the official source.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-11-00",
+      "number": "11.00",
+      "title": "Charge Phase",
+      "category": "Phases",
+      "summary": "Declare charges and resolve eligible charge moves.",
+      "context": "",
+      "aliases": [
+        "Charge"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-12-00",
+      "number": "12.00",
+      "title": "Fight Phase",
+      "category": "Phases",
+      "summary": "Resolve melee engagements, including pile-ins, fights and consolidations.",
+      "context": "",
+      "aliases": [
+        "Fighting"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-12-04",
+      "number": "12.04",
+      "title": "Fights First Combats",
+      "category": "Phases",
+      "summary": "Fights First units receive special priority when resolving fights.",
+      "context": "",
+      "aliases": [
+        "Fight First"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-13-00",
+      "number": "13.00",
+      "title": "Terrain",
+      "category": "Terrain",
+      "summary": "Terrain traits affect movement, visibility and protection.",
+      "context": "Use the agreed terrain classification and consult its detailed trait.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-13-08",
+      "number": "13.08",
+      "title": "Benefit of Cover",
+      "category": "Terrain",
+      "summary": "Cover provides defensive benefits when its conditions are met.",
+      "context": "Several abilities grant or ignore it.",
+      "aliases": [
+        "Cover"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-13-09",
+      "number": "13.09",
+      "title": "Hidden",
+      "category": "Terrain",
+      "summary": "Hidden terrain affects visibility according to its category.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-13-10",
+      "number": "13.10",
+      "title": "Obscuring",
+      "category": "Terrain",
+      "summary": "Obscuring terrain restricts visibility across or through its defined area.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-14-00",
+      "number": "14.00",
+      "title": "Objectives",
+      "category": "Objectives",
+      "summary": "Control is determined from eligible models and mission-specific instructions.",
+      "context": "",
+      "aliases": [
+        "Objective Control"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-15-00",
+      "number": "15.00",
+      "title": "Stratagems",
+      "category": "Stratagems",
+      "summary": "Spend CP on stratagems when their timing, target and other conditions permit.",
+      "context": "See the relevant core or faction stratagem for exact text.",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-16-00",
+      "number": "16.00",
+      "title": "Actions",
+      "category": "Objectives",
+      "summary": "Certain missions allow units to perform actions with movement and attack restrictions.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-17-00",
+      "number": "17.00",
+      "title": "Monsters and Vehicles",
+      "category": "Advanced",
+      "summary": "Monsters and Vehicles have additional movement and shooting interactions.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-18-00",
+      "number": "18.00",
+      "title": "Transports",
+      "category": "Advanced",
+      "summary": "Embarkation, disembarkation and transport capacity follow dedicated rules.",
+      "context": "",
+      "aliases": [
+        "Embark",
+        "Disembark"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-19-00",
+      "number": "19.00",
+      "title": "Attached Units",
+      "category": "Advanced",
+      "summary": "Leaders and supports join eligible bodyguards before the battle.",
+      "context": "",
+      "aliases": [
+        "Attached Unit",
+        "Bodyguard"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-20-00",
+      "number": "20.00",
+      "title": "Strategic Reserves",
+      "category": "Advanced",
+      "summary": "Units in reserve enter according to deployment, timing and distance limits.",
+      "context": "",
+      "aliases": [
+        "Reserves",
+        "Ingress"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-21-00",
+      "number": "21.00",
+      "title": "Flying and Surging",
+      "category": "Advanced",
+      "summary": "Flyers and surge movement use specialized movement rules.",
+      "context": "",
+      "aliases": [
+        "Flying"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-23-00",
+      "number": "23.00",
+      "title": "Aircraft",
+      "category": "Advanced",
+      "summary": "Aircraft follow extra deployment, movement and engagement rules.",
+      "context": "",
+      "aliases": [],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-03",
+      "number": "24.03",
+      "title": "Anti",
+      "category": "Weapon Abilities",
+      "summary": "Against the named keyword, qualifying unmodified wound rolls count as Critical Wounds.",
+      "context": "ANTI-VEHICLE 4+ means a 4+ unmodified Wound roll is critical versus VEHICLE.",
+      "aliases": [
+        "ANTI",
+        "ANTI-X",
+        "ANTI-VEHICLE",
+        "ANTI-INFANTRY",
+        "ANTI-PSYKER"
+      ],
+      "tags": [
+        "anti",
+        "vehicle",
+        "wound"
+      ],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-04",
+      "number": "24.04",
+      "title": "Assault",
+      "category": "Weapon Abilities",
+      "summary": "Allows a unit to use Assault shooting after it Advances.",
+      "context": "See section 10.05 for the shooting-type restrictions.",
+      "aliases": [
+        "ASSAULT"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-05",
+      "number": "24.05",
+      "title": "Blast",
+      "category": "Weapon Abilities",
+      "summary": "Add attacks according to the target unit’s size.",
+      "context": "Normally +1 attack per five target models; BLAST X adds X per five.",
+      "aliases": [
+        "BLAST",
+        "BLAST 1",
+        "BLAST 2",
+        "BLAST 3"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-06",
+      "number": "24.06",
+      "title": "Cleave",
+      "category": "Weapon Abilities",
+      "summary": "When focusing attacks on one target, gain more attacks based on its model count.",
+      "context": "CLEAVE X grants X attacks for each group of five target models.",
+      "aliases": [
+        "CLEAVE",
+        "CLEAVE 1"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-07",
+      "number": "24.07",
+      "title": "Close-quarters",
+      "category": "Weapon Abilities",
+      "summary": "Supports close-quarters shooting in Engagement Range.",
+      "context": "For ordinary shooting, a model normally chooses close-quarters weapons or its other guns.",
+      "aliases": [
+        "CLOSE QUARTERS",
+        "CLOSE-QUARTERS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-08",
+      "number": "24.08",
+      "title": "Deadly Demise",
+      "category": "Core Abilities",
+      "summary": "On destruction, a model may explode and wound nearby units.",
+      "context": "Normally roll a D6: on a 6, units within 6″ suffer the listed mortal wounds.",
+      "aliases": [
+        "DEADLY DEMISE",
+        "DEADLY DEMISE D3"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-09",
+      "number": "24.09",
+      "title": "Deep Strike",
+      "category": "Core Abilities",
+      "summary": "During a qualifying ingress, arrive more than 8″ horizontally from enemies.",
+      "context": "All models in the unit must have the ability for the special setup.",
+      "aliases": [
+        "DEEP STRIKE"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-10",
+      "number": "24.10",
+      "title": "Devastating Wounds",
+      "category": "Weapon Abilities",
+      "summary": "A Critical Wound inflicts mortal wounds equal to Damage instead of normal damage.",
+      "context": "Each Critical Wound can damage at most one model; excess mortal wounds from it are lost.",
+      "aliases": [
+        "DEVASTATING WOUNDS",
+        "DEV WOUNDS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-11",
+      "number": "24.11",
+      "title": "Extra Attacks",
+      "category": "Weapon Abilities",
+      "summary": "Use Extra Attacks weapons in addition to a model’s chosen other melee weapon.",
+      "context": "",
+      "aliases": [
+        "EXTRA ATTACKS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-12",
+      "number": "24.12",
+      "title": "Feel No Pain",
+      "category": "Core Abilities",
+      "summary": "Roll one D6 for each wound lost; on the listed X+ it is prevented.",
+      "context": "Example: Feel No Pain 4+ ignores each such wound on 4, 5 or 6.",
+      "aliases": [
+        "FNP",
+        "FEEL NO PAIN",
+        "FEEL NO PAIN 4+"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-13",
+      "number": "24.13",
+      "title": "Fights First",
+      "category": "Core Abilities",
+      "summary": "An entirely eligible unit receives priority in Fights First combats.",
+      "context": "",
+      "aliases": [
+        "FIGHTS FIRST"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-14",
+      "number": "24.14",
+      "title": "Firing Deck",
+      "category": "Core Abilities",
+      "summary": "A transport can use a limited selection of embarked models’ ranged weapons.",
+      "context": "",
+      "aliases": [
+        "FIRING DECK"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-15",
+      "number": "24.15",
+      "title": "Hazardous",
+      "category": "Weapon Abilities",
+      "summary": "After attacks, make hazard rolls for Hazardous weapons selected.",
+      "context": "",
+      "aliases": [
+        "HAZARDOUS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-16",
+      "number": "24.16",
+      "title": "Heavy",
+      "category": "Weapon Abilities",
+      "summary": "Gain +1 to Hit when the firing unit meets 11th-edition movement conditions.",
+      "context": "Requires unengaged, not set up this turn, and no model having moved over 3″.",
+      "aliases": [
+        "HEAVY"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-17",
+      "number": "24.17",
+      "title": "Hover",
+      "category": "Core Abilities",
+      "summary": "Modifies how the unit moves when taking to the skies.",
+      "context": "",
+      "aliases": [
+        "HOVER"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-18",
+      "number": "24.18",
+      "title": "Ignores Cover",
+      "category": "Weapon Abilities",
+      "summary": "The targeted unit cannot receive the Benefit of Cover against these attacks.",
+      "context": "",
+      "aliases": [
+        "IGNORES COVER"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-19",
+      "number": "24.19",
+      "title": "Indirect Fire",
+      "category": "Weapon Abilities",
+      "summary": "Enables indirect shooting with special targeting and resolution restrictions.",
+      "context": "See the Indirect Shooting section for all conditions.",
+      "aliases": [
+        "INDIRECT FIRE"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-20",
+      "number": "24.20",
+      "title": "Infiltrators",
+      "category": "Core Abilities",
+      "summary": "Deploy farther forward if every model qualifies, staying more than 8″ from enemies.",
+      "context": "",
+      "aliases": [
+        "INFILTRATORS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-21",
+      "number": "24.21",
+      "title": "Lance",
+      "category": "Weapon Abilities",
+      "summary": "Gain +1 to Wound when the attacking unit charged this turn.",
+      "context": "",
+      "aliases": [
+        "LANCE"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-22",
+      "number": "24.22",
+      "title": "Leader",
+      "category": "Core Abilities",
+      "summary": "Before battle, an eligible Leader may join a Bodyguard unit.",
+      "context": "",
+      "aliases": [
+        "LEADER"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-23",
+      "number": "24.23",
+      "title": "Lethal Hits",
+      "category": "Weapon Abilities",
+      "summary": "On a Critical Hit, you may choose to wound automatically.",
+      "context": "Skipping the Wound roll prevents that hit from triggering Critical Wound effects.",
+      "aliases": [
+        "LETHAL HITS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-24",
+      "number": "24.24",
+      "title": "Lone Operative",
+      "category": "Core Abilities",
+      "summary": "When unattached, generally cannot be seen or indirectly targeted beyond its range.",
+      "context": "",
+      "aliases": [
+        "LONE OPERATIVE"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-25",
+      "number": "24.25",
+      "title": "Melta",
+      "category": "Weapon Abilities",
+      "summary": "Within half range, increase the weapon’s Damage by the listed X.",
+      "context": "",
+      "aliases": [
+        "MELTA",
+        "MELTA 2",
+        "MELTA 4"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-26",
+      "number": "24.26",
+      "title": "One Shot",
+      "category": "Weapon Abilities",
+      "summary": "Each One Shot weapon can be selected to attack only once per battle.",
+      "context": "",
+      "aliases": [
+        "ONE SHOT",
+        "ONE-SHOT"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-27",
+      "number": "24.27",
+      "title": "Pistol",
+      "category": "Weapon Abilities",
+      "summary": "Legacy name; treated as Close-quarters in 11th edition.",
+      "context": "",
+      "aliases": [
+        "PISTOL",
+        "PISTOLS"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-28",
+      "number": "24.28",
+      "title": "Precision",
+      "category": "Weapon Abilities",
+      "summary": "May direct qualifying attacks into a visible Character allocation group.",
+      "context": "Check the allocation-order conditions in the official source.",
+      "aliases": [
+        "PRECISION"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-29",
+      "number": "24.29",
+      "title": "Psychic",
+      "category": "Weapon Abilities",
+      "summary": "Psychic attacks may disregard specified hit and skill modifiers.",
+      "context": "",
+      "aliases": [
+        "PSYCHIC"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-30",
+      "number": "24.30",
+      "title": "Rapid Fire",
+      "category": "Weapon Abilities",
+      "summary": "Gain X extra attacks when shooting a target within half the weapon’s range.",
+      "context": "",
+      "aliases": [
+        "RAPID FIRE",
+        "RAPID FIRE 1",
+        "RAPID FIRE 2"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-31",
+      "number": "24.31",
+      "title": "Scouts",
+      "category": "Core Abilities",
+      "summary": "Gives a qualifying unit a pre-battle redeployment or Scout move.",
+      "context": "",
+      "aliases": [
+        "SCOUT",
+        "SCOUTS",
+        "SCOUTS 6\""
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-32",
+      "number": "24.32",
+      "title": "Scout Move",
+      "category": "Core Abilities",
+      "summary": "Make a pre-battle move of the allowed distance while respecting enemy separation.",
+      "context": "",
+      "aliases": [
+        "SCOUT MOVE"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-33",
+      "number": "24.33",
+      "title": "Stealth",
+      "category": "Core Abilities",
+      "summary": "A qualifying unit benefits from Cover when targeted by ranged attacks.",
+      "context": "",
+      "aliases": [
+        "STEALTH"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-34",
+      "number": "24.34",
+      "title": "Support",
+      "category": "Core Abilities",
+      "summary": "A qualifying Support unit can join an eligible Bodyguard before the battle.",
+      "context": "",
+      "aliases": [
+        "SUPPORT"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-35",
+      "number": "24.35",
+      "title": "Super-Heavy Walker",
+      "category": "Core Abilities",
+      "summary": "Provides additional movement options through models and low terrain.",
+      "context": "Using its extra MOBILE option introduces a possible Battle-shock risk.",
+      "aliases": [
+        "SUPER HEAVY WALKER"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-36",
+      "number": "24.36",
+      "title": "Sustained Hits",
+      "category": "Weapon Abilities",
+      "summary": "A Critical Hit generates X additional hits with the same weapon.",
+      "context": "",
+      "aliases": [
+        "SUSTAINED HITS",
+        "SUSTAINED HITS 1",
+        "SUSTAINED HITS 2"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-37",
+      "number": "24.37",
+      "title": "Torrent",
+      "category": "Weapon Abilities",
+      "summary": "Attacks from this weapon hit automatically.",
+      "context": "",
+      "aliases": [
+        "TORRENT"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-38",
+      "number": "24.38",
+      "title": "Twin-linked",
+      "category": "Weapon Abilities",
+      "summary": "You can reroll this weapon’s Wound roll.",
+      "context": "",
+      "aliases": [
+        "TWIN LINKED",
+        "TWIN-LINKED"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    },
+    {
+      "id": "core-24-39",
+      "number": "24.39",
+      "title": "Damaged",
+      "category": "Core Abilities",
+      "summary": "At the specified wounds threshold, this model suffers a hit-roll penalty.",
+      "context": "",
+      "aliases": [
+        "DAMAGED"
+      ],
+      "tags": [],
+      "sourceUrl": "https://assets.warhammer-community.com/eng_01-06_warhammer40k_new40k_core_rules-was6fbu1ix-hfewhmxyiy.pdf",
+      "sourceStatus": "QUICK_SUMMARY"
+    }
+  ]
+}

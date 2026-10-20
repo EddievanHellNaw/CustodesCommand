@@ -1,0 +1,2190 @@
+{
+  "packId": "custodes_verified_11e_2026_10_20_v1",
+  "dateVerified": "2026-10-20",
+  "pointsVersion": "MFM v1.6 (from supplied file; official MFM last updated 2026-10-14)",
+  "source": {
+    "codexUserProvided": "11th edn - Custodes.pdf pages 16-30",
+    "officialMfm": "https://www.warhammer-community.com/en-gb/downloads/warhammer-40000/",
+    "webIndependent": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/datasheets.html",
+    "officialPreview": "https://www.warhammer-community.com/en-gb/articles/2xxurx9j/first-look-adeptus-custodes-datasheets/"
+  },
+  "note": "Ability text consists of concise summaries cross-checked with current 11th-edition datasheet references; always consult source PDF for exact wording.",
+  "units": [
+    {
+      "unitId": "achillus",
+      "sourcePage": 22,
+      "keywords": [
+        "VEHICLE",
+        "DREADNOUGHT",
+        "IMPERIUM",
+        "WALKER",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Damaged 4",
+        "Deadly Demise D3"
+      ],
+      "abilities": [
+        {
+          "name": "Unyielding Ancient",
+          "text": "Enemy attacks against this unit with Strength greater than this unit’s Toughness suffer -1 to their wound rolls."
+        }
+      ],
+      "wargearOptions": [
+        "The pair of Lastrum Storm Bolters may be replaced by two Adrathic Combi-destructors or two Twin Infernus Incinerators."
+      ],
+      "weapons": [
+        {
+          "unitId": "achillus",
+          "sortOrder": 0,
+          "name": "Adrathic Combi-destructor",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -2,
+          "damage": "3",
+          "abilities": []
+        },
+        {
+          "unitId": "achillus",
+          "sortOrder": 1,
+          "name": "Dreadspear (ranged)",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -3,
+          "damage": "D3+2",
+          "abilities": []
+        },
+        {
+          "unitId": "achillus",
+          "sortOrder": 2,
+          "name": "Lastrum Storm Bolter",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "RAPID FIRE 3"
+          ]
+        },
+        {
+          "unitId": "achillus",
+          "sortOrder": 3,
+          "name": "Twin Infernus Incinerator",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "-",
+          "strength": "6",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "BLAST 2",
+            "TORRENT",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "achillus",
+          "sortOrder": 4,
+          "name": "Dreadspear (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "12",
+          "armourPenetration": -3,
+          "damage": "D3+3",
+          "abilities": [
+            "LANCE"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Contemptor-Achillus-Dreadnought",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "allarus",
+      "sourcePage": 20,
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "TERMINATOR",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Slayer of Tyrants",
+          "text": "This unit gains +1 to wound rolls for melee attacks against targets with higher Toughness."
+        },
+        {
+          "name": "Vexilla",
+          "text": "With one Vexilla bearer in this unit: +1 Objective Control for the unit and ignore Leadership modifiers."
+        }
+      ],
+      "wargearOptions": [
+        "A maximum of one model in the unit may carry a Vexilla.",
+        "Each model may replace its Guardian Spear with one Castellan Axe."
+      ],
+      "weapons": [
+        {
+          "unitId": "allarus",
+          "sortOrder": 0,
+          "name": "Balistus Grenade Launcher",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ASSAULT",
+            "BLAST 1"
+          ]
+        },
+        {
+          "unitId": "allarus",
+          "sortOrder": 1,
+          "name": "Castellan Axe (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "allarus",
+          "sortOrder": 2,
+          "name": "Guardian Spear (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "allarus",
+          "sortOrder": 3,
+          "name": "Castellan Axe (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "unitId": "allarus",
+          "sortOrder": 4,
+          "name": "Guardian Spear (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Allarus-Custodians",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "aquilon-gauntlets",
+      "sourcePage": 21,
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "TERMINATOR",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Dread Foe",
+          "text": "Melee attacks against targets other than Monsters or Vehicles improve their AP by 1."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "aquilon-gauntlets",
+          "sortOrder": 0,
+          "name": "Adrathic Combi-destructor",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -2,
+          "damage": "3",
+          "abilities": []
+        },
+        {
+          "unitId": "aquilon-gauntlets",
+          "sortOrder": 1,
+          "name": "Solarite Power Gauntlet",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "3",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Aquilon-Terminators-with-Solarite-Power-Gauntlets",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "aquilon-talons",
+      "sourcePage": 21,
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "TERMINATOR",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Reap a Terrible Tally",
+          "text": "Against Infantry targets, attacks can re-roll hit rolls of 1 and wound rolls of 1."
+        }
+      ],
+      "wargearOptions": [
+        "Each model may exchange its Lastrum Storm Bolter for one Infernus Firepike."
+      ],
+      "weapons": [
+        {
+          "unitId": "aquilon-talons",
+          "sortOrder": 0,
+          "name": "Infernus Firepike",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "-",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "BLAST 2",
+            "TORRENT"
+          ]
+        },
+        {
+          "unitId": "aquilon-talons",
+          "sortOrder": 1,
+          "name": "Lastrum Storm Bolter",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "RAPID FIRE 3"
+          ]
+        },
+        {
+          "unitId": "aquilon-talons",
+          "sortOrder": 2,
+          "name": "Solarite Power Talon",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "SUSTAINED HITS 2"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Aquilon-Terminators-with-Solarite-Power-Talons",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "blade-champion",
+      "sourcePage": 18,
+      "keywords": [
+        "INFANTRY",
+        "CHARACTER",
+        "IMPERIUM",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike",
+        "Leader"
+      ],
+      "abilities": [
+        {
+          "name": "Swift Onslaught",
+          "text": "This unit can re-roll Advance rolls and Charge rolls."
+        },
+        {
+          "name": "Sword of the Throne",
+          "text": "At the start of round one, mark an enemy unit. This model gets +1 to wound that mark. Choose a new mark when it is destroyed."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "blade-champion",
+          "sortOrder": 0,
+          "name": "Vaultswords - Behemor",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -3,
+          "damage": "3",
+          "abilities": [
+            "DEVASTATING WOUNDS"
+          ]
+        },
+        {
+          "unitId": "blade-champion",
+          "sortOrder": 1,
+          "name": "Vaultswords - Hurricanis",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "10",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "CLEAVE 1",
+            "SUSTAINED HITS 1"
+          ]
+        },
+        {
+          "unitId": "blade-champion",
+          "sortOrder": 2,
+          "name": "Vaultswords - Victus",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "8",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -3,
+          "damage": "2",
+          "abilities": [
+            "PRECISION"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Blade-Champion",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "caladius",
+      "sourcePage": 27,
+      "keywords": [
+        "VEHICLE",
+        "CALADIUS",
+        "FLY",
+        "FRAME",
+        "GRAV-ASSAULT",
+        "IMPERIUM",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Damaged 5",
+        "Deadly Demise D3",
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Destructor Optics",
+          "text": "Ranged attacks against targets other than Monsters or Vehicles improve AP by 1."
+        }
+      ],
+      "wargearOptions": [
+        "Twin Lastrum Bolt Cannon may be replaced by Twin Neutronium Cascade Projectors."
+      ],
+      "weapons": [
+        {
+          "unitId": "caladius",
+          "sortOrder": 0,
+          "name": "Iliastus Accelerator Cannon",
+          "weaponType": "RANGED",
+          "range": "48\"",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -1,
+          "damage": "3",
+          "abilities": [
+            "RAPID FIRE 4",
+            "SUSTAINED HITS 1: non-MONSTER/VEHICLE"
+          ]
+        },
+        {
+          "unitId": "caladius",
+          "sortOrder": 1,
+          "name": "Twin Lastrum Bolt Cannon",
+          "weaponType": "RANGED",
+          "range": "36\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "SUSTAINED HITS 1",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "caladius",
+          "sortOrder": 2,
+          "name": "Twin Neutronium Cascade Projectors",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "-",
+          "strength": "7",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "BLAST 1",
+            "TORRENT",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "caladius",
+          "sortOrder": 3,
+          "name": "Armoured Hull",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "4",
+          "skill": "4+",
+          "strength": "6",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Caladius-Grav-Tank",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "sourcePage": 27,
+      "keywords": [
+        "VEHICLE",
+        "CALADIUS",
+        "FLY",
+        "FRAME",
+        "GRAV-ASSAULT",
+        "IMPERIUM",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Damaged 5",
+        "Deadly Demise D3",
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Advanced Firepower",
+          "text": "Against a Monster or Vehicle, this unit’s ranged attacks can re-roll one hit roll, one wound roll and one damage roll."
+        }
+      ],
+      "wargearOptions": [
+        "Twin Lastrum Bolt Cannon may be replaced by Twin Neutronium Cascade Projectors."
+      ],
+      "weapons": [
+        {
+          "unitId": "caladius-annihilator",
+          "sortOrder": 0,
+          "name": "Arachnus Blaze Carronade",
+          "weaponType": "RANGED",
+          "range": "48\"",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "12",
+          "armourPenetration": -3,
+          "damage": "D6+2",
+          "abilities": [
+            "LETHAL HITS: MONSTER/VEHICLE"
+          ]
+        },
+        {
+          "unitId": "caladius-annihilator",
+          "sortOrder": 1,
+          "name": "Twin Lastrum Bolt Cannon",
+          "weaponType": "RANGED",
+          "range": "36\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "SUSTAINED HITS 1",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "caladius-annihilator",
+          "sortOrder": 2,
+          "name": "Twin Neutronium Cascade Projectors",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "-",
+          "strength": "7",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "BLAST 1",
+            "TORRENT",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "caladius-annihilator",
+          "sortOrder": 3,
+          "name": "Armoured Hull",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "4",
+          "skill": "4+",
+          "strength": "6",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Caladius-Annihilator-Grav-Tank",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "coronus",
+      "sourcePage": 26,
+      "keywords": [
+        "VEHICLE",
+        "FLY",
+        "FRAME",
+        "GRAV-ASSAULT",
+        "IMPERIUM",
+        "TRANSPORT",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Damaged 6",
+        "Deadly Demise D6",
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Repulsor Suspensor Technology",
+          "text": "Once per phase during the opponent’s Shooting phase: if this unengaged unit loses a wound from enemy shooting, it may make a normal move of up to D6 inches."
+        },
+        {
+          "name": "Assault Vehicle",
+          "text": "After this transport ends an Advance move, embarked units may perform a shock disembark move."
+        },
+        {
+          "name": "Transport",
+          "text": "Carries up to 8 Adeptus Custodes Infantry models; cannot transport Jump Pack models."
+        }
+      ],
+      "wargearOptions": [
+        "Twin Lastrum Bolt Cannon may be replaced by Twin Neutronium Cascade Projectors."
+      ],
+      "weapons": [
+        {
+          "unitId": "coronus",
+          "sortOrder": 0,
+          "name": "Twin Arachnus Blaze Cannon",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -3,
+          "damage": "D3+2",
+          "abilities": [
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "coronus",
+          "sortOrder": 1,
+          "name": "Twin Lastrum Bolt Cannon",
+          "weaponType": "RANGED",
+          "range": "36\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "SUSTAINED HITS 1",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "coronus",
+          "sortOrder": 2,
+          "name": "Twin Neutronium Cascade Projectors",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "-",
+          "strength": "7",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "BLAST 1",
+            "TORRENT",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "coronus",
+          "sortOrder": 3,
+          "name": "Armoured Hull",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "4+",
+          "strength": "8",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Coronus-Grav-Carrier",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "galatus",
+      "sourcePage": 22,
+      "keywords": [
+        "VEHICLE",
+        "DREADNOUGHT",
+        "IMPERIUM",
+        "WALKER",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Damaged 4",
+        "Deadly Demise D3"
+      ],
+      "abilities": [
+        {
+          "name": "Unyielding Ancient",
+          "text": "Enemy attacks against this unit with Strength greater than this unit’s Toughness suffer -1 to their wound rolls."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "galatus",
+          "sortOrder": 0,
+          "name": "Warblade (ranged)",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "4",
+          "skill": "-",
+          "strength": "6",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "BLAST 2",
+            "TORRENT",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "galatus",
+          "sortOrder": 1,
+          "name": "Warblade (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "8",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "3",
+          "abilities": [
+            "CLEAVE 1",
+            "SUSTAINED HITS 1: non-MONSTER/VEHICLE"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Contemptor-Galatus-Dreadnought",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "guard",
+      "sourcePage": 19,
+      "keywords": [
+        "INFANTRY",
+        "BATTLELINE",
+        "IMPERIUM",
+        "TRUSTED SENTINEL",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Impenetrable Defence",
+          "text": "Attacks gain Sustained Hits 1 against targets other than Monsters or Vehicles when this unit or its target is within an objective’s range."
+        },
+        {
+          "name": "Vexilla",
+          "text": "With a Vexilla in the unit: +1 Objective Control, and ignore Leadership modifiers."
+        }
+      ],
+      "wargearOptions": [
+        "A maximum of one model in the unit may carry a Vexilla."
+      ],
+      "weapons": [
+        {
+          "unitId": "guard",
+          "sortOrder": 0,
+          "name": "Guardian Spear (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "guard",
+          "sortOrder": 1,
+          "name": "Guardian Spear (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Custodian-Guard-Sodality",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "gyrfalcon",
+      "sourcePage": 23,
+      "keywords": [
+        "MOUNTED",
+        "FLY",
+        "IMPERIUM",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Death Blow",
+          "text": "If this unit charged this turn, improve AP of its melee attacks by 1."
+        }
+      ],
+      "wargearOptions": [
+        "Each model may swap its Lastrum Bolt Cannon for an Adrathic Devastator, Arachnus Volley Cannon or Twin Corvae Las-pulser."
+      ],
+      "weapons": [
+        {
+          "unitId": "gyrfalcon",
+          "sortOrder": 0,
+          "name": "Adrathic Devastator",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "3",
+          "abilities": []
+        },
+        {
+          "unitId": "gyrfalcon",
+          "sortOrder": 1,
+          "name": "Arachnus Volley Cannon",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "8",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "DEVASTATING WOUNDS",
+            "SUSTAINED HITS 1"
+          ]
+        },
+        {
+          "unitId": "gyrfalcon",
+          "sortOrder": 2,
+          "name": "Lastrum Bolt Cannon",
+          "weaponType": "RANGED",
+          "range": "36\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "SUSTAINED HITS 1"
+          ]
+        },
+        {
+          "unitId": "gyrfalcon",
+          "sortOrder": 3,
+          "name": "Twin Corvae Las-pulser",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "1",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -3,
+          "damage": "D3+2",
+          "abilities": [
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "gyrfalcon",
+          "sortOrder": 4,
+          "name": "Solarite Power Lance",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "3",
+          "abilities": [
+            "LANCE"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Gyrfalcon-Jetbike-Sodality",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "knight-centura",
+      "sourcePage": 28,
+      "keywords": [
+        "INFANTRY",
+        "CHARACTER",
+        "IMPERIUM",
+        "ANATHEMA PSYKANA"
+      ],
+      "coreAbilities": [
+        "Scouts 7\"",
+        "Support"
+      ],
+      "abilities": [
+        {
+          "name": "Seeker’s Instincts",
+          "text": "This unit gets +2 inches Movement and can re-roll Advance and Charge rolls."
+        },
+        {
+          "name": "Corner the Quarry",
+          "text": "An engaged non-Monster/non-Vehicle falling back from this unit must make a Desperate Escape move; battle-shocked targets get -1 to hazard rolls."
+        }
+      ],
+      "wargearOptions": [
+        "Replace Executioner Greatblade with a Master-crafted Boltgun plus Gun Stock, or a Master-crafted Flamer plus Gun Stock."
+      ],
+      "weapons": [
+        {
+          "unitId": "knight-centura",
+          "sortOrder": 0,
+          "name": "Master-crafted Boltgun",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ANTI-PSYKER 4+",
+            "ASSAULT",
+            "RAPID FIRE 1"
+          ]
+        },
+        {
+          "unitId": "knight-centura",
+          "sortOrder": 1,
+          "name": "Master-crafted Flamer",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "4",
+          "skill": "—",
+          "strength": "4",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ANTI-PSYKER 4+",
+            "ASSAULT",
+            "BLAST 2",
+            "TORRENT"
+          ]
+        },
+        {
+          "unitId": "knight-centura",
+          "sortOrder": 2,
+          "name": "Executioner Greatblade",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "ANTI-PSYKER 5+",
+            "CLEAVE 1",
+            "DEVASTATING WOUNDS: PSYKER"
+          ]
+        },
+        {
+          "unitId": "knight-centura",
+          "sortOrder": 3,
+          "name": "Gun Stock",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "3",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Knight-Centura",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "pallas",
+      "sourcePage": 26,
+      "keywords": [
+        "VEHICLE",
+        "FLY",
+        "FRAME",
+        "GRAV-ASSAULT",
+        "IMPERIUM",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deadly Demise 1",
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Mobile Hunter",
+          "text": "After this unit shoots, it may make a normal move of up to D6 inches; it cannot declare a charge this turn."
+        }
+      ],
+      "wargearOptions": [
+        "Twin Arachnus Blaze Cannon may be replaced by Twin Iliastus Accelerator Fusil."
+      ],
+      "weapons": [
+        {
+          "unitId": "pallas",
+          "sortOrder": 0,
+          "name": "Twin Arachnus Blaze Cannon",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -3,
+          "damage": "D3+2",
+          "abilities": [
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "pallas",
+          "sortOrder": 1,
+          "name": "Twin Iliastus Accelerator Fusil",
+          "weaponType": "RANGED",
+          "range": "48\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -1,
+          "damage": "3",
+          "abilities": [
+            "RAPID FIRE 2",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "pallas",
+          "sortOrder": 2,
+          "name": "Armoured Hull",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "3",
+          "skill": "4+",
+          "strength": "6",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Pallas-Grav-Attack",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "prosecutor",
+      "sourcePage": 28,
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "ANATHEMA PSYKANA"
+      ],
+      "coreAbilities": [],
+      "abilities": [
+        {
+          "name": "Purity of Execution",
+          "text": "During your Shooting phase, select a visible enemy within 18 inches; it becomes detected and gains +3 inches detection range while detected."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "prosecutor",
+          "sortOrder": 0,
+          "name": "Boltgun",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "1",
+          "skill": "3+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ANTI-PSYKER 4+",
+            "ASSAULT",
+            "RAPID FIRE 1"
+          ]
+        },
+        {
+          "unitId": "prosecutor",
+          "sortOrder": 1,
+          "name": "Gun Stock",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "2",
+          "skill": "3+",
+          "strength": "3",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Prosecutor-Squad",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "rhino",
+      "sourcePage": 30,
+      "keywords": [
+        "VEHICLE",
+        "DEDICATED TRANSPORT",
+        "FRAME",
+        "IMPERIUM",
+        "SMOKE",
+        "TRANSPORT",
+        "ANATHEMA PSYKANA"
+      ],
+      "coreAbilities": [
+        "Deadly Demise D3",
+        "Firing Deck 2"
+      ],
+      "abilities": [
+        {
+          "name": "Assault Vehicle",
+          "text": "After this transport completes an Advance move, embarked units may make a shock disembark move."
+        },
+        {
+          "name": "Transport",
+          "text": "Transport capacity: 12 Anathema Psykana Infantry models."
+        }
+      ],
+      "wargearOptions": [
+        "May equip one Hunter-killer Missile."
+      ],
+      "weapons": [
+        {
+          "unitId": "rhino",
+          "sortOrder": 0,
+          "name": "Hunter-killer Missile",
+          "weaponType": "RANGED",
+          "range": "48\"",
+          "attacks": "1",
+          "skill": "2+",
+          "strength": "14",
+          "armourPenetration": -3,
+          "damage": "D3+3",
+          "abilities": [
+            "ONE SHOT"
+          ]
+        },
+        {
+          "unitId": "rhino",
+          "sortOrder": 1,
+          "name": "Storm Bolter",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "3+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "rhino",
+          "sortOrder": 2,
+          "name": "Armoured Tracks",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "3",
+          "skill": "4+",
+          "strength": "6",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Anathema-Psykana-Rhino",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "sentinel",
+      "sourcePage": 18,
+      "keywords": [
+        "INFANTRY",
+        "BATTLELINE",
+        "IMPERIUM",
+        "TRUSTED SENTINEL",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Stand Vigil",
+          "text": "Attacks against targets other than Monsters or Vehicles gain Lethal Hits if this unit or its target is within objective range."
+        },
+        {
+          "name": "Praesidium Shield",
+          "text": "Attacks targeting this unit with Strength higher than its Toughness suffer -1 to their wound rolls."
+        },
+        {
+          "name": "Vexilla",
+          "text": "With a Vexilla in the unit: +1 Objective Control, and ignore Leadership modifiers."
+        }
+      ],
+      "wargearOptions": [
+        "A maximum of one model in the unit may carry a Vexilla."
+      ],
+      "weapons": [
+        {
+          "unitId": "sentinel",
+          "sortOrder": 0,
+          "name": "Sentinel Blade (ranged)",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "CLOSE-QUARTERS"
+          ]
+        },
+        {
+          "unitId": "sentinel",
+          "sortOrder": 1,
+          "name": "Sentinel Blade (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Sentinel-Guard-Sodality",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "shield-captain",
+      "sourcePage": 16,
+      "keywords": [
+        "INFANTRY",
+        "CHARACTER",
+        "IMPERIUM",
+        "SHIELD-CAPTAIN",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike",
+        "Leader"
+      ],
+      "abilities": [
+        {
+          "name": "Master of Ka’tahs",
+          "text": "Once per battle round for the unit, if not readied, make this unit readied."
+        },
+        {
+          "name": "Vengeful Surge",
+          "text": "Once per battle, after this unit loses a wound from enemy shooting, it may make a surge move of up to D6+2 inches."
+        },
+        {
+          "name": "Praesidium Shield",
+          "text": "Attacks allocated to this model suffer -1 Damage."
+        }
+      ],
+      "wargearOptions": [
+        "Pyrithite Spear can be exchanged for an Eternity-pattern Paragon Blade.",
+        "Pyrithite Spear and Praesidium Shield together can be exchanged for a Castellan Axe or Guardian Spear."
+      ],
+      "weapons": [
+        {
+          "unitId": "shield-captain",
+          "sortOrder": 0,
+          "name": "Castellan Axe (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "shield-captain",
+          "sortOrder": 1,
+          "name": "Guardian Spear (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "shield-captain",
+          "sortOrder": 2,
+          "name": "Pyrithite Spear (ranged)",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "1",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -3,
+          "damage": "D3+2",
+          "abilities": [
+            "ASSAULT",
+            "MELTA 2"
+          ]
+        },
+        {
+          "unitId": "shield-captain",
+          "sortOrder": 3,
+          "name": "Castellan Axe (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "unitId": "shield-captain",
+          "sortOrder": 4,
+          "name": "Eternity-pattern Paragon Blade",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -3,
+          "damage": "3",
+          "abilities": [
+            "PRECISION"
+          ]
+        },
+        {
+          "unitId": "shield-captain",
+          "sortOrder": 5,
+          "name": "Guardian Spear (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "8",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "CLEAVE 1"
+          ]
+        },
+        {
+          "unitId": "shield-captain",
+          "sortOrder": 6,
+          "name": "Pyrithite Spear (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "8",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "CLEAVE 1"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Shield-Captain",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "sourcePage": 17,
+      "keywords": [
+        "INFANTRY",
+        "CHARACTER",
+        "IMPERIUM",
+        "SHIELD-CAPTAIN",
+        "TERMINATOR",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike",
+        "Leader"
+      ],
+      "abilities": [
+        {
+          "name": "Master of Ka’tahs",
+          "text": "Once per battle round for the unit, if not readied, make this unit readied."
+        },
+        {
+          "name": "Archeotech Teleport-shunter",
+          "text": "Once per battle during your Movement phase, if unengaged and not yet selected to move, put this unit in Strategic Reserves; it must ingress this phase."
+        }
+      ],
+      "wargearOptions": [
+        "Guardian Spear may be replaced by a Castellan Axe."
+      ],
+      "weapons": [
+        {
+          "unitId": "shield-captain-allarus",
+          "sortOrder": 0,
+          "name": "Balistus Grenade Launcher",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ASSAULT",
+            "BLAST 1"
+          ]
+        },
+        {
+          "unitId": "shield-captain-allarus",
+          "sortOrder": 1,
+          "name": "Castellan Axe (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "shield-captain-allarus",
+          "sortOrder": 2,
+          "name": "Guardian Spear (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "shield-captain-allarus",
+          "sortOrder": 3,
+          "name": "Castellan Axe (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "unitId": "shield-captain-allarus",
+          "sortOrder": 4,
+          "name": "Guardian Spear (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "8",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "CLEAVE 1"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Shield-Captain-in-Allarus-Terminator-Armour",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "sourcePage": 17,
+      "keywords": [
+        "MOUNTED",
+        "CHARACTER",
+        "FLY",
+        "IMPERIUM",
+        "SHIELD-CAPTAIN",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike",
+        "Leader"
+      ],
+      "abilities": [
+        {
+          "name": "Master of Ka’tahs",
+          "text": "Once per battle round for the unit, if not readied, make this unit readied."
+        },
+        {
+          "name": "Sweeping Advance",
+          "text": "Once per battle, at the end of a Fight phase when this unit was eligible to fight: make a Normal move if unengaged, or Fall Back if engaged."
+        }
+      ],
+      "wargearOptions": [
+        "Salvo Launcher may be replaced by a Hurricane Bolter."
+      ],
+      "weapons": [
+        {
+          "unitId": "shield-captain-jetbike",
+          "sortOrder": 0,
+          "name": "Hurricane Bolter",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "RAPID FIRE 3",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "shield-captain-jetbike",
+          "sortOrder": 1,
+          "name": "Salvo Launcher",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "D3+2",
+          "abilities": []
+        },
+        {
+          "unitId": "shield-captain-jetbike",
+          "sortOrder": 2,
+          "name": "Interceptor Lance",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "8",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "LANCE"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Shield-Captain-on-Dawneagle-Jetbike",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "telemon",
+      "sourcePage": 25,
+      "keywords": [
+        "VEHICLE",
+        "DREADNOUGHT",
+        "IMPERIUM",
+        "WALKER",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Damaged 5",
+        "Deadly Demise D3"
+      ],
+      "abilities": [
+        {
+          "name": "Guardian Eternal",
+          "text": "Enemy ranged attacks against this unit suffer -1 Damage."
+        }
+      ],
+      "wargearOptions": [
+        "Dual Caestus Fists and both Neutronium Cascade Projectors may be replaced by one Caestus Fist, one Neutronium Cascade Projector, and one selected heavy weapon: Adrathic Desolator, Arachnus Storm Cannon or Iliastus Accelerator Culverin."
+      ],
+      "weapons": [
+        {
+          "unitId": "telemon",
+          "sortOrder": 0,
+          "name": "Adrathic Desolator",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "unitId": "telemon",
+          "sortOrder": 1,
+          "name": "Arachnus Storm Cannon",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "12",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "DEVASTATING WOUNDS",
+            "SUSTAINED HITS 1"
+          ]
+        },
+        {
+          "unitId": "telemon",
+          "sortOrder": 2,
+          "name": "Iliastus Accelerator Culverin",
+          "weaponType": "RANGED",
+          "range": "48\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -1,
+          "damage": "3",
+          "abilities": [
+            "RAPID FIRE 3"
+          ]
+        },
+        {
+          "unitId": "telemon",
+          "sortOrder": 3,
+          "name": "Spiculus Bolt Launcher",
+          "weaponType": "RANGED",
+          "range": "36\"",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "BLAST 2"
+          ]
+        },
+        {
+          "unitId": "telemon",
+          "sortOrder": 4,
+          "name": "Twin Neutronium Cascade Projectors",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "—",
+          "strength": "7",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "BLAST 1",
+            "TORRENT",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "telemon",
+          "sortOrder": 5,
+          "name": "Caestus Fist",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "14",
+          "armourPenetration": -3,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "unitId": "telemon",
+          "sortOrder": 6,
+          "name": "Dual Caestus Fists",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "7",
+          "skill": "2+",
+          "strength": "14",
+          "armourPenetration": -3,
+          "damage": "4",
+          "abilities": [
+            "TWIN-LINKED"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Telemon-Heavy-Dreadnought",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "trajann",
+      "sourcePage": 16,
+      "keywords": [
+        "INFANTRY",
+        "CHARACTER",
+        "EPIC HERO",
+        "IMPERIUM",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike",
+        "Feel No Pain 5+",
+        "Leader"
+      ],
+      "abilities": [
+        {
+          "name": "Captain-General (Aura)",
+          "text": "Friendly Adeptus Custodes units within 6 inches (excluding Monsters and Vehicles) can re-roll hit rolls and wound rolls of 1."
+        },
+        {
+          "name": "Moment Shackle",
+          "text": "Once per battle for the army, at the start of a phase choose: add 3 attacks to Watcher’s Axe, or improve this model’s invulnerable save to 3+ for that phase."
+        },
+        {
+          "name": "Supreme Commander",
+          "text": "If included in the army, this model must be the Warlord."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "trajann",
+          "sortOrder": 0,
+          "name": "Eagle’s Scream",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "trajann",
+          "sortOrder": 1,
+          "name": "Watcher’s Axe",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "12",
+          "armourPenetration": -3,
+          "damage": "4",
+          "abilities": [
+            "CLEAVE 1"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Trajann-Valoris",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "venatari-kinetic",
+      "sourcePage": 24,
+      "keywords": [
+        "INFANTRY",
+        "EXPLOSIVES",
+        "FLY",
+        "IMPERIUM",
+        "JUMP PACK",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Take Wing",
+          "text": "At the end of the opponent’s Fight phase, if unengaged this unit may enter Strategic Reserves."
+        },
+        {
+          "name": "Neutronium Cascade Mine",
+          "text": "Once per battle for the unit, at the start of a phase select an enemy within 3 inches; on 2+, deal D3 mortal wounds, or 2D3 against a Monster/Vehicle."
+        },
+        {
+          "name": "Strike from the Skies",
+          "text": "If this unit made an ingress move this turn, it can re-roll hit rolls for its ranged attacks during your Shooting phase."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "venatari-kinetic",
+          "sortOrder": 0,
+          "name": "Kinetic Destroyer",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "4",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "ASSAULT",
+            "CLOSE-QUARTERS",
+            "SUSTAINED HITS 1"
+          ]
+        },
+        {
+          "unitId": "venatari-kinetic",
+          "sortOrder": 1,
+          "name": "Tarsus Buckler",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "6",
+          "armourPenetration": -2,
+          "damage": "1",
+          "abilities": [
+            "SUSTAINED HITS 1"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Venatari-with-Kinetic-Destroyers",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "venatari-lances",
+      "sourcePage": 24,
+      "keywords": [
+        "INFANTRY",
+        "EXPLOSIVES",
+        "FLY",
+        "IMPERIUM",
+        "JUMP PACK",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Take Wing",
+          "text": "At the end of the opponent’s Fight phase, if unengaged this unit may enter Strategic Reserves."
+        },
+        {
+          "name": "Neutronium Cascade Mine",
+          "text": "Once per battle for the unit, at the start of a phase select an enemy within 3 inches; on 2+, deal D3 mortal wounds, or 2D3 against a Monster/Vehicle."
+        },
+        {
+          "name": "Swift Ruin",
+          "text": "Once per phase for the army, use Rapid Ingress on this unit even if that stratagem has already been used; this use costs 1 fewer CP and does not stop other uses."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "venatari-lances",
+          "sortOrder": 0,
+          "name": "Verutum Lance (ranged)",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "1",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "3",
+          "abilities": [
+            "ASSAULT"
+          ]
+        },
+        {
+          "unitId": "venatari-lances",
+          "sortOrder": 1,
+          "name": "Verutum Lance (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "5",
+          "skill": "2+",
+          "strength": "7",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "LANCE",
+            "PRECISION"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Venatari-with-Verutum-Lances",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "vertus",
+      "sourcePage": 23,
+      "keywords": [
+        "MOUNTED",
+        "FLY",
+        "IMPERIUM",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Quicksilver Execution",
+          "text": "If this unit made a Charge move this turn, its melee attacks gain Sustained Hits 1."
+        }
+      ],
+      "wargearOptions": [
+        "Each model may swap its Salvo Launcher for a Hurricane Bolter."
+      ],
+      "weapons": [
+        {
+          "unitId": "vertus",
+          "sortOrder": 0,
+          "name": "Hurricane Bolter",
+          "weaponType": "RANGED",
+          "range": "18\"",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "RAPID FIRE 3",
+            "TWIN-LINKED"
+          ]
+        },
+        {
+          "unitId": "vertus",
+          "sortOrder": 1,
+          "name": "Salvo Launcher",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "D3+2",
+          "abilities": []
+        },
+        {
+          "unitId": "vertus",
+          "sortOrder": 2,
+          "name": "Interceptor Lance",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "LANCE"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Vertus-Praetors",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "vigilator",
+      "sourcePage": 29,
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "ANATHEMA PSYKANA"
+      ],
+      "coreAbilities": [],
+      "abilities": [
+        {
+          "name": "Deft Parry",
+          "text": "Enemy melee attacks targeting this unit suffer -1 to hit rolls."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "vigilator",
+          "sortOrder": 0,
+          "name": "Executioner Greatblade",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "3",
+          "skill": "3+",
+          "strength": "5",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": [
+            "ANTI-PSYKER 5+",
+            "DEVASTATING WOUNDS: PSYKER"
+          ]
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Vigilator-Squad",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "wardens",
+      "sourcePage": 19,
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "TRUSTED SENTINEL",
+        "ADEPTUS CUSTODES"
+      ],
+      "coreAbilities": [
+        "Deep Strike"
+      ],
+      "abilities": [
+        {
+          "name": "Living Fortress",
+          "text": "Attacks targeting this unit suffer -1 Armour Penetration."
+        },
+        {
+          "name": "Vexilla",
+          "text": "With a Vexilla in the unit: +1 Objective Control, and ignore Leadership modifiers."
+        }
+      ],
+      "wargearOptions": [
+        "Each model may replace its Guardian Spear with a Castellan Axe.",
+        "A maximum of one model in the unit may carry a Vexilla."
+      ],
+      "weapons": [
+        {
+          "unitId": "wardens",
+          "sortOrder": 0,
+          "name": "Castellan Axe (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "wardens",
+          "sortOrder": 1,
+          "name": "Guardian Spear (ranged)",
+          "weaponType": "RANGED",
+          "range": "24\"",
+          "attacks": "2",
+          "skill": "2+",
+          "strength": "5",
+          "armourPenetration": -1,
+          "damage": "2",
+          "abilities": [
+            "ASSAULT",
+            "RAPID FIRE 2"
+          ]
+        },
+        {
+          "unitId": "wardens",
+          "sortOrder": 2,
+          "name": "Castellan Axe (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "3",
+          "skill": "2+",
+          "strength": "10",
+          "armourPenetration": -2,
+          "damage": "4",
+          "abilities": []
+        },
+        {
+          "unitId": "wardens",
+          "sortOrder": 3,
+          "name": "Guardian Spear (melee)",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "6",
+          "skill": "2+",
+          "strength": "8",
+          "armourPenetration": -2,
+          "damage": "2",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Custodian-Wardens",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    },
+    {
+      "unitId": "witchseeker",
+      "sourcePage": 30,
+      "keywords": [
+        "INFANTRY",
+        "IMPERIUM",
+        "ANATHEMA PSYKANA"
+      ],
+      "coreAbilities": [
+        "Scouts 7\""
+      ],
+      "abilities": [
+        {
+          "name": "Sanctified Flames",
+          "text": "After this unit shoots, select one enemy hit; that enemy makes a Battle-shock roll with an additional -1 penalty if it is a Psyker."
+        }
+      ],
+      "wargearOptions": [],
+      "weapons": [
+        {
+          "unitId": "witchseeker",
+          "sortOrder": 0,
+          "name": "Flamer",
+          "weaponType": "RANGED",
+          "range": "12\"",
+          "attacks": "3",
+          "skill": "-",
+          "strength": "4",
+          "armourPenetration": -1,
+          "damage": "1",
+          "abilities": [
+            "ANTI-PSYKER 4+",
+            "ASSAULT",
+            "BLAST 1",
+            "TORRENT"
+          ]
+        },
+        {
+          "unitId": "witchseeker",
+          "sortOrder": 1,
+          "name": "Gun Stock",
+          "weaponType": "MELEE",
+          "range": "Melee",
+          "attacks": "2",
+          "skill": "3+",
+          "strength": "3",
+          "armourPenetration": 0,
+          "damage": "1",
+          "abilities": []
+        }
+      ],
+      "sourceUrl": "https://wahapedia.ru/wh40k11ed/factions/adeptus-custodes/Witchseeker-Squad",
+      "textStatus": "RULE_SUMMARY_CROSS_CHECKED"
+    }
+  ]
+}

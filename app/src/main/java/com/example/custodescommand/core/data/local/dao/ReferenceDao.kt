@@ -54,4 +54,23 @@ interface ReferenceDao {
     suspend fun findPointTiers(unitId: String): List<PointTierEntity>
     @Query("SELECT * FROM optional_wargear_costs WHERE unitId = :unitId")
     suspend fun findOptionalWargearCosts(unitId: String): List<OptionalWargearCostEntity>
+    // Upserts verified weapon profiles from the L11 incremental reference pack.
+    @Upsert
+    suspend fun upsertWeapons(weapons: List<UnitWeaponEntity>)
+
+    @Upsert
+    suspend fun upsertCodexSections(sections: List<UnitCodexSectionEntity>)
+
+    @Query("SELECT * FROM unit_codex_sections WHERE unitId = :unitId ORDER BY kind")
+    suspend fun findCodexSections(unitId: String): List<UnitCodexSectionEntity>
+    @Query("DELETE FROM unit_abilities WHERE unitId = :unitId")
+    suspend fun deleteVerifiedAbilities(unitId: String)
+
+    @Query("DELETE FROM unit_wargear_options WHERE unitId = :unitId")
+    suspend fun deleteVerifiedWargearDescriptions(unitId: String)
+
+    @Query("DELETE FROM unit_weapons WHERE unitId = :unitId")
+    suspend fun deleteVerifiedWeapons(unitId: String)
+
+
 }

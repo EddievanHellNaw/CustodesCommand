@@ -12,10 +12,12 @@ data class RosterEditorUiState(
     val points: PointSummary? = null,
     val enhancementPoints: Int = 0,
     val assignedEnhancementCount: Int = 0,
+    val wargearPoints: Int = 0,
+    val configuredWargearCount: Int = 0,
     val loadError: String? = null,
     val actionError: String? = null,
     val pricingError: String? = null
 ) {
-    val armyTotalPoints: Int? get() = points?.totalPoints?.plus(enhancementPoints)
+    val armyTotalPoints: Int? get() = points?.totalPoints?.plus(enhancementPoints)?.plus(wargearPoints)
     val armyRemainingPoints: Int? get() = armyTotalPoints?.let { total -> roster?.pointsLimit?.minus(total) }
 }

@@ -17,16 +17,17 @@ object RosterValidation {
         baseUnitPoints: Int?,
         assignedEnhancements: List<AssignedEnhancement>,
         selectedDetachments: List<DetachmentSummary>,
-        dpAllowance: Int? = null
+        dpAllowance: Int? = null,
+        additionalWargearPoints: Int = 0
     ): List<RosterValidationIssue> {
         val issues = mutableListOf<RosterValidationIssue>()
-        val extras = assignedEnhancements.sumOf { it.points }
+        val extras = assignedEnhancements.sumOf { it.points } + additionalWargearPoints
         if (baseUnitPoints == null) {
             issues += RosterValidationIssue(ValidationSeverity.ERROR,
                 "Cannot verify army points because base unit pricing is unavailable.")
         } else if (baseUnitPoints + extras > roster.pointsLimit) {
             issues += RosterValidationIssue(ValidationSeverity.ERROR,
-                "Army is ${baseUnitPoints + extras - roster.pointsLimit} points over its limit (before extra wargear).")
+                "Army is ${baseUnitPoints + extras - roster.pointsLimit} points over its limit.")
         }
         if (selectedDetachments.isEmpty()) {
             issues += RosterValidationIssue(ValidationSeverity.WARNING,

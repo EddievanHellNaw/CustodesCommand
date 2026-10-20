@@ -17,6 +17,7 @@ fun RosterEditorScreen(
     rosterId: String,
     state: RosterEditorUiState,
     onAddUnit: (String, Int) -> Unit,
+    onConfigureUnit: (String) -> Unit,
     onRemoveUnit: (String) -> Unit,
     onManageDetachments: () -> Unit,
     onManageEnhancements: () -> Unit,
@@ -91,6 +92,7 @@ fun RosterEditorScreen(
                 )
                 Text("Base units: ${state.points?.totalPoints ?: "?"} pts")
                 Text("Enhancements: +${state.enhancementPoints} pts")
+                Text("Wargear: +${state.wargearPoints} pts")
                 state.armyRemainingPoints?.let { remaining ->
                     Text(
                         text = "Remaining: $remaining pts",
@@ -98,8 +100,7 @@ fun RosterEditorScreen(
                         else MaterialTheme.colorScheme.onSurface
                     )
                 }
-                Text("Extra wargear points not included yet.",
-                    style = MaterialTheme.typography.bodySmall)
+
             }
         }
 
@@ -201,6 +202,11 @@ fun RosterEditorScreen(
                                         .typography.bodyMedium
                                 )
                             }
+
+                            TextButton(
+                                onClick = { onConfigureUnit(rosterUnit.instanceId) },
+                                enabled = !state.isSaving
+                            ) { Text("Equip") }
 
                             TextButton(
                                 onClick = {

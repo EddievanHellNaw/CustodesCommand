@@ -1,0 +1,783 @@
+{
+  "packId": "custodes_codex_sections_l14_crosschecked_20261020_v2",
+  "source": "11th edn - Custodes.pdf, photographed pages 16–30; composition/default entries transcribed manually and indexed to source; supplemented with online 11th edition reference and user supplied scans; verified 2026-10-20",
+  "limitations": [
+    "Ability index and summaries are not complete rules text. Use original photographed source until each effect is verified.",
+    "Ares and Orion have no datasheets in provided source.",
+    "Legends remain unchanged.",
+    "This pack does not replace existing unit stats, weapons, prices or configured loadouts.",
+    "ABILITY_SUMMARY entries are paraphrases verified 2026-10-20, not complete exact rules. The dedicated structured ability table is filled by the additive verified-datasheet importer."
+  ],
+  "sections": [
+    {
+      "unitId": "trajann",
+      "kind": "COMPOSITION",
+      "text": "1 Trajann Valoris model",
+      "sourcePage": 16,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "trajann",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Eagle’s Scream; 1 Watcher’s Axe",
+      "sourcePage": 16,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "trajann",
+      "kind": "ABILITY_INDEX",
+      "text": "Captain-General (Aura); Moment Shackle; Supreme Commander",
+      "sourcePage": 16,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "shield-captain",
+      "kind": "COMPOSITION",
+      "text": "1 Shield-Captain model",
+      "sourcePage": 16,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "shield-captain",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Praesidium Shield; 1 Pyrithite Spear",
+      "sourcePage": 16,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "shield-captain",
+      "kind": "ABILITY_INDEX",
+      "text": "Master of Ka’tahs; Vengeful Surge; Praesidium Shield",
+      "sourcePage": 16,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "kind": "COMPOSITION",
+      "text": "1 Shield-Captain in Allarus Terminator Armour model",
+      "sourcePage": 17,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Ballistus Grenade Launcher; 1 Guardian Spear",
+      "sourcePage": 17,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "kind": "ABILITY_INDEX",
+      "text": "Master of Ka’tahs; Archeotech Teleport-shunter",
+      "sourcePage": 17,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "kind": "COMPOSITION",
+      "text": "1 Shield-Captain on Dawneagle Jetbike model",
+      "sourcePage": 17,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Interceptor Lance; 1 Salvo Launcher",
+      "sourcePage": 17,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "kind": "ABILITY_INDEX",
+      "text": "Master of Ka’tahs; Sweeping Advance",
+      "sourcePage": 17,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "blade-champion",
+      "kind": "COMPOSITION",
+      "text": "1 Blade Champion model",
+      "sourcePage": 18,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "blade-champion",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Vaultswords",
+      "sourcePage": 18,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "blade-champion",
+      "kind": "ABILITY_INDEX",
+      "text": "Swift Onslaught; Sword of the Throne",
+      "sourcePage": 18,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "sentinel",
+      "kind": "COMPOSITION",
+      "text": "3 Sentinel Guard models",
+      "sourcePage": 18,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "sentinel",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Praesidium Shield; 1 Sentinel Blade",
+      "sourcePage": 18,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "sentinel",
+      "kind": "ABILITY_INDEX",
+      "text": "Stand Vigil; Praesidium Shield; Vexilla",
+      "sourcePage": 18,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "sentinel",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Stand Vigil: Attacks against targets other than Monsters or Vehicles gain Lethal Hits if this unit or its target is within objective range. | Praesidium Shield: Attacks targeting this unit with Strength higher than its Toughness suffer -1 to their wound rolls. | Vexilla: With a Vexilla in the unit: +1 Objective Control, and ignore Leadership modifiers.",
+      "sourcePage": 18,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "guard",
+      "kind": "COMPOSITION",
+      "text": "3 Custodian Guard models",
+      "sourcePage": 19,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "guard",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Guardian Spear",
+      "sourcePage": 19,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "guard",
+      "kind": "ABILITY_INDEX",
+      "text": "Impenetrable Defence; Vexilla",
+      "sourcePage": 19,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "guard",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Impenetrable Defence: Attacks gain Sustained Hits 1 against targets other than Monsters or Vehicles when this unit or its target is within an objective’s range. | Vexilla: With a Vexilla in the unit: +1 Objective Control, and ignore Leadership modifiers.",
+      "sourcePage": 19,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "wardens",
+      "kind": "COMPOSITION",
+      "text": "2–3 Custodian Warden models",
+      "sourcePage": 19,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "wardens",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Guardian Spear",
+      "sourcePage": 19,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "wardens",
+      "kind": "ABILITY_INDEX",
+      "text": "Living Fortress; Vexilla",
+      "sourcePage": 19,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "wardens",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Living Fortress: Attacks targeting this unit suffer -1 Armour Penetration. | Vexilla: With a Vexilla in the unit: +1 Objective Control, and ignore Leadership modifiers.",
+      "sourcePage": 19,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "allarus",
+      "kind": "COMPOSITION",
+      "text": "2–3 Allarus Custodian models",
+      "sourcePage": 20,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "allarus",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Ballistus Grenade Launcher; 1 Guardian Spear",
+      "sourcePage": 20,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "allarus",
+      "kind": "ABILITY_INDEX",
+      "text": "Slayer of Tyrants; Vexilla",
+      "sourcePage": 20,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "allarus",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Slayer of Tyrants: This unit gains +1 to wound rolls for melee attacks against targets with higher Toughness. | Vexilla: With one Vexilla bearer in this unit: +1 Objective Control for the unit and ignore Leadership modifiers.",
+      "sourcePage": 20,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "aquilon-gauntlets",
+      "kind": "COMPOSITION",
+      "text": "3 Aquilon Terminator models",
+      "sourcePage": 21,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "aquilon-gauntlets",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Adrathic Combi-destructor; 1 Solarite Power Gauntlet",
+      "sourcePage": 21,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "aquilon-gauntlets",
+      "kind": "ABILITY_INDEX",
+      "text": "Dread Foe",
+      "sourcePage": 21,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "aquilon-gauntlets",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Dread Foe: Melee attacks against targets other than Monsters or Vehicles improve their AP by 1.",
+      "sourcePage": 21,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "aquilon-talons",
+      "kind": "COMPOSITION",
+      "text": "3 Aquilon Terminator models",
+      "sourcePage": 21,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "aquilon-talons",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Lastrum Storm Bolter; 1 Solarite Power Talon",
+      "sourcePage": 21,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "aquilon-talons",
+      "kind": "ABILITY_INDEX",
+      "text": "Reap a Terrible Tally",
+      "sourcePage": 21,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "aquilon-talons",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Reap a Terrible Tally: Against Infantry targets, attacks can re-roll hit rolls of 1 and wound rolls of 1.",
+      "sourcePage": 21,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "galatus",
+      "kind": "COMPOSITION",
+      "text": "1 Contemptor-Galatus Dreadnought model",
+      "sourcePage": 22,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "galatus",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Warblade",
+      "sourcePage": 22,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "galatus",
+      "kind": "ABILITY_INDEX",
+      "text": "Unyielding Ancient",
+      "sourcePage": 22,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "galatus",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Unyielding Ancient: Enemy attacks against this unit with Strength greater than this unit’s Toughness suffer -1 to their wound rolls.",
+      "sourcePage": 22,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "achillus",
+      "kind": "COMPOSITION",
+      "text": "1 Contemptor-Achillus Dreadnought model",
+      "sourcePage": 22,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "achillus",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Dreadspear; 2 Lastrum Storm Bolters",
+      "sourcePage": 22,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "achillus",
+      "kind": "ABILITY_INDEX",
+      "text": "Unyielding Ancient",
+      "sourcePage": 22,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "achillus",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Unyielding Ancient: Enemy attacks against this unit with Strength greater than this unit’s Toughness suffer -1 to their wound rolls.",
+      "sourcePage": 22,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "vertus",
+      "kind": "COMPOSITION",
+      "text": "2–3 Vertus Praetor models",
+      "sourcePage": 23,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "vertus",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Interceptor Lance; 1 Salvo Launcher",
+      "sourcePage": 23,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "vertus",
+      "kind": "ABILITY_INDEX",
+      "text": "Quicksilver Execution",
+      "sourcePage": 23,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "vertus",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Quicksilver Execution: If this unit made a Charge move this turn, its melee attacks gain Sustained Hits 1.",
+      "sourcePage": 23,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "gyrfalcon",
+      "kind": "COMPOSITION",
+      "text": "2 Gyrfalcon Jetbiker models",
+      "sourcePage": 23,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "gyrfalcon",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Lastrum Bolt Cannon; 1 Solarite Power Lance",
+      "sourcePage": 23,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "gyrfalcon",
+      "kind": "ABILITY_INDEX",
+      "text": "Death Blow",
+      "sourcePage": 23,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "gyrfalcon",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Death Blow: If this unit charged this turn, improve AP of its melee attacks by 1.",
+      "sourcePage": 23,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "venatari-kinetic",
+      "kind": "COMPOSITION",
+      "text": "3 Venatari models",
+      "sourcePage": 24,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "venatari-kinetic",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Kinetic Destroyer; 1 Tarsus Buckler",
+      "sourcePage": 24,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "venatari-kinetic",
+      "kind": "ABILITY_INDEX",
+      "text": "Take Wing; Neutronium Cascade Mine; Strike from the Skies",
+      "sourcePage": 24,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "venatari-kinetic",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Take Wing: At the end of the opponent’s Fight phase, if unengaged this unit may enter Strategic Reserves. | Neutronium Cascade Mine: Once per battle for the unit, at the start of a phase select an enemy within 3 inches; on 2+, deal D3 mortal wounds, or 2D3 against a Monster/Vehicle. | Strike from the Skies: If this unit made an ingress move this turn, it can re-roll hit rolls for its ranged attacks during your Shooting phase.",
+      "sourcePage": 24,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "venatari-lances",
+      "kind": "COMPOSITION",
+      "text": "3 Venatari models",
+      "sourcePage": 24,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "venatari-lances",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Verutum Lance",
+      "sourcePage": 24,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "venatari-lances",
+      "kind": "ABILITY_INDEX",
+      "text": "Take Wing; Neutronium Cascade Mine; Swift Ruin",
+      "sourcePage": 24,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "venatari-lances",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Take Wing: At the end of the opponent’s Fight phase, if unengaged this unit may enter Strategic Reserves. | Neutronium Cascade Mine: Once per battle for the unit, at the start of a phase select an enemy within 3 inches; on 2+, deal D3 mortal wounds, or 2D3 against a Monster/Vehicle. | Swift Ruin: Once per phase for the army, use Rapid Ingress on this unit even if that stratagem has already been used; this use costs 1 fewer CP and does not stop other uses.",
+      "sourcePage": 24,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "telemon",
+      "kind": "COMPOSITION",
+      "text": "1 Telemon Heavy Dreadnought model",
+      "sourcePage": 25,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "telemon",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Dual Caestus Fists; 1 Spiculus Bolt Launcher; 2 Twin Neutronium Cascade Projectors",
+      "sourcePage": 25,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "telemon",
+      "kind": "ABILITY_INDEX",
+      "text": "Guardian Eternal",
+      "sourcePage": 25,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "telemon",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Guardian Eternal: Enemy ranged attacks against this unit suffer -1 Damage.",
+      "sourcePage": 25,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "pallas",
+      "kind": "COMPOSITION",
+      "text": "1 Pallas Grav-attack model",
+      "sourcePage": 26,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "pallas",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Armoured Hull; 1 Twin Arachnus Blaze Cannon",
+      "sourcePage": 26,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "pallas",
+      "kind": "ABILITY_INDEX",
+      "text": "Mobile Hunter",
+      "sourcePage": 26,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "pallas",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Mobile Hunter: After this unit shoots, it may make a normal move of up to D6 inches; it cannot declare a charge this turn.",
+      "sourcePage": 26,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "coronus",
+      "kind": "COMPOSITION",
+      "text": "1 Coronus Grav-carrier model",
+      "sourcePage": 26,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "coronus",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Armoured Hull; 1 Twin Arachnus Blaze Cannon; 1 Twin Lastrum Bolt Cannon",
+      "sourcePage": 26,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "coronus",
+      "kind": "ABILITY_INDEX",
+      "text": "Repulsor Suspensor Technology; Assault Vehicle; Transport",
+      "sourcePage": 26,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "coronus",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Repulsor Suspensor Technology: Once per phase during the opponent’s Shooting phase: if this unengaged unit loses a wound from enemy shooting, it may make a normal move of up to D6 inches. | Assault Vehicle: After this transport ends an Advance move, embarked units may perform a shock disembark move. | Transport: Carries up to 8 Adeptus Custodes Infantry models; cannot transport Jump Pack models.",
+      "sourcePage": 26,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "caladius",
+      "kind": "COMPOSITION",
+      "text": "1 Caladius Grav-tank model",
+      "sourcePage": 27,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "caladius",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Armoured Hull; 1 Iliastus Accelerator Cannon; 1 Twin Lastrum Bolt Cannon",
+      "sourcePage": 27,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "caladius",
+      "kind": "ABILITY_INDEX",
+      "text": "Destructor Optics",
+      "sourcePage": 27,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "caladius",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Destructor Optics: Ranged attacks against targets other than Monsters or Vehicles improve AP by 1.",
+      "sourcePage": 27,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "kind": "COMPOSITION",
+      "text": "1 Caladius Annihilator Grav-tank model",
+      "sourcePage": 27,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Arachnus Blaze Carronade; 1 Armoured Hull; 1 Twin Lastrum Bolt Cannon",
+      "sourcePage": 27,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "kind": "ABILITY_INDEX",
+      "text": "Advanced Firepower",
+      "sourcePage": 27,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Advanced Firepower: Against a Monster or Vehicle, this unit’s ranged attacks can re-roll one hit roll, one wound roll and one damage roll.",
+      "sourcePage": 27,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "knight-centura",
+      "kind": "COMPOSITION",
+      "text": "1 Knight-Centura model",
+      "sourcePage": 28,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "knight-centura",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Executioner Greatblade",
+      "sourcePage": 28,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "knight-centura",
+      "kind": "ABILITY_INDEX",
+      "text": "Seeker’s Instincts; Corner the Quarry",
+      "sourcePage": 28,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "knight-centura",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Seeker’s Instincts: This unit gets +2 inches Movement and can re-roll Advance and Charge rolls. | Corner the Quarry: An engaged non-Monster/non-Vehicle falling back from this unit must make a Desperate Escape move; battle-shocked targets get -1 to hazard rolls.",
+      "sourcePage": 28,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "prosecutor",
+      "kind": "COMPOSITION",
+      "text": "4–10 Prosecutor models",
+      "sourcePage": 28,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "prosecutor",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Boltgun; 1 Gun Stock",
+      "sourcePage": 28,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "prosecutor",
+      "kind": "ABILITY_INDEX",
+      "text": "Purity of Execution",
+      "sourcePage": 28,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "prosecutor",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Purity of Execution: During your Shooting phase, select a visible enemy within 18 inches; it becomes detected and gains +3 inches detection range while detected.",
+      "sourcePage": 28,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "vigilator",
+      "kind": "COMPOSITION",
+      "text": "4–10 Vigilator models",
+      "sourcePage": 29,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "vigilator",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Executioner Greatblade",
+      "sourcePage": 29,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "vigilator",
+      "kind": "ABILITY_INDEX",
+      "text": "Deft Parry",
+      "sourcePage": 29,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "vigilator",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Deft Parry: Enemy melee attacks targeting this unit suffer -1 to hit rolls.",
+      "sourcePage": 29,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "witchseeker",
+      "kind": "COMPOSITION",
+      "text": "4–10 Witchseeker models",
+      "sourcePage": 30,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "witchseeker",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "Each model: 1 Flamer; 1 Gun Stock",
+      "sourcePage": 30,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "witchseeker",
+      "kind": "ABILITY_INDEX",
+      "text": "Sanctified Flames",
+      "sourcePage": 30,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "witchseeker",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Sanctified Flames: After this unit shoots, select one enemy hit; that enemy makes a Battle-shock roll with an additional -1 penalty if it is a Psyker.",
+      "sourcePage": 30,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "rhino",
+      "kind": "COMPOSITION",
+      "text": "1 Anathema Psykana Rhino model",
+      "sourcePage": 30,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "rhino",
+      "kind": "DEFAULT_EQUIPMENT",
+      "text": "1 Armoured Tracks; 1 Storm Bolter",
+      "sourcePage": 30,
+      "status": "SOURCE_READ"
+    },
+    {
+      "unitId": "rhino",
+      "kind": "ABILITY_INDEX",
+      "text": "Assault Vehicle; Transport",
+      "sourcePage": 30,
+      "status": "NAME_VERIFIED"
+    },
+    {
+      "unitId": "rhino",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Assault Vehicle: After this transport completes an Advance move, embarked units may make a shock disembark move. | Transport: Transport capacity: 12 Anathema Psykana Infantry models.",
+      "sourcePage": 30,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "ares-gunship",
+      "kind": "SOURCE_WARNING",
+      "text": "The uploaded Custodes PDF has no datasheet for this current unit. Rules not transcribed.",
+      "sourcePage": null,
+      "status": "SOURCE_MISSING"
+    },
+    {
+      "unitId": "orion-dropship",
+      "kind": "SOURCE_WARNING",
+      "text": "The uploaded Custodes PDF has no datasheet for this current unit. Rules not transcribed.",
+      "sourcePage": null,
+      "status": "SOURCE_MISSING"
+    },
+    {
+      "unitId": "blade-champion",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Swift Onslaught: This unit can re-roll Advance rolls and Charge rolls. | Sword of the Throne: At the start of round one, mark an enemy unit. This model gets +1 to wound that mark. Choose a new mark when it is destroyed.",
+      "sourcePage": 18,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "shield-captain",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Master of Ka’tahs: Once per battle round for the unit, if not readied, make this unit readied. | Vengeful Surge: Once per battle, after this unit loses a wound from enemy shooting, it may make a surge move of up to D6+2 inches. | Praesidium Shield: Attacks allocated to this model suffer -1 Damage.",
+      "sourcePage": 16,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Master of Ka’tahs: Once per battle round for the unit, if not readied, make this unit readied. | Archeotech Teleport-shunter: Once per battle during your Movement phase, if unengaged and not yet selected to move, put this unit in Strategic Reserves; it must ingress this phase.",
+      "sourcePage": 17,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Master of Ka’tahs: Once per battle round for the unit, if not readied, make this unit readied. | Sweeping Advance: Once per battle, at the end of a Fight phase when this unit was eligible to fight: make a Normal move if unengaged, or Fall Back if engaged.",
+      "sourcePage": 17,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    },
+    {
+      "unitId": "trajann",
+      "kind": "ABILITY_SUMMARY",
+      "text": "Captain-General (Aura): Friendly Adeptus Custodes units within 6 inches (excluding Monsters and Vehicles) can re-roll hit rolls and wound rolls of 1. | Moment Shackle: Once per battle for the army, at the start of a phase choose: add 3 attacks to Watcher’s Axe, or improve this model’s invulnerable save to 3+ for that phase. | Supreme Commander: If included in the army, this model must be the Warlord.",
+      "sourcePage": 16,
+      "status": "WEB_CHECKED_PARAPHRASE"
+    }
+  ]
+}

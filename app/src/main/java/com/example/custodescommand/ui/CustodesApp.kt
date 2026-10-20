@@ -50,12 +50,27 @@ import com.example.custodescommand.feature.detachments.*
 import com.example.custodescommand.feature.enhancements.RosterEnhancementsViewModel
 import com.example.custodescommand.feature.enhancements.RosterEnhancementsScreen
 
+import com.example.custodescommand.feature.wargear.WargearEditorViewModel
+import com.example.custodescommand.feature.wargear.WargearEditorScreen
+import com.example.custodescommand.feature.gamemode.GameModeViewModel
+import com.example.custodescommand.feature.gamemode.GameModeScreen
+
+import com.example.custodescommand.feature.media.UnitPhotosViewModel
+import com.example.custodescommand.feature.rosters.RosterDeletionViewModel
+import com.example.custodescommand.feature.rosters.RosterDeletionState
+import com.example.custodescommand.feature.rosters.RosterCommandScreen
+
+import com.example.custodescommand.feature.reference.CoreRulesViewModel
+import com.example.custodescommand.feature.reference.CoreRulesScreen
+
 private const val UNIT_PREFIX = "unit:"
 private const val ROSTER_PREFIX = "roster:"
 private const val SOURCE_PAGE_PREFIX = "source-page:"
 private const val DETACHMENT_PREFIX = "detachment:"
 private const val ROSTER_DETACHMENTS_PREFIX = "roster-detachments:"
 private const val ROSTER_ENHANCEMENTS_PREFIX = "roster-enhancements:"
+private const val WARGEAR_PREFIX = "wargear:"
+private const val GAME_PREFIX = "game:"
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -65,6 +80,55 @@ fun CustodesApp() {
             as CustodesApplication
 
     val container = application.container
+
+    val unitPhotosFactory = remember(container) {
+        viewModelFactory {
+            initializer { UnitPhotosViewModel(container.unitPhotoStore) }
+        }
+    }
+    val photoVm: UnitPhotosViewModel = viewModel(factory = unitPhotosFactory)
+    val photoState by photoVm.state.collectAsStateWithLifecycle()
+    val photoRevision by photoVm.revision.collectAsStateWithLifecycle()
+
+    val deletionFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                RosterDeletionViewModel(
+                    rosters = container.rosterRepository,
+                    photos = container.unitPhotoStore
+                )
+            }
+        }
+    }
+    val deletionVm: RosterDeletionViewModel = viewModel(factory = deletionFactory)
+    val deletionState by deletionVm.state.collectAsStateWithLifecycle()
+
+    val coreRulesFactory = remember(container) {
+        viewModelFactory {
+            initializer { CoreRulesViewModel(container.coreRulesRepository) }
+        }
+    }
+    val coreRulesVm: CoreRulesViewModel = viewModel(factory = coreRulesFactory)
+    val coreRulesState by coreRulesVm.state.collectAsStateWithLifecycle()
+
+    val gameModeFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                GameModeViewModel(
+                    rosters = container.rosterRepository,
+                    references = container.referenceRepository,
+                    details = container.unitDetailRepository,
+                    detachments = container.detachmentRepository,
+                    enhancements = container.rosterEnhancementRepository,
+                    wargear = container.wargearRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+
+    val gameModeVm: GameModeViewModel = viewModel(factory = gameModeFactory)
+    val gameModeState by gameModeVm.state.collectAsStateWithLifecycle()
 
     val detailFactory = remember(container) {
         viewModelFactory {
@@ -79,6 +143,22 @@ fun CustodesApp() {
     val detailViewModel: UnitDetailViewModel = viewModel(factory = detailFactory)
     val detailState by detailViewModel.state.collectAsStateWithLifecycle()
 
+    val wargearFactory = remember(container) {
+        viewModelFactory {
+            initializer {
+                WargearEditorViewModel(
+                    rosters = container.rosterRepository,
+                    references = container.referenceRepository,
+                    wargear = container.wargearRepository,
+                    details = container.unitDetailRepository,
+                    initializeData = container::initializeData
+                )
+            }
+        }
+    }
+    val wargearVm: WargearEditorViewModel = viewModel(factory = wargearFactory)
+    val wargearState by wargearVm.state.collectAsStateWithLifecycle()
+
     val enhancementFactory = remember(container) {
         viewModelFactory {
             initializer {
@@ -86,7 +166,8 @@ fun CustodesApp() {
                     rosterRepository = container.rosterRepository,
                     referenceRepository = container.referenceRepository,
                     enhancements = container.rosterEnhancementRepository,
-                    initializeData = container::initializeData
+                    initializeData = container::initializeData,
+                    wargear = container.wargearRepository,
                 )
             }
         }
@@ -167,6 +248,17 @@ fun CustodesApp() {
         mutableStateListOf(MainTab.Rosters.key)
     }
 
+    LaunchedEffect(deletionState) {
+        val deleted = deletionState as? RosterDeletionState.Deleted
+        if (deleted != null) {
+            // If the deleted roster is currently in the stack, remove it.
+            backStack.remove("$ROSTER_PREFIX${deleted.rosterId}")
+            // If a nested route somehow remained, return to the roster list.
+            backStack.clear()
+            backStack.add(MainTab.Rosters.key)
+            deletionVm.acknowledge()
+        }
+    }
 
     val rosterEditorFactory = remember(container) {
         viewModelFactory {
@@ -179,6 +271,8 @@ fun CustodesApp() {
                     initializeData =
                         container::initializeData,
                     enhancementRepository = container.rosterEnhancementRepository,
+                    wargearRepository = container.wargearRepository,
+                    unitPhotoStore = container.unitPhotoStore
                 )
             }
         }
@@ -288,6 +382,9 @@ fun CustodesApp() {
                                     backStack.add(
                                         "$ROSTER_PREFIX$rosterId"
                                     )
+                                },
+                                onPlayRoster = { rosterId ->
+                                    backStack.add("$GAME_PREFIX$rosterId")
                                 }
                             )
                         }
@@ -312,13 +409,12 @@ fun CustodesApp() {
                         )
                     }
 
-                    route == MainTab.Rules.key ->
-                        NavEntry(route) {
-                            SectionPlaceholder(
-                                title = "Core Rules",
-                                description = "A searchable reference for Warhammer 40,000."
-                            )
-                        }
+                    route == MainTab.Rules.key -> NavEntry(route) {
+                        CoreRulesScreen(
+                            state = coreRulesState,
+                            officialUrl = container.coreRulesRepository.officialPdfUrl
+                        )
+                    }
 
                     route.startsWith(UNIT_PREFIX) -> NavEntry(route) {
                         val unitId = route.removePrefix(UNIT_PREFIX)
@@ -342,21 +438,37 @@ fun CustodesApp() {
                                 rosterEditorViewModel.loadRoster(rosterId)
                             }
 
-                            RosterEditorScreen(
+                            RosterCommandScreen(
                                 rosterId = rosterId,
                                 state = rosterEditorState,
-                                onAddUnit =
-                                    rosterEditorViewModel::addUnit,
-                                onRemoveUnit =
-                                    rosterEditorViewModel::removeUnit,
+                                photoState = photoState,
+                                photoRevision = photoRevision,
+                                photoFor = photoVm::photoFor,
+                                deletionState = deletionState,
+                                onAddUnit = rosterEditorViewModel::addUnit,
+                                onRemoveUnit = rosterEditorViewModel::removeUnit,
+                                onEquipUnit = { instanceId ->
+                                    backStack.add("$WARGEAR_PREFIX$rosterId:$instanceId")
+                                },
+                                onOpenUnit = { unitId ->
+                                    backStack.add("$UNIT_PREFIX$unitId")
+                                },
                                 onManageDetachments = {
                                     backStack.add("$ROSTER_DETACHMENTS_PREFIX$rosterId")
                                 },
                                 onManageEnhancements = {
                                     backStack.add("$ROSTER_ENHANCEMENTS_PREFIX$rosterId")
                                 },
-                                onDismissError =
-                                    rosterEditorViewModel::dismissError
+                                onOpenRules = {
+                                    backStack.clear()
+                                    backStack.add(MainTab.Rules.key)
+                                },
+                                onStartGame = {
+                                    backStack.add("$GAME_PREFIX$rosterId")
+                                },
+                                onDeleteRoster = { deletionVm.deleteRoster(rosterId) },
+                                onPhotoSelected = photoVm::import,
+                                onRemovePhoto = photoVm::remove
                             )
                         }
 
@@ -403,6 +515,50 @@ fun CustodesApp() {
                             onDismissError = enhancementVm::dismissError,
                             onOpenSourcePage = { page ->
                                 backStack.add("$SOURCE_PAGE_PREFIX$page")
+                            }
+                        )
+                    }
+
+                    route.startsWith(WARGEAR_PREFIX) -> NavEntry(route) {
+                        val parts = route.removePrefix(WARGEAR_PREFIX).split(":", limit = 2)
+                        require(parts.size == 2) { "Invalid wargear route" }
+                        val rosterId = parts[0]
+                        val instanceId = parts[1]
+                        LaunchedEffect(rosterId, instanceId) { wargearVm.load(rosterId, instanceId) }
+                        WargearEditorScreen(
+                            state = wargearState,
+                            onSelect = wargearVm::setSelected,
+                            onSetVexillaBearer = wargearVm::setVexillaBearer,
+                            onResize = wargearVm::resize,
+                            onDismissError = wargearVm::dismissError,
+                            onOpenSourcePage = { page -> backStack.add("$SOURCE_PAGE_PREFIX$page") }
+                        )
+                    }
+
+                    route.startsWith(GAME_PREFIX) -> NavEntry(route) {
+                        val rosterId = route.removePrefix(GAME_PREFIX)
+
+                        LaunchedEffect(rosterId) {
+                            gameModeVm.open(rosterId)
+                        }
+
+                        GameModeScreen(
+                            rosterId = rosterId,
+                            state = gameModeState,
+                            onOpenDatasheet = { unitId ->
+                                backStack.add("$UNIT_PREFIX$unitId")
+                            },
+                            onOpenDetachment = { detachmentId ->
+                                backStack.add("$DETACHMENT_PREFIX$detachmentId")
+                            },
+                            onOpenSourcePage = { page ->
+                                backStack.add("$SOURCE_PAGE_PREFIX$page")
+                            },
+                            onOpenCoreRules = {
+                                // Core Rules is still a placeholder from the earlier lessons.
+                                // Switch tabs, rather than stacking a root destination under Rosters.
+                                backStack.clear()
+                                backStack.add(MainTab.Rules.key)
                             }
                         )
                     }

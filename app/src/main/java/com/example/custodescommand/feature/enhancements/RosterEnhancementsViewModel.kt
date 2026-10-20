@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.custodescommand.core.data.repository.ReferenceRepository
 import com.example.custodescommand.core.data.repository.RosterRepository
 import com.example.custodescommand.core.data.repository.RosterEnhancementRepository
+import com.example.custodescommand.core.data.repository.WargearRepository
 import com.example.custodescommand.core.domain.model.*
 import com.example.custodescommand.core.domain.service.PointsCalculator
 import kotlinx.coroutines.CancellationException
@@ -21,11 +22,12 @@ data class RosterEnhancementsUiState(
     val options: List<AvailableEnhancement> = emptyList(),
     val assignments: List<AssignedEnhancement> = emptyList(),
     val baseUnitPoints: Int? = null,
+    val wargearPoints: Int = 0,
     val pricingError: String? = null,
     val error: String? = null
 ) {
     val enhancementPoints: Int get() = assignments.sumOf { it.points }
-    val totalPoints: Int? get() = baseUnitPoints?.plus(enhancementPoints)
+    val totalPoints: Int? get() = baseUnitPoints?.plus(enhancementPoints)?.plus(wargearPoints)
     val remainingPoints: Int? get() = totalPoints?.let { total -> roster?.pointsLimit?.minus(total) }
     // The lesson-8 enhancement records are INDEX_ONLY; eligibility is not fully verified.
     val provisionalCount: Int get() = assignments.count { it.textStatus != "FULLY_VERIFIED" }
@@ -35,6 +37,7 @@ class RosterEnhancementsViewModel(
     private val rosterRepository: RosterRepository,
     private val referenceRepository: ReferenceRepository,
     private val enhancements: RosterEnhancementRepository,
+    private val wargear: WargearRepository,
     private val initializeData: suspend () -> Unit
 ) : ViewModel() {
     private val mutableState = MutableStateFlow(RosterEnhancementsUiState())
@@ -53,8 +56,9 @@ class RosterEnhancementsViewModel(
                     rosterRepository.observeRoster(rosterId),
                     referenceRepository.observeUnits(),
                     enhancements.observeAvailable(rosterId),
-                    enhancements.observeAssignments(rosterId)
-                ) { roster, unitSummaries, options, assigned ->
+                    enhancements.observeAssignments(rosterId),
+                    wargear.observeRosterSelections(rosterId)
+                ) { roster, unitSummaries, options, assigned, selectedWargear ->
                     val attempt = roster?.let { runCatching { calculator.calculate(it) } }
                     RosterEnhancementsUiState(
                         rosterId = rosterId,
@@ -63,6 +67,7 @@ class RosterEnhancementsViewModel(
                         unitNames = unitSummaries.associate { it.id to it.name },
                         options = options,
                         assignments = assigned,
+                        wargearPoints = WargearRules.totalPoints(selectedWargear),
                         baseUnitPoints = attempt?.getOrNull()?.totalPoints,
                         pricingError = attempt?.exceptionOrNull()?.message,
                         error = if (roster == null) "Roster not found" else null

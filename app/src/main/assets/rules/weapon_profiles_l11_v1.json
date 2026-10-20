@@ -1,0 +1,634 @@
+{
+  "packId": "custodes-weapons-l11-crosschecked-20261020-v2",
+  "source": "11th edn - Custodes.pdf photographed pages 17–27, manual transcription. Check photos during play.; verified against current 11th edition references 2026-10-20",
+  "weapons": [
+    {
+      "unitId": "guard",
+      "sortOrder": 0,
+      "name": "Guardian Spear (ranged)",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "guard",
+      "sortOrder": 1,
+      "name": "Guardian Spear (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "6",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": []
+    },
+    {
+      "unitId": "wardens",
+      "sortOrder": 0,
+      "name": "Castellan Axe (ranged)",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "wardens",
+      "sortOrder": 1,
+      "name": "Guardian Spear (ranged)",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "wardens",
+      "sortOrder": 2,
+      "name": "Castellan Axe (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "4",
+      "abilities": []
+    },
+    {
+      "unitId": "wardens",
+      "sortOrder": 3,
+      "name": "Guardian Spear (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "6",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": []
+    },
+    {
+      "unitId": "sentinel",
+      "sortOrder": 0,
+      "name": "Sentinel Blade (ranged)",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "4",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "CLOSE-QUARTERS"
+      ]
+    },
+    {
+      "unitId": "sentinel",
+      "sortOrder": 1,
+      "name": "Sentinel Blade (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": []
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "sortOrder": 0,
+      "name": "Ballistus Grenade Launcher",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "ASSAULT",
+        "BLAST 1"
+      ]
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "sortOrder": 1,
+      "name": "Castellan Axe (ranged)",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "sortOrder": 2,
+      "name": "Guardian Spear (ranged)",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "sortOrder": 3,
+      "name": "Castellan Axe (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "4",
+      "abilities": []
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "sortOrder": 4,
+      "name": "Guardian Spear (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "8",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "CLEAVE 1"
+      ]
+    },
+    {
+      "unitId": "vertus",
+      "sortOrder": 0,
+      "name": "Hurricane Bolter",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "RAPID FIRE 3",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "vertus",
+      "sortOrder": 1,
+      "name": "Salvo Launcher",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "D3+2",
+      "abilities": []
+    },
+    {
+      "unitId": "vertus",
+      "sortOrder": 2,
+      "name": "Interceptor Lance",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "6",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "LANCE"
+      ]
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "sortOrder": 0,
+      "name": "Hurricane Bolter",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "RAPID FIRE 3",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "sortOrder": 1,
+      "name": "Salvo Launcher",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "D3+2",
+      "abilities": []
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "sortOrder": 2,
+      "name": "Interceptor Lance",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "8",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "LANCE"
+      ]
+    },
+    {
+      "unitId": "aquilon-talons",
+      "sortOrder": 0,
+      "name": "Infernus Firepike",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "3",
+      "skill": "-",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "BLAST 2",
+        "TORRENT"
+      ]
+    },
+    {
+      "unitId": "aquilon-talons",
+      "sortOrder": 1,
+      "name": "Lastrum Storm Bolter",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "RAPID FIRE 3"
+      ]
+    },
+    {
+      "unitId": "aquilon-talons",
+      "sortOrder": 2,
+      "name": "Solarite Power Talon",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "6",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "1",
+      "abilities": [
+        "SUSTAINED HITS 2"
+      ]
+    },
+    {
+      "unitId": "gyrfalcon",
+      "sortOrder": 0,
+      "name": "Adrathic Devastator",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "3",
+      "abilities": []
+    },
+    {
+      "unitId": "gyrfalcon",
+      "sortOrder": 1,
+      "name": "Arachnus Volley Cannon",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "8",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "DEVASTATING WOUNDS",
+        "SUSTAINED HITS 1"
+      ]
+    },
+    {
+      "unitId": "gyrfalcon",
+      "sortOrder": 2,
+      "name": "Lastrum Bolt Cannon",
+      "weaponType": "RANGED",
+      "range": "36\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "SUSTAINED HITS 1"
+      ]
+    },
+    {
+      "unitId": "gyrfalcon",
+      "sortOrder": 3,
+      "name": "Twin Corvae Las-pulser",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "1",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -3,
+      "damage": "D3+2",
+      "abilities": [
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "gyrfalcon",
+      "sortOrder": 4,
+      "name": "Solarite Power Lance",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "3",
+      "abilities": [
+        "LANCE"
+      ]
+    },
+    {
+      "unitId": "pallas",
+      "sortOrder": 0,
+      "name": "Twin Arachnus Blaze Cannon",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -3,
+      "damage": "D3+2",
+      "abilities": [
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "pallas",
+      "sortOrder": 1,
+      "name": "Twin Iliastus Accelerator Fusil",
+      "weaponType": "RANGED",
+      "range": "48\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -1,
+      "damage": "3",
+      "abilities": [
+        "RAPID FIRE 2",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "pallas",
+      "sortOrder": 2,
+      "name": "Armoured Hull",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "3",
+      "skill": "4+",
+      "strength": "6",
+      "armourPenetration": 0,
+      "damage": "1",
+      "abilities": []
+    },
+    {
+      "unitId": "caladius",
+      "sortOrder": 0,
+      "name": "Iliastus Accelerator Cannon",
+      "weaponType": "RANGED",
+      "range": "48\"",
+      "attacks": "4",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -1,
+      "damage": "3",
+      "abilities": [
+        "RAPID FIRE 4",
+        "SUSTAINED HITS 1: non-MONSTER/VEHICLE"
+      ]
+    },
+    {
+      "unitId": "caladius",
+      "sortOrder": 1,
+      "name": "Twin Lastrum Bolt Cannon",
+      "weaponType": "RANGED",
+      "range": "36\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "SUSTAINED HITS 1",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "caladius",
+      "sortOrder": 2,
+      "name": "Twin Neutronium Cascade Projectors",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "3",
+      "skill": "-",
+      "strength": "7",
+      "armourPenetration": -2,
+      "damage": "1",
+      "abilities": [
+        "BLAST 1",
+        "TORRENT",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "caladius",
+      "sortOrder": 3,
+      "name": "Armoured Hull",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "4",
+      "skill": "4+",
+      "strength": "6",
+      "armourPenetration": 0,
+      "damage": "1",
+      "abilities": []
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "sortOrder": 0,
+      "name": "Arachnus Blaze Carronade",
+      "weaponType": "RANGED",
+      "range": "48\"",
+      "attacks": "4",
+      "skill": "2+",
+      "strength": "12",
+      "armourPenetration": -3,
+      "damage": "D6+2",
+      "abilities": [
+        "LETHAL HITS: MONSTER/VEHICLE"
+      ]
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "sortOrder": 1,
+      "name": "Twin Lastrum Bolt Cannon",
+      "weaponType": "RANGED",
+      "range": "36\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "SUSTAINED HITS 1",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "sortOrder": 2,
+      "name": "Twin Neutronium Cascade Projectors",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "3",
+      "skill": "-",
+      "strength": "7",
+      "armourPenetration": -2,
+      "damage": "1",
+      "abilities": [
+        "BLAST 1",
+        "TORRENT",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "sortOrder": 3,
+      "name": "Armoured Hull",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "4",
+      "skill": "4+",
+      "strength": "6",
+      "armourPenetration": 0,
+      "damage": "1",
+      "abilities": []
+    },
+    {
+      "unitId": "coronus",
+      "sortOrder": 0,
+      "name": "Twin Arachnus Blaze Cannon",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -3,
+      "damage": "D3+2",
+      "abilities": [
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "coronus",
+      "sortOrder": 1,
+      "name": "Twin Lastrum Bolt Cannon",
+      "weaponType": "RANGED",
+      "range": "36\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "SUSTAINED HITS 1",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "coronus",
+      "sortOrder": 2,
+      "name": "Twin Neutronium Cascade Projectors",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "3",
+      "skill": "-",
+      "strength": "7",
+      "armourPenetration": -2,
+      "damage": "1",
+      "abilities": [
+        "BLAST 1",
+        "TORRENT",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "coronus",
+      "sortOrder": 3,
+      "name": "Armoured Hull",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "6",
+      "skill": "4+",
+      "strength": "8",
+      "armourPenetration": 0,
+      "damage": "1",
+      "abilities": []
+    }
+  ]
+}

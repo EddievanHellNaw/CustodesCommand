@@ -60,7 +60,15 @@ class UnitDetailRepository(private val dao: ReferenceDao) {
             extraWargearCosts = dao.findOptionalWargearCosts(unitId).map {
                 OptionalWargearCost(it.optionName, it.pointsPerItem)
             },
-            sourcePage = profile.sourcePage
+            sourcePage = profile.sourcePage,
+            codexSections = dao.findCodexSections(unitId).map { section ->
+                CodexSection(
+                    kind = section.kind,
+                    text = section.text,
+                    sourcePage = section.sourcePage,
+                    status = section.status
+                )
+            }
         )
     }
 }

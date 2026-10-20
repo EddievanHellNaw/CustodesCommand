@@ -16,7 +16,8 @@ data class DetailedUnit(
     val eligibleBodyguardNames: List<String>,
     val pointTiers: List<PointCostTier>,
     val extraWargearCosts: List<OptionalWargearCost>,
-    val sourcePage: Int?
+    val sourcePage: Int?,
+    val codexSections: List<CodexSection> = emptyList()
 )
 
 data class RuleSnippet(val name: String, val text: String)

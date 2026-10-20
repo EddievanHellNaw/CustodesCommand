@@ -1,0 +1,65 @@
+{
+  "packId": "custodes-wargear-l10-crosschecked-20261020-v2",
+  "source": "11th edn - Custodes.pdf pp. 16, 20, 28; Current-MFM-points-for-custodes.txt v1.6",
+  "warnings": [
+    "Selections include only individually interpretable wargear choices from provided sources; this is not the complete faction wargear catalogue.",
+    "Shield-Captain Praesidium Shield cost is sourced from MFM v1.6, but datasheet eligibility is not fully transcribed; treat as provisional."
+  ],
+  "options": [
+    {
+      "unitId": "allarus",
+      "optionId": "castellan-axe",
+      "name": "Castellan Axe (replaces Guardian Spear)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": null,
+      "exclusivityGroup": "primary-melee",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 20,
+      "description": "Every model may replace its Guardian Spear with a Castellan Axe."
+    },
+    {
+      "unitId": "allarus",
+      "optionId": "vexilla",
+      "name": "Vexilla",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": null,
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 20,
+      "description": "One model in the unit may be equipped with a Vexilla."
+    },
+    {
+      "unitId": "knight-centura",
+      "optionId": "master-crafted-boltgun",
+      "name": "Master-crafted Boltgun and Gun Stock",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "primary-loadout",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 28,
+      "description": "Replace the Executioner Greatblade with a Master-crafted Boltgun and Gun Stock."
+    },
+    {
+      "unitId": "knight-centura",
+      "optionId": "master-crafted-flamer",
+      "name": "Master-crafted Flamer and Gun Stock",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "primary-loadout",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 28,
+      "description": "Replace the Executioner Greatblade with a Master-crafted Flamer and Gun Stock."
+    },
+    {
+      "unitId": "shield-captain",
+      "optionId": "praesidium-shield",
+      "name": "Praesidium Shield (paid option)",
+      "pointsPerSelection": 25,
+      "maxPerUnit": 1,
+      "exclusivityGroup": null,
+      "sourceStatus": "PRICE_ONLY",
+      "sourcePage": 16,
+      "description": "MFM v1.6 lists +25 points per Praesidium Shield. Verify exact eligibility and interactions on the unit datasheet before play."
+    }
+  ]
+}

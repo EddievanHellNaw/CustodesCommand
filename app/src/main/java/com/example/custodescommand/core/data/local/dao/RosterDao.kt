@@ -56,4 +56,15 @@ interface RosterDao {
 
     @Query("DELETE FROM rosters WHERE id = :id")
     suspend fun deleteRoster(id: String)
+
+    @Query("""
+            UPDATE roster_units SET modelCount = :modelCount
+            WHERE rosterId = :rosterId AND instanceId = :instanceId
+        """)
+    suspend fun changeModelCount(rosterId: String, instanceId: String, modelCount: Int): Int
+
+
 }
+
+
+

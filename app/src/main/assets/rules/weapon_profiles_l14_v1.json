@@ -1,0 +1,444 @@
+{
+  "packId": "custodes_weapons_l14_crosschecked_20261020_v2",
+  "source": "11th edn - Custodes.pdf photographed pages 16,18,21,22,24,29,30; crosschecked 2026-10-20 against 11th codex references",
+  "weapons": [
+    {
+      "unitId": "shield-captain",
+      "sortOrder": 0,
+      "name": "Castellan Axe (ranged)",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "shield-captain",
+      "sortOrder": 1,
+      "name": "Guardian Spear (ranged)",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "ASSAULT",
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "shield-captain",
+      "sortOrder": 2,
+      "name": "Pyrithite Spear (ranged)",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "1",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -3,
+      "damage": "D3+2",
+      "abilities": [
+        "ASSAULT",
+        "MELTA 2"
+      ]
+    },
+    {
+      "unitId": "shield-captain",
+      "sortOrder": 3,
+      "name": "Castellan Axe (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "4",
+      "abilities": []
+    },
+    {
+      "unitId": "shield-captain",
+      "sortOrder": 4,
+      "name": "Eternity-pattern Paragon Blade",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "6",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -3,
+      "damage": "3",
+      "abilities": [
+        "PRECISION"
+      ]
+    },
+    {
+      "unitId": "shield-captain",
+      "sortOrder": 5,
+      "name": "Guardian Spear (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "8",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "CLEAVE 1"
+      ]
+    },
+    {
+      "unitId": "shield-captain",
+      "sortOrder": 6,
+      "name": "Pyrithite Spear (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "8",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "CLEAVE 1"
+      ]
+    },
+    {
+      "unitId": "blade-champion",
+      "sortOrder": 0,
+      "name": "Vaultswords - Behemor",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -3,
+      "damage": "3",
+      "abilities": [
+        "DEVASTATING WOUNDS"
+      ]
+    },
+    {
+      "unitId": "blade-champion",
+      "sortOrder": 1,
+      "name": "Vaultswords - Hurricanis",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "10",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "1",
+      "abilities": [
+        "CLEAVE 1",
+        "SUSTAINED HITS 1"
+      ]
+    },
+    {
+      "unitId": "blade-champion",
+      "sortOrder": 2,
+      "name": "Vaultswords - Victus",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "8",
+      "skill": "2+",
+      "strength": "8",
+      "armourPenetration": -3,
+      "damage": "2",
+      "abilities": [
+        "PRECISION"
+      ]
+    },
+    {
+      "unitId": "aquilon-gauntlets",
+      "sortOrder": 0,
+      "name": "Adrathic Combi-destructor",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -2,
+      "damage": "3",
+      "abilities": []
+    },
+    {
+      "unitId": "aquilon-gauntlets",
+      "sortOrder": 1,
+      "name": "Solarite Power Gauntlet",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "3",
+      "abilities": []
+    },
+    {
+      "unitId": "galatus",
+      "sortOrder": 0,
+      "name": "Warblade (ranged)",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "4",
+      "skill": "-",
+      "strength": "6",
+      "armourPenetration": -1,
+      "damage": "2",
+      "abilities": [
+        "BLAST 2",
+        "TORRENT",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "galatus",
+      "sortOrder": 1,
+      "name": "Warblade (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "8",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "3",
+      "abilities": [
+        "CLEAVE 1",
+        "SUSTAINED HITS 1: non-MONSTER/VEHICLE"
+      ]
+    },
+    {
+      "unitId": "achillus",
+      "sortOrder": 0,
+      "name": "Adrathic Combi-destructor",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -2,
+      "damage": "3",
+      "abilities": []
+    },
+    {
+      "unitId": "achillus",
+      "sortOrder": 1,
+      "name": "Dreadspear (ranged)",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "2",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -3,
+      "damage": "D3+2",
+      "abilities": []
+    },
+    {
+      "unitId": "achillus",
+      "sortOrder": 2,
+      "name": "Lastrum Storm Bolter",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "3",
+      "skill": "2+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "RAPID FIRE 3"
+      ]
+    },
+    {
+      "unitId": "achillus",
+      "sortOrder": 3,
+      "name": "Twin Infernus Incinerator",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "3",
+      "skill": "-",
+      "strength": "6",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "BLAST 2",
+        "TORRENT",
+        "TWIN-LINKED"
+      ]
+    },
+    {
+      "unitId": "achillus",
+      "sortOrder": 4,
+      "name": "Dreadspear (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "12",
+      "armourPenetration": -3,
+      "damage": "D3+3",
+      "abilities": [
+        "LANCE"
+      ]
+    },
+    {
+      "unitId": "venatari-kinetic",
+      "sortOrder": 0,
+      "name": "Kinetic Destroyer",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "4",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "1",
+      "abilities": [
+        "ASSAULT",
+        "CLOSE-QUARTERS",
+        "SUSTAINED HITS 1"
+      ]
+    },
+    {
+      "unitId": "venatari-kinetic",
+      "sortOrder": 1,
+      "name": "Tarsus Buckler",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "6",
+      "armourPenetration": -2,
+      "damage": "1",
+      "abilities": [
+        "SUSTAINED HITS 1"
+      ]
+    },
+    {
+      "unitId": "venatari-lances",
+      "sortOrder": 0,
+      "name": "Verutum Lance (ranged)",
+      "weaponType": "RANGED",
+      "range": "18\"",
+      "attacks": "1",
+      "skill": "2+",
+      "strength": "10",
+      "armourPenetration": -2,
+      "damage": "3",
+      "abilities": [
+        "ASSAULT"
+      ]
+    },
+    {
+      "unitId": "venatari-lances",
+      "sortOrder": 1,
+      "name": "Verutum Lance (melee)",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "5",
+      "skill": "2+",
+      "strength": "7",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "LANCE",
+        "PRECISION"
+      ]
+    },
+    {
+      "unitId": "vigilator",
+      "sortOrder": 0,
+      "name": "Executioner Greatblade",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "3",
+      "skill": "3+",
+      "strength": "5",
+      "armourPenetration": -2,
+      "damage": "2",
+      "abilities": [
+        "ANTI-PSYKER 5+",
+        "DEVASTATING WOUNDS: PSYKER"
+      ]
+    },
+    {
+      "unitId": "witchseeker",
+      "sortOrder": 0,
+      "name": "Flamer",
+      "weaponType": "RANGED",
+      "range": "12\"",
+      "attacks": "3",
+      "skill": "-",
+      "strength": "4",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "ANTI-PSYKER 4+",
+        "ASSAULT",
+        "BLAST 1",
+        "TORRENT"
+      ]
+    },
+    {
+      "unitId": "witchseeker",
+      "sortOrder": 1,
+      "name": "Gun Stock",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "2",
+      "skill": "3+",
+      "strength": "3",
+      "armourPenetration": 0,
+      "damage": "1",
+      "abilities": []
+    },
+    {
+      "unitId": "rhino",
+      "sortOrder": 0,
+      "name": "Hunter-killer Missile",
+      "weaponType": "RANGED",
+      "range": "48\"",
+      "attacks": "1",
+      "skill": "2+",
+      "strength": "14",
+      "armourPenetration": -3,
+      "damage": "D3+3",
+      "abilities": [
+        "ONE SHOT"
+      ]
+    },
+    {
+      "unitId": "rhino",
+      "sortOrder": 1,
+      "name": "Storm Bolter",
+      "weaponType": "RANGED",
+      "range": "24\"",
+      "attacks": "2",
+      "skill": "3+",
+      "strength": "5",
+      "armourPenetration": -1,
+      "damage": "1",
+      "abilities": [
+        "RAPID FIRE 2"
+      ]
+    },
+    {
+      "unitId": "rhino",
+      "sortOrder": 2,
+      "name": "Armoured Tracks",
+      "weaponType": "MELEE",
+      "range": "Melee",
+      "attacks": "3",
+      "skill": "4+",
+      "strength": "6",
+      "armourPenetration": 0,
+      "damage": "1",
+      "abilities": []
+    }
+  ],
+  "note": "Profiles transcribed from supplied photos. Unclear source effects and interactions remain linked to source pages."
+}

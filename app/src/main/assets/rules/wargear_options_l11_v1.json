@@ -1,0 +1,232 @@
+{
+  "packId": "custodes-wargear-l11-crosschecked-20261020-v2",
+  "source": "11th edn - Custodes.pdf photographed pages 17–27; MFM v1.6 retained from earlier packs",
+  "warnings": [
+    "All Vexilla options are exactly one bearer per ROSTER UNIT, not per model.",
+    "Only options clearly readable in the supplied photographed pages are included.",
+    "Shield-Captain Praesidium Shield default equipment and paid points require a future default-loadout pricing refactor; see README.",
+    "Many unphotographed Legends options and some model-specific equipment rules remain untranscribed."
+  ],
+  "options": [
+    {
+      "unitId": "guard",
+      "optionId": "vexilla",
+      "name": "Vexilla",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": null,
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 19,
+      "description": "One model in the unit can be equipped with one Vexilla."
+    },
+    {
+      "unitId": "wardens",
+      "optionId": "castellan-axe",
+      "name": "Castellan Axe (replaces Guardian Spear)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": null,
+      "exclusivityGroup": "primary-melee",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 19,
+      "description": "Each model may replace its Guardian Spear with one Castellan Axe."
+    },
+    {
+      "unitId": "wardens",
+      "optionId": "vexilla",
+      "name": "Vexilla",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": null,
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 19,
+      "description": "One model in the unit can be equipped with one Vexilla."
+    },
+    {
+      "unitId": "sentinel",
+      "optionId": "vexilla",
+      "name": "Vexilla",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": null,
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 18,
+      "description": "One model in the unit can be equipped with one Vexilla."
+    },
+    {
+      "unitId": "shield-captain-allarus",
+      "optionId": "castellan-axe",
+      "name": "Castellan Axe (replaces Guardian Spear)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "primary-melee",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 17,
+      "description": "This model may replace its Guardian Spear with one Castellan Axe."
+    },
+    {
+      "unitId": "shield-captain-jetbike",
+      "optionId": "hurricane-bolter",
+      "name": "Hurricane Bolter (replaces Salvo Launcher)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "jetbike-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 17,
+      "description": "Replace this model’s Salvo Launcher with one Hurricane Bolter."
+    },
+    {
+      "unitId": "vertus",
+      "optionId": "hurricane-bolter",
+      "name": "Hurricane Bolter (replaces Salvo Launcher)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": null,
+      "exclusivityGroup": "jetbike-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 23,
+      "description": "Each model may replace its Salvo Launcher with one Hurricane Bolter."
+    },
+    {
+      "unitId": "gyrfalcon",
+      "optionId": "adrathic-devastator",
+      "name": "Adrathic Devastator (replaces Lastrum Bolt Cannon)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": null,
+      "exclusivityGroup": "jetbike-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 23,
+      "description": "Each model may replace its Lastrum Bolt Cannon with one of these weapons."
+    },
+    {
+      "unitId": "gyrfalcon",
+      "optionId": "arachnus-volley-cannon",
+      "name": "Arachnus Volley Cannon (replaces Lastrum Bolt Cannon)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": null,
+      "exclusivityGroup": "jetbike-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 23,
+      "description": "Each model may replace its Lastrum Bolt Cannon with one of these weapons."
+    },
+    {
+      "unitId": "gyrfalcon",
+      "optionId": "twin-corvae-las-pulser",
+      "name": "Twin Corvae Las-pulser (replaces Lastrum Bolt Cannon)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": null,
+      "exclusivityGroup": "jetbike-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 23,
+      "description": "Each model may replace its Lastrum Bolt Cannon with one of these weapons."
+    },
+    {
+      "unitId": "aquilon-talons",
+      "optionId": "infernus-firepike",
+      "name": "Infernus Firepike (replaces Lastrum Storm Bolter)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": null,
+      "exclusivityGroup": "primary-ranged",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 21,
+      "description": "Each model may replace its Lastrum Storm Bolter with one Infernus Firepike."
+    },
+    {
+      "unitId": "pallas",
+      "optionId": "twin-iliastus",
+      "name": "Twin Iliastus Accelerator Fusil (replaces Twin Arachnus Blaze Cannon)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "secondary-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 26,
+      "description": "Replace the Twin Arachnus Blaze Cannon with one Twin Iliastus Accelerator Fusil."
+    },
+    {
+      "unitId": "coronus",
+      "optionId": "twin-neutronium",
+      "name": "Twin Neutronium Cascade Projectors (replaces Twin Lastrum Bolt Cannon)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "secondary-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 26,
+      "description": "Replace the Twin Lastrum Bolt Cannon with one Twin Neutronium Cascade Projectors."
+    },
+    {
+      "unitId": "caladius",
+      "optionId": "twin-neutronium",
+      "name": "Twin Neutronium Cascade Projectors (replaces Twin Lastrum Bolt Cannon)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "secondary-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 27,
+      "description": "Replace the Twin Lastrum Bolt Cannon with one Twin Neutronium Cascade Projectors."
+    },
+    {
+      "unitId": "caladius-annihilator",
+      "optionId": "twin-neutronium",
+      "name": "Twin Neutronium Cascade Projectors (replaces Twin Lastrum Bolt Cannon)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "secondary-gun",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 27,
+      "description": "Replace the Twin Lastrum Bolt Cannon with one Twin Neutronium Cascade Projectors."
+    },
+    {
+      "unitId": "achillus",
+      "optionId": "double-adrathic",
+      "name": "2 Adrathic Combi-destructors (replaces 2 Lastrum Storm Bolters)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "arm-guns",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 22,
+      "description": "Replace both Lastrum Storm Bolters with two Adrathic Combi-destructors."
+    },
+    {
+      "unitId": "achillus",
+      "optionId": "double-infernus",
+      "name": "2 Twin Infernus Incinerators (replaces 2 Lastrum Storm Bolters)",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "arm-guns",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 22,
+      "description": "Replace both Lastrum Storm Bolters with two Twin Infernus Incinerators."
+    },
+    {
+      "unitId": "telemon",
+      "optionId": "adrathic-desolator",
+      "name": "Adrathic Desolator + Caestus Fist configuration",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "telemon-configuration",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 25,
+      "description": "Choose this printed one-weapon replacement configuration in place of Dual Caestus Fists and two Twin Neutronium Cascade Projectors. See source page 25 for the exact combination."
+    },
+    {
+      "unitId": "telemon",
+      "optionId": "arachnus-storm-cannon",
+      "name": "Arachnus Storm Cannon + Caestus Fist configuration",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "telemon-configuration",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 25,
+      "description": "Choose this printed one-weapon replacement configuration in place of Dual Caestus Fists and two Twin Neutronium Cascade Projectors. See source page 25 for the exact combination."
+    },
+    {
+      "unitId": "telemon",
+      "optionId": "iliastus-culverin",
+      "name": "Iliastus Accelerator Culverin + Caestus Fist configuration",
+      "pointsPerSelection": 0,
+      "maxPerUnit": 1,
+      "exclusivityGroup": "telemon-configuration",
+      "sourceStatus": "SOURCE_TRANSCRIBED",
+      "sourcePage": 25,
+      "description": "Choose this printed one-weapon replacement configuration in place of Dual Caestus Fists and two Twin Neutronium Cascade Projectors. See source page 25 for the exact combination."
+    }
+  ]
+}

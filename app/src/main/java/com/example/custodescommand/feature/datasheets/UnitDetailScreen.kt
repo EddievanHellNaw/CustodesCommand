@@ -15,6 +15,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.example.custodescommand.core.domain.model.*
+import com.example.custodescommand.feature.reference.WeaponAbilityChips
 
 private val headerGold = Color(0xFFD6B65F)
 private val headerBurgundy = Color(0xFF312026)
@@ -77,6 +78,7 @@ private fun DatasheetPage(unit: DetailedUnit, onOpenSourcePage: (Int) -> Unit) {
                 Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                         AbilityPanel(unit)
+                        CodexReferencePanel(unit)
                     }
                     Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(12.dp)) {
                         CompositionPanel(unit)
@@ -88,6 +90,7 @@ private fun DatasheetPage(unit: DetailedUnit, onOpenSourcePage: (Int) -> Unit) {
                 // or the ability, composition and points text will draw on top of itself.
                 Column(verticalArrangement = Arrangement.spacedBy(16.dp)) {
                     AbilityPanel(unit)
+                    CodexReferencePanel(unit)
                     CompositionPanel(unit)
                     PricePanel(unit)
                 }
@@ -186,10 +189,11 @@ private fun WeaponMatrix(title: String, weapons: List<WeaponProfile>, skillLabel
                 MatrixCell(weapon.damage, numericWidth)
             }
             if (weapon.abilities.isNotEmpty()) {
-                Text(weapon.abilities.joinToString(" • "),
-                    modifier = Modifier.width(tableWidth).padding(start = 8.dp, top = 2.dp, bottom = 8.dp),
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.primary)
+                WeaponAbilityChips(
+                    abilities = weapon.abilities,
+                    modifier = Modifier.width(tableWidth)
+                        .padding(start = 8.dp, top = 2.dp, bottom = 8.dp)
+                )
             }
         }
     }
@@ -230,9 +234,41 @@ private fun AbilityPanel(unit: DetailedUnit) {
 }
 
 @Composable
+private fun CodexReferencePanel(unit: DetailedUnit) {
+    val index = unit.codexSections.find { it.kind == "ABILITY_INDEX" }
+    val summary = unit.codexSections.find { it.kind == "ABILITY_SUMMARY" }
+    val missing = unit.codexSections.find { it.kind == "SOURCE_WARNING" }
+    if (index == null && summary == null && missing == null) return
+    SectionTitle("Codex source index")
+    index?.let {
+        Text("Listed abilities: ${it.text}", style = MaterialTheme.typography.bodyMedium)
+    }
+    summary?.let {
+        Text(it.text, style = MaterialTheme.typography.bodyMedium)
+        Text("Summary only — consult photographed datasheet for the complete effect.",
+            style = MaterialTheme.typography.labelSmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+    missing?.let {
+        Text(it.text, style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.error)
+    }
+}
+
+@Composable
 private fun CompositionPanel(unit: DetailedUnit) {
     SectionTitle("Unit composition and wargear")
-    Text("Unit sizes: ${unit.allowedModelCounts.sorted().joinToString(" / ")}")
+    Text("Allowed roster sizes: ${unit.allowedModelCounts.sorted().joinToString(" / ")}")
+    val composition = unit.codexSections.find { it.kind == "COMPOSITION" }
+    val defaultEquipment = unit.codexSections.find { it.kind == "DEFAULT_EQUIPMENT" }
+    if (composition != null) {
+        Text("Printed composition", style = MaterialTheme.typography.titleSmall)
+        Text(composition.text, style = MaterialTheme.typography.bodyMedium)
+    }
+    if (defaultEquipment != null) {
+        Text("Default equipment", style = MaterialTheme.typography.titleSmall)
+        Text(defaultEquipment.text, style = MaterialTheme.typography.bodyMedium)
+    }
     if (unit.wargearOptions.isEmpty()) Text("Wargear transcription pending; consult scan.",
         style = MaterialTheme.typography.bodySmall)
     else unit.wargearOptions.forEach { Text("• $it", style = MaterialTheme.typography.bodyMedium) }

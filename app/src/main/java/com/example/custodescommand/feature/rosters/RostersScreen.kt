@@ -18,7 +18,8 @@ fun RostersScreen(
     state: RostersUiState,
     onCreateRoster: (String, Int) -> Unit,
     onDismissError: () -> Unit,
-    onOpenRoster: (String) -> Unit
+    onOpenRoster: (String) -> Unit,
+    onPlayRoster: (String) -> Unit
 ) {
     var showCreateDialog by rememberSaveable {
         mutableStateOf(false)
@@ -98,6 +99,10 @@ fun RostersScreen(
                                     style = MaterialTheme
                                         .typography.bodyMedium
                                 )
+
+                                TextButton(onClick = { onPlayRoster(roster.id) }) {
+                                    Text("Play / Game Mode")
+                                }
 
                                 Text(
                                     text = "Tap to manage this army",
